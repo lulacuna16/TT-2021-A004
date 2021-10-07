@@ -1,0 +1,2 @@
+Convertir .ui a .py
+    pyuic5 xyz.ui -o xyz.py

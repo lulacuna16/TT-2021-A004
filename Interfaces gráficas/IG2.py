@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG1 as G1
-
+import IG3 as G3
 class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
         IG2_MenuUsuario.setObjectName("IG2_MenuUsuario")
@@ -18,9 +18,12 @@ class Ui_IG2_MenuUsuario(object):
         self.labelNombreUsuario = QtWidgets.QLabel(IG2_MenuUsuario)
         self.labelNombreUsuario.setGeometry(QtCore.QRect(50, 50, 61, 16))
         self.labelNombreUsuario.setObjectName("labelNombreUsuario")
+
         self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
         self.botonModificarPerfil.setGeometry(QtCore.QRect(330, 50, 91, 21))
         self.botonModificarPerfil.setObjectName("botonModificarPerfil")
+        self.ModificarPerfil(IG2_MenuUsuario)
+
         self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
         self.botonAprender.setGeometry(QtCore.QRect(60, 130, 75, 23))
         self.botonAprender.setObjectName("botonAprender")
@@ -36,6 +39,14 @@ class Ui_IG2_MenuUsuario(object):
         self.retranslateUi(IG2_MenuUsuario)
         QtCore.QMetaObject.connectSlotsByName(IG2_MenuUsuario)
 
+    def ModificarPerfil(self,IG2_MenuUsuario):
+        self.botonModificarPerfil.clicked.connect(lambda:self.abrirIG3(IG2_MenuUsuario))
+    def abrirIG3(self,IG2_MenuUsuario):
+        IG2_MenuUsuario.hide()
+        self.IIG3=QtWidgets.QWidget()
+        ui = G3.Ui_IG3_ModificacionPerfil()
+        ui.setupUi(self.IIG3)
+        self.IIG3.show()
     def regresarInicio(self, IG2_MenuUusuario):
         self.botonRegresarInicio.clicked.connect(lambda:self.abrirIG1(IG2_MenuUusuario))
     def abrirIG1(self,IG2_MenuUsuario):

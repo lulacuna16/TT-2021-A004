@@ -41,7 +41,7 @@ class Ui_IG1_Bienvenida(object):
     def retranslateUi(self, IG1_Bienvenida):
         _translate = QtCore.QCoreApplication.translate
         IG1_Bienvenida.setWindowTitle(_translate("IG1_Bienvenida", "Form"))
-        self.botonUsuario1.setText(_translate("IG1_Bienvenida", "Ususario1"))
+        self.botonUsuario1.setText(_translate("IG1_Bienvenida", "Usuario1"))
         self.LabelBienvenida.setText(_translate("IG1_Bienvenida", "Selecciona un usuario"))
 
 

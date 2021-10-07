@@ -1,42 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>IG2</class>
- <widget class="QWidget" name="IG2">
+ <class>IG2_MenuUsuario</class>
+ <widget class="QWidget" name="IG2_MenuUsuario">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>490</width>
+    <width>495</width>
     <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="labelUsuario">
+  <widget class="QLabel" name="labelNombreUsuario">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>50</x>
      <y>50</y>
-     <width>47</width>
-     <height>13</height>
+     <width>61</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
     <string>Usuario1</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="botonRegresarPerfiles">
+  <widget class="QPushButton" name="botonModificarPerfil">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>150</y>
-     <width>201</width>
-     <height>41</height>
+     <x>330</x>
+     <y>50</y>
+     <width>91</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Regresar a perfiles</string>
+    <string>Modificar Perfil</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonAprender">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aprender</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonPracticar">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Practicar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonRegresarInicio">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Regresar a Inicio</string>
    </property>
   </widget>
  </widget>

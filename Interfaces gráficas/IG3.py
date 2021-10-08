@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG2 as G2
-
+from Clases.Usuario import Usuario
 
 class Ui_IG3_ModificacionPerfil(object):
     def setupUi(self, IG3_ModificacionPerfil):
@@ -33,28 +33,39 @@ class Ui_IG3_ModificacionPerfil(object):
         self.botonCancelar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
         self.botonCancelar.setGeometry(QtCore.QRect(280, 170, 75, 23))
         self.botonCancelar.setObjectName("botonCancelar")
-        self.Cancelar(IG3_ModificacionPerfil)
+        self.Eventos(IG3_ModificacionPerfil)
 
         self.retranslateUi(IG3_ModificacionPerfil)
         QtCore.QMetaObject.connectSlotsByName(IG3_ModificacionPerfil)
 
-    def Cancelar(self,IG3_ModificacionPerfil):
+    def Eventos(self,IG3_ModificacionPerfil):
         self.botonCancelar.clicked.connect(lambda:self.abrirIG2(IG3_ModificacionPerfil))
+        self.botonGuardar.clicked.connect(lambda: self.actualizarNombre(0))
+
     def abrirIG2(self,IG3_ModificacionPerfil):
         IG3_ModificacionPerfil.hide()
         self.IIG2=QtWidgets.QWidget()
         ui=G2.Ui_IG2_MenuUsuario()
         ui.setupUi(self.IIG2)
         self.IIG2.show()
+    def actualizarNombre(self,index):
+        nombre = self.textNombreUsuario.text()
+        usuario = Usuario("")
+        usuario.actualizarUsuarioIndex("usuarios.json",index,nombre)
+
     def retranslateUi(self, IG3_ModificacionPerfil):
         _translate = QtCore.QCoreApplication.translate
         IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Form"))
         self.labelNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Nombre Usuario:"))
-        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Usuario1"))
+        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(0)))
         self.botonGuardar.setText(_translate("IG3_ModificacionPerfil", "Guardar"))
         self.botonEliminarPerfil.setText(_translate("IG3_ModificacionPerfil", "Eliminar perfil"))
         self.botonCancelar.setText(_translate("IG3_ModificacionPerfil", "Cancelar"))
 
+    def nombreUsuario(self,index):
+        usuario = Usuario("")
+        usuario.obtenerUsuarioIndex("usuarios.json",index)
+        return usuario.nombre
 
 if __name__ == "__main__":
     import sys

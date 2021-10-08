@@ -11,6 +11,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG1 as G1
 import IG3 as G3
+from Clases.Usuario import Usuario
+
 class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
         IG2_MenuUsuario.setObjectName("IG2_MenuUsuario")
@@ -59,12 +61,16 @@ class Ui_IG2_MenuUsuario(object):
     def retranslateUi(self, IG2_MenuUsuario):
         _translate = QtCore.QCoreApplication.translate
         IG2_MenuUsuario.setWindowTitle(_translate("IG2_MenuUsuario", "Form"))
-        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", "Usuario1"))
+        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(0)))
         self.botonModificarPerfil.setText(_translate("IG2_MenuUsuario", "Modificar Perfil"))
         self.botonAprender.setText(_translate("IG2_MenuUsuario", "Aprender"))
         self.botonPracticar.setText(_translate("IG2_MenuUsuario", "Practicar"))
         self.botonRegresarInicio.setText(_translate("IG2_MenuUsuario", "Regresar a Inicio"))
 
+    def nombreUsuario(self,index):
+        usuario = Usuario("")
+        usuario.obtenerUsuarioIndex("usuarios.json",index)
+        return usuario.nombre
 
 if __name__ == "__main__":
     import sys

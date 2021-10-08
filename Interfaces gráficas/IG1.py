@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG2 as G2
+from Clases.Usuario import Usuario
 
 class Ui_IG1_Bienvenida(object):
     def setupUi(self, IG1_Bienvenida):
@@ -41,9 +42,13 @@ class Ui_IG1_Bienvenida(object):
     def retranslateUi(self, IG1_Bienvenida):
         _translate = QtCore.QCoreApplication.translate
         IG1_Bienvenida.setWindowTitle(_translate("IG1_Bienvenida", "Form"))
-        self.botonUsuario1.setText(_translate("IG1_Bienvenida", "Usuario1"))
+        self.botonUsuario1.setText(_translate("IG1_Bienvenida", self.nombreUsuario(0)))
         self.LabelBienvenida.setText(_translate("IG1_Bienvenida", "Selecciona un usuario"))
 
+    def nombreUsuario(self,index):
+        usuario = Usuario("")
+        usuario.obtenerUsuarioIndex("usuarios.json",index)
+        return usuario.nombre
 
 if __name__ == "__main__":
     import sys

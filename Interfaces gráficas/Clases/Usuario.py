@@ -1,5 +1,5 @@
 import json
-
+import os
 class Usuario:
     def __init__(self, nombre):
         self.__nombre = nombre
@@ -59,7 +59,7 @@ class Usuario:
 
     # Obtener usuario por indice desde .json
     def obtenerUsuarioIndex(self,archivo,index):
-        f = open(archivo, 'r')
+        f = open(os.path.abspath(archivo), 'r')
         usuarios = f.read()
         f.close()
         usuarios = json.loads(usuarios)
@@ -83,7 +83,7 @@ class Usuario:
     #     return False
 
     def actualizarUsuarioIndex(self, archivo, index, nombre_n):
-        f = open(archivo, 'r')
+        f = open(os.path.abspath(archivo), 'r')
         usuarios = f.read()
         f.close()
         usuarios = json.loads(usuarios)

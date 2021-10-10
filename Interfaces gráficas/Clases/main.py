@@ -4,7 +4,7 @@ usuario = Usuario("Rulo")
 
 # print(usuario.obtenerUsuarios("./usuarios.json"))
 # print(usuario.obtenerUsuario("./usuarios.json", "Usuario5"))
-print(usuario.obtenerUsuarioIndex("./usuarios.json", 2))
+print(usuario.obtenerUsuarioIndex("usuarios.json", 2))
 
 # print(usuario.actualizarUsuario("./usuarios.json","Rulo","Raul"))
 

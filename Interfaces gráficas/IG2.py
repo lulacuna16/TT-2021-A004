@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG1 as G1
 import IG3 as G3
+import IG4 as G4
 from Clases.Usuario import Usuario
 
 class Ui_IG2_MenuUsuario(object):
@@ -24,7 +25,6 @@ class Ui_IG2_MenuUsuario(object):
         self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
         self.botonModificarPerfil.setGeometry(QtCore.QRect(330, 50, 91, 21))
         self.botonModificarPerfil.setObjectName("botonModificarPerfil")
-        self.ModificarPerfil(IG2_MenuUsuario)
 
         self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
         self.botonAprender.setGeometry(QtCore.QRect(60, 130, 75, 23))
@@ -36,27 +36,36 @@ class Ui_IG2_MenuUsuario(object):
         self.botonRegresarInicio = QtWidgets.QPushButton(IG2_MenuUsuario)
         self.botonRegresarInicio.setGeometry(QtCore.QRect(150, 230, 101, 23))
         self.botonRegresarInicio.setObjectName("botonRegresarInicio")
-        self.regresarInicio(IG2_MenuUsuario)
 
+        self.Eventos(IG2_MenuUsuario)
         self.retranslateUi(IG2_MenuUsuario)
         QtCore.QMetaObject.connectSlotsByName(IG2_MenuUsuario)
 
-    def ModificarPerfil(self,IG2_MenuUsuario):
+    def Eventos(self,IG2_MenuUsuario):
         self.botonModificarPerfil.clicked.connect(lambda:self.abrirIG3(IG2_MenuUsuario))
+        self.botonRegresarInicio.clicked.connect(lambda:self.abrirIG1(IG2_MenuUsuario))
+        self.botonAprender.clicked.connect(lambda: self.abrirIG4(IG2_MenuUsuario))
+
     def abrirIG3(self,IG2_MenuUsuario):
         IG2_MenuUsuario.hide()
         self.IIG3=QtWidgets.QWidget()
         ui = G3.Ui_IG3_ModificacionPerfil()
         ui.setupUi(self.IIG3)
         self.IIG3.show()
-    def regresarInicio(self, IG2_MenuUusuario):
-        self.botonRegresarInicio.clicked.connect(lambda:self.abrirIG1(IG2_MenuUusuario))
+
     def abrirIG1(self,IG2_MenuUsuario):
         IG2_MenuUsuario.hide()
         self.IIG1=QtWidgets.QWidget()
         ui = G1.Ui_IG1_Bienvenida()
         ui.setupUi(self.IIG1)
         self.IIG1.show()
+
+    def abrirIG4(self,IG2_MenuUsuario):
+        IG2_MenuUsuario.hide()
+        self.IIG4=QtWidgets.QWidget()
+        ui = G4.Ui_IG4_Aprendizaje()
+        ui.setupUi(self.IIG4)
+        self.IIG4.show()
 
     def retranslateUi(self, IG2_MenuUsuario):
         _translate = QtCore.QCoreApplication.translate

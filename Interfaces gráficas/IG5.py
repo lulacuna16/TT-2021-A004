@@ -1,0 +1,59 @@
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_IG5_Sena(object):
+
+    def setupUi(self, IG5_Sena):
+        IG5_Sena.setObjectName("IG5_Sena")
+        IG5_Sena.resize(703, 792)
+        self.nombreSena = QtWidgets.QLabel(IG5_Sena)
+        self.nombreSena.setGeometry(QtCore.QRect(240, 40, 71, 21))
+        self.nombreSena.setObjectName("nombreSena")
+        self.widgetVideoTutorial = QtWidgets.QWidget(IG5_Sena)
+        self.widgetVideoTutorial.setGeometry(QtCore.QRect(69, 110, 352, 640))
+        self.widgetVideoTutorial.setObjectName("widgetVideoTutorial")
+        self.botonReproducir = QtWidgets.QPushButton(IG5_Sena)
+        self.botonReproducir.setGeometry(QtCore.QRect(440, 110, 75, 23))
+        self.botonReproducir.setObjectName("botonReproducir")
+        self.botonPausar = QtWidgets.QPushButton(IG5_Sena)
+        self.botonPausar.setGeometry(QtCore.QRect(440, 160, 75, 23))
+        self.botonPausar.setObjectName("botonPausar")
+        self.botonVerificar = QtWidgets.QPushButton(IG5_Sena)
+        self.botonVerificar.setGeometry(QtCore.QRect(580, 310, 81, 23))
+        self.botonVerificar.setObjectName("botonVerificar")
+        self.labelResultado = QtWidgets.QLabel(IG5_Sena)
+        self.labelResultado.setGeometry(QtCore.QRect(450, 370, 221, 131))
+        self.labelResultado.setText("")
+        self.labelResultado.setObjectName("labelResultado")
+        self.botonGrabar = QtWidgets.QPushButton(IG5_Sena)
+        self.botonGrabar.setGeometry(QtCore.QRect(450, 310, 75, 23))
+        self.botonGrabar.setObjectName("botonGrabar")
+        self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
+        self.labelTutorial.setGeometry(QtCore.QRect(80, 70, 121, 16))
+        self.labelTutorial.setObjectName("labelTutorial")
+
+        self.retranslateUi(IG5_Sena)
+        QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
+    def setNombre(self,nombre):
+        self.nombreSena.setText(nombre)
+    def retranslateUi(self, IG5_Sena):
+        _translate = QtCore.QCoreApplication.translate
+        IG5_Sena.setWindowTitle(_translate("IG5_Sena", "Form"))
+        self.nombreSena.setText(_translate("IG5_Sena", "name"))
+        self.botonReproducir.setText(_translate("IG5_Sena", "Reproducir"))
+        self.botonPausar.setText(_translate("IG5_Sena", "Pausar"))
+        self.botonVerificar.setText(_translate("IG5_Sena", "Verificar seña"))
+        self.botonGrabar.setText(_translate("IG5_Sena", "Grabar seña"))
+        self.labelTutorial.setText(_translate("IG5_Sena", "¿Cómo hacer la seña?"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    IG5_Sena = QtWidgets.QWidget()
+    ui = Ui_IG5_Sena()
+    ui.setupUi(IG5_Sena)
+    IG5_Sena.show()
+    sys.exit(app.exec_())

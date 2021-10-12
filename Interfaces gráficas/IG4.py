@@ -89,7 +89,7 @@ class Ui_IG4_Aprendizaje(object):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
         self.labelBienvenida.setText(_translate("IG4_Aprendizaje", "Bienvenido al menú de Aprendizaje"))
-        self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Selecciona presiona sobre una categoría para ver las señas disponibles"))
+        self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Presiona sobre una categoría para ver las señas disponibles"))
         self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(0)))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
         self.tabs.setTabText(self.tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))

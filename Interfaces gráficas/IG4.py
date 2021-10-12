@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'IG4.ui'
+# Form implementation generated from reading ui file 'IGP.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -9,61 +9,66 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 import IG4_1_Abecedario as abecedario
 import IG4_2_Numeros as numeros
 import IG2 as G2
 from Clases.Usuario import Usuario
+
 class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
         IG4_Aprendizaje.setObjectName("IG4_Aprendizaje")
-        IG4_Aprendizaje.resize(1038, 836)
-
-        self.labelAprender = QtWidgets.QLabel(IG4_Aprendizaje)
-        self.labelAprender.setGeometry(QtCore.QRect(40, 20, 47, 13))
-        self.labelAprender.setObjectName("labelAprender")
-        self.labelNombreUsuario = QtWidgets.QLabel(IG4_Aprendizaje)
-        self.labelNombreUsuario.setGeometry(QtCore.QRect(380, 20, 47, 13))
-        self.labelNombreUsuario.setObjectName("labelNombreUsuario")
-        self.labelInstrucciones = QtWidgets.QLabel(IG4_Aprendizaje)
-        self.labelInstrucciones.setGeometry(QtCore.QRect(40, 50, 321, 16))
+        IG4_Aprendizaje.resize(950, 404)
+        self.verticalLayout = QtWidgets.QVBoxLayout(IG4_Aprendizaje)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.tabs = QtWidgets.QTabWidget(IG4_Aprendizaje)
+        self.tabs.setObjectName("tabs")
+        self.tabInicio = QtWidgets.QWidget()
+        self.tabInicio.setObjectName("tabInicio")
+        self.labelBienvenida = QtWidgets.QLabel(self.tabInicio)
+        self.labelBienvenida.setGeometry(QtCore.QRect(20, 80, 191, 16))
+        self.labelBienvenida.setObjectName("labelBienvenida")
+        self.labelInstrucciones = QtWidgets.QLabel(self.tabInicio)
+        self.labelInstrucciones.setGeometry(QtCore.QRect(20, 90, 341, 61))
         self.labelInstrucciones.setObjectName("labelInstrucciones")
+        self.labelNombreUsuario = QtWidgets.QLabel(self.tabInicio)
+        self.labelNombreUsuario.setGeometry(QtCore.QRect(20, 50, 47, 13))
+        self.labelNombreUsuario.setObjectName("labelNombreUsuario")
+        self.botonRegresar = QtWidgets.QPushButton(self.tabInicio)
+        self.botonRegresar.setGeometry(QtCore.QRect(250, 190, 75, 23))
+        self.botonRegresar.setObjectName("botonRegresar")
+        self.tabs.addTab(self.tabInicio, "")
 
-        self.botonAbecedario = QtWidgets.QPushButton(IG4_Aprendizaje)
-        self.botonAbecedario.setGeometry(QtCore.QRect(30, 110, 881, 23))
+        self.tabAbecedario = QtWidgets.QWidget()
+        self.tabAbecedario.setObjectName("tabAbecedario")
+        self.botonAbecedario = QtWidgets.QPushButton(self.tabAbecedario)
+        self.botonAbecedario.setGeometry(QtCore.QRect(20, 10, 881, 23))
         self.botonAbecedario.setObjectName("botonAbecedario")
-        self.widgetAbecedario = QtWidgets.QWidget(IG4_Aprendizaje)
-        self.widgetAbecedario.setGeometry(QtCore.QRect(30, 130, 881, 311))
+        self.widgetAbecedario = QtWidgets.QWidget(self.tabAbecedario)
+        self.widgetAbecedario.setGeometry(QtCore.QRect(20, 30, 881, 311))
         self.widgetAbecedario.setObjectName("widgetAbecedario")
         ventanaAbecedario = abecedario.IG_Abecedario()
         ventanaAbecedario.iniciar_Abecedario(self.widgetAbecedario)
         ventanaAbecedario.retranslateUiAbecedario(IG4_Aprendizaje)
+        self.tabs.addTab(self.tabAbecedario, "")
 
-        self.botonRegresar = QtWidgets.QPushButton(IG4_Aprendizaje)
-        self.botonRegresar.setGeometry(QtCore.QRect(30, 800, 75, 23))
-        self.botonRegresar.setObjectName("botonRegresar")
-
-        """  self.verticalScrollBar = QtWidgets.QScrollBar(IG4_Aprendizaje)
-        self.verticalScrollBar.setGeometry(QtCore.QRect(1020, 0, 16, 551))
-        self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
-        self.verticalScrollBar.setObjectName("verticalScrollBar")
-        IG4_Aprendizaje.setVerticalScrollBar(self.verticalScrollBar)"""
-
-        self.botonNumeros = QtWidgets.QPushButton(IG4_Aprendizaje)
-        self.botonNumeros.setGeometry(QtCore.QRect(30, 460, 881, 23))
+        self.tabNumeros = QtWidgets.QWidget()
+        self.tabNumeros.setObjectName("tabNumeros")
+        self.botonNumeros = QtWidgets.QPushButton(self.tabNumeros)
+        self.botonNumeros.setGeometry(QtCore.QRect(30, 10, 881, 23))
         self.botonNumeros.setObjectName("botonNumeros")
-        self.widgetNumeros = QtWidgets.QWidget(IG4_Aprendizaje)
-        self.widgetNumeros.setGeometry(QtCore.QRect(30, 480, 881, 311))
+        self.widgetNumeros = QtWidgets.QWidget(self.tabNumeros)
+        self.widgetNumeros.setGeometry(QtCore.QRect(30, 30, 881, 311))
         self.widgetNumeros.setObjectName("widgetNumeros")
         ventanaNumeros = numeros.IG_Numeros()
         ventanaNumeros.iniciar_Numeros(self.widgetNumeros)
         ventanaNumeros.retranslateUi(IG4_Aprendizaje)
+        self.tabs.addTab(self.tabNumeros, "")
 
+        self.verticalLayout.addWidget(self.tabs)
         self.Eventos(IG4_Aprendizaje)
 
-
-
         self.retranslateUi(IG4_Aprendizaje)
+        self.tabs.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(IG4_Aprendizaje)
 
     def abrirIG2(self,IG4_Aprendizaje):
@@ -80,16 +85,20 @@ class Ui_IG4_Aprendizaje(object):
         usuario.obtenerUsuarioIndex("usuarios.json", index)
         return usuario.nombre
 
-
     def retranslateUi(self, IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
-        self.labelAprender.setText(_translate("IG4_Aprendizaje", "Aprender"))
+        self.labelBienvenida.setText(_translate("IG4_Aprendizaje", "Bienvenido al menú de Aprendizaje"))
+        self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Selecciona presiona sobre una categoría para ver las señas disponibles"))
         self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(0)))
-        self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Presiona sobre la categoría para visualizar la señas disponibles"))
-        self.botonAbecedario.setText(_translate("IG4_Aprendizaje", "Abecedario"))
-        self.botonNumeros.setText(_translate("IG4_Aprendizaje", "Números"))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
+        self.tabs.setTabText(self.tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))
+        self.botonAbecedario.setText(_translate("IG4_Aprendizaje", "Abecedario"))
+
+        self.tabs.setTabText(self.tabs.indexOf(self.tabAbecedario), _translate("IG4_Aprendizaje", "Abecedario"))
+
+        self.botonNumeros.setText(_translate("IG4_Aprendizaje", "Números"))
+        self.tabs.setTabText(self.tabs.indexOf(self.tabNumeros), _translate("IG4_Aprendizaje", "Números"))
 
 
 if __name__ == "__main__":
@@ -99,4 +108,4 @@ if __name__ == "__main__":
     ui = Ui_IG4_Aprendizaje()
     ui.setupUi(IG4_Aprendizaje)
     IG4_Aprendizaje.show()
-    app.exec_()
+    sys.exit(app.exec_())

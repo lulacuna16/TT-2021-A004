@@ -11,11 +11,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 import IG4_1_Abecedario as abecedario
+import IG4_2_Numeros as numeros
 import IG2 as G2
+from Clases.Usuario import Usuario
 class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
         IG4_Aprendizaje.setObjectName("IG4_Aprendizaje")
-        IG4_Aprendizaje.resize(1038, 463)
+        IG4_Aprendizaje.resize(1038, 836)
+
         self.labelAprender = QtWidgets.QLabel(IG4_Aprendizaje)
         self.labelAprender.setGeometry(QtCore.QRect(40, 20, 47, 13))
         self.labelAprender.setObjectName("labelAprender")
@@ -25,25 +28,40 @@ class Ui_IG4_Aprendizaje(object):
         self.labelInstrucciones = QtWidgets.QLabel(IG4_Aprendizaje)
         self.labelInstrucciones.setGeometry(QtCore.QRect(40, 50, 321, 16))
         self.labelInstrucciones.setObjectName("labelInstrucciones")
+
         self.botonAbecedario = QtWidgets.QPushButton(IG4_Aprendizaje)
         self.botonAbecedario.setGeometry(QtCore.QRect(30, 110, 881, 23))
         self.botonAbecedario.setObjectName("botonAbecedario")
-
         self.widgetAbecedario = QtWidgets.QWidget(IG4_Aprendizaje)
         self.widgetAbecedario.setGeometry(QtCore.QRect(30, 130, 881, 311))
         self.widgetAbecedario.setObjectName("widgetAbecedario")
-        ventanaAbecedario = abecedario.IG_Abecedario();
+        ventanaAbecedario = abecedario.IG_Abecedario()
         ventanaAbecedario.iniciar_Abecedario(self.widgetAbecedario)
         ventanaAbecedario.retranslateUiAbecedario(IG4_Aprendizaje)
 
         self.botonRegresar = QtWidgets.QPushButton(IG4_Aprendizaje)
-        self.botonRegresar.setGeometry(QtCore.QRect(40, 500, 75, 23))
+        self.botonRegresar.setGeometry(QtCore.QRect(30, 800, 75, 23))
         self.botonRegresar.setObjectName("botonRegresar")
-        self.verticalScrollBar = QtWidgets.QScrollBar(IG4_Aprendizaje)
+
+        """  self.verticalScrollBar = QtWidgets.QScrollBar(IG4_Aprendizaje)
         self.verticalScrollBar.setGeometry(QtCore.QRect(1020, 0, 16, 551))
         self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
         self.verticalScrollBar.setObjectName("verticalScrollBar")
+        IG4_Aprendizaje.setVerticalScrollBar(self.verticalScrollBar)"""
+
+        self.botonNumeros = QtWidgets.QPushButton(IG4_Aprendizaje)
+        self.botonNumeros.setGeometry(QtCore.QRect(30, 460, 881, 23))
+        self.botonNumeros.setObjectName("botonNumeros")
+        self.widgetNumeros = QtWidgets.QWidget(IG4_Aprendizaje)
+        self.widgetNumeros.setGeometry(QtCore.QRect(30, 480, 881, 311))
+        self.widgetNumeros.setObjectName("widgetNumeros")
+        ventanaNumeros = numeros.IG_Numeros()
+        ventanaNumeros.iniciar_Numeros(self.widgetNumeros)
+        ventanaNumeros.retranslateUi(IG4_Aprendizaje)
+
         self.Eventos(IG4_Aprendizaje)
+
+
 
         self.retranslateUi(IG4_Aprendizaje)
         QtCore.QMetaObject.connectSlotsByName(IG4_Aprendizaje)
@@ -57,13 +75,20 @@ class Ui_IG4_Aprendizaje(object):
     def Eventos(self,IG4_Aprendizaje):
         self.botonRegresar.clicked.connect(lambda:self.abrirIG2(IG4_Aprendizaje))
 
+    def nombreUsuario(self, index):
+        usuario = Usuario("")
+        usuario.obtenerUsuarioIndex("usuarios.json", index)
+        return usuario.nombre
+
+
     def retranslateUi(self, IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
         self.labelAprender.setText(_translate("IG4_Aprendizaje", "Aprender"))
-        self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", "Usuario1"))
+        self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(0)))
         self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Presiona sobre la categoría para visualizar la señas disponibles"))
         self.botonAbecedario.setText(_translate("IG4_Aprendizaje", "Abecedario"))
+        self.botonNumeros.setText(_translate("IG4_Aprendizaje", "Números"))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
 
 

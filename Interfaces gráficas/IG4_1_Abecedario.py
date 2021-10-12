@@ -1,6 +1,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
+import os
 
 class IG_Abecedario(object):
     def iniciar_Abecedario(self,widgetAbecedario):
@@ -199,6 +200,10 @@ class IG_Abecedario(object):
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
+        ruta = os.getcwd().replace("\\","/") + "/Interfaces gráficas/videos/abecedario/"
+        ruta += boton.text() + ".wmv"
+        Sena.setPath(ruta)
+        Sena.setup(self.IIG5)
         self.IIG5.show()
         #print(boton.text())
     def retranslateUiAbecedario(self,IG4_Aprendizaje):

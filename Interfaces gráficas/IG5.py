@@ -1,7 +1,8 @@
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-
+from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
+import sys
+import os
 
 class Ui_IG5_Sena(object):
 
@@ -34,6 +35,8 @@ class Ui_IG5_Sena(object):
         self.labelTutorial.setGeometry(QtCore.QRect(80, 70, 121, 16))
         self.labelTutorial.setObjectName("labelTutorial")
 
+        # self.setup(IG5_Sena)
+
         self.retranslateUi(IG5_Sena)
         QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
     def setNombre(self,nombre):
@@ -48,12 +51,37 @@ class Ui_IG5_Sena(object):
         self.botonGrabar.setText(_translate("IG5_Sena", "Grabar seña"))
         self.labelTutorial.setText(_translate("IG5_Sena", "¿Cómo hacer la seña?"))
 
+    def setup(self,Form):
+        self.video = self.crearVideo(Form)
+        self.contenedor = self.crearContenedor(Form)
+        self.contenedor.setMedia(QtMultimedia.QMediaContent(QtCore.QUrl(self.path)))
+        self.contenedor.play()
+        self.eventos(Form)
+
+    def crearContenedor(self,Form):
+        contenedor = QtMultimedia.QMediaPlayer(Form)
+        contenedor.setVideoOutput(self.video)
+        return contenedor
+
+    def crearVideo(self,Form):
+        videoOutput = QtMultimediaWidgets.QVideoWidget(Form)
+        caja = QtWidgets.QVBoxLayout()
+        caja.addWidget(videoOutput)
+        self.widgetVideoTutorial.setLayout(caja)
+        return videoOutput
+
+    def setPath(self,path):
+        self.path = path
+
+    def eventos(self,Form):
+        self.botonReproducir.clicked.connect(self.contenedor.play)
+        self.botonPausar.clicked.connect(self.contenedor.pause)
+
 
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     IG5_Sena = QtWidgets.QWidget()
-    ui = Ui_IG5_Sena()
+    ui = Ui_IG5_Sena()  
     ui.setupUi(IG5_Sena)
     IG5_Sena.show()
     sys.exit(app.exec_())

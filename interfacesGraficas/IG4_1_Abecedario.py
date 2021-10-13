@@ -3,6 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
 
+
 class IG_Abecedario(object):
     def iniciar_Abecedario(self,widgetAbecedario):
         self.imagen_A = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -200,7 +201,9 @@ class IG_Abecedario(object):
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
-        ruta = ("./videos/abecedario/")
+        ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/abecedario/")
+        print(ruta)
+        print(os.path.exists(ruta))
         ruta += boton.text() + ".wmv"
         Sena.setPath(ruta)
         Sena.setup(self.IIG5)

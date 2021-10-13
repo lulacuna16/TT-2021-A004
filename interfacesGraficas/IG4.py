@@ -13,6 +13,7 @@ import IG4_1_Abecedario as abecedario
 import IG4_2_Numeros as numeros
 import IG2 as G2
 from Clases.Usuario import Usuario
+from os import environ
 
 class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
@@ -100,9 +101,15 @@ class Ui_IG4_Aprendizaje(object):
         self.botonNumeros.setText(_translate("IG4_Aprendizaje", "Números"))
         self.tabs.setTabText(self.tabs.indexOf(self.tabNumeros), _translate("IG4_Aprendizaje", "Números"))
 
+def suppress_qt_warnings():
+    environ["QT_DEVICE_PIXEL_RATIO"] = "0"
+    environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
+    environ["QT_SCREEN_SCALE_FACTORS"] = "1"
+    environ["QT_SCALE_FACTOR"] = "1"
 
 if __name__ == "__main__":
     import sys
+    suppress_qt_warnings()
     app = QtWidgets.QApplication(sys.argv)
     IG4_Aprendizaje = QtWidgets.QWidget()
     ui = Ui_IG4_Aprendizaje()

@@ -144,7 +144,7 @@ class IG_Numeros(object):
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
-        ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/abecedario/")
+        ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/numeros/")
         print(ruta)
         print(os.path.exists(ruta))
         ruta += boton.text() + ".wmv"

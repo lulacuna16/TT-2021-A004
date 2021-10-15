@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
+import os
 
 class IG_Numeros(object):
     def iniciar_Numeros(self,widgetNumeros):
@@ -51,7 +52,7 @@ class IG_Numeros(object):
         self.boton_8 = QtWidgets.QPushButton(widgetNumeros)
         self.boton_8.setGeometry(QtCore.QRect(700, 70, 75, 23))
         self.boton_8.setObjectName("boton_8")
-        self.imagen_9 = QtWidgets.QGraphicsView(widgetNumeros)
+        """self.imagen_9 = QtWidgets.QGraphicsView(widgetNumeros)
         self.imagen_9.setGeometry(QtCore.QRect(810, 20, 51, 41))
         self.imagen_9.setObjectName("imagen_9")
         self.boton_9 = QtWidgets.QPushButton(widgetNumeros)
@@ -116,7 +117,7 @@ class IG_Numeros(object):
         self.imagen_100.setObjectName("imagen_100")
         self.boton_100 = QtWidgets.QPushButton(widgetNumeros)
         self.boton_100.setGeometry(QtCore.QRect(400, 270, 75, 23))
-        self.boton_100.setObjectName("boton_100")
+        self.boton_100.setObjectName("boton_100")"""
         self.boton_1.clicked.connect(lambda: self.buttonClicked(self.boton_1))
         self.boton_2.clicked.connect(lambda: self.buttonClicked(self.boton_2))
         self.boton_3.clicked.connect(lambda: self.buttonClicked(self.boton_3))
@@ -125,7 +126,8 @@ class IG_Numeros(object):
         self.boton_6.clicked.connect(lambda: self.buttonClicked(self.boton_6))
         self.boton_7.clicked.connect(lambda: self.buttonClicked(self.boton_7))
         self.boton_8.clicked.connect(lambda: self.buttonClicked(self.boton_8))
-        self.boton_9.clicked.connect(lambda: self.buttonClicked(self.boton_9))
+
+        """self.boton_9.clicked.connect(lambda: self.buttonClicked(self.boton_9))
         self.boton_10.clicked.connect(lambda: self.buttonClicked(self.boton_10))
         self.boton_20.clicked.connect(lambda: self.buttonClicked(self.boton_20))
         self.boton_30.clicked.connect(lambda: self.buttonClicked(self.boton_30))
@@ -136,11 +138,19 @@ class IG_Numeros(object):
         self.boton_80.clicked.connect(lambda: self.buttonClicked(self.boton_80))
         self.boton_90.clicked.connect(lambda: self.buttonClicked(self.boton_90))
         self.boton_100.clicked.connect(lambda: self.buttonClicked(self.boton_100))
+        """
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
+        ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/abecedario/")
+        print(ruta)
+        print(os.path.exists(ruta))
+        ruta += boton.text() + ".wmv"
+        print(os.path.exists(ruta))
+        Sena.setPath(ruta)
+        Sena.setup(self.IIG5)
         self.IIG5.show()
     def retranslateUi(self, IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
@@ -153,7 +163,7 @@ class IG_Numeros(object):
         self.boton_6.setText(_translate("IG4_Aprendizaje", "6"))
         self.boton_7.setText(_translate("IG4_Aprendizaje", "7"))
         self.boton_8.setText(_translate("IG4_Aprendizaje", "8"))
-        self.boton_9.setText(_translate("IG4_Aprendizaje", "9"))
+        """self.boton_9.setText(_translate("IG4_Aprendizaje", "9"))
         self.boton_10.setText(_translate("IG4_Aprendizaje", "10"))
         self.boton_20.setText(_translate("IG4_Aprendizaje", "20"))
         self.boton_30.setText(_translate("IG4_Aprendizaje", "30"))
@@ -164,3 +174,6 @@ class IG_Numeros(object):
         self.boton_80.setText(_translate("IG4_Aprendizaje", "80"))
         self.boton_90.setText(_translate("IG4_Aprendizaje", "90"))
         self.boton_100.setText(_translate("IG4_Aprendizaje", "100"))
+        """
+
+        # Las comentadas son señas dinámicas

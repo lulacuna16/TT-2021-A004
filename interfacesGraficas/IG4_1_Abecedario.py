@@ -1,4 +1,3 @@
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
@@ -205,6 +204,7 @@ class IG_Abecedario(object):
         print(ruta)
         print(os.path.exists(ruta))
         ruta += boton.text() + ".wmv"
+        print(os.path.exists(ruta))
         Sena.setPath(ruta)
         Sena.setup(self.IIG5)
         self.IIG5.show()
@@ -239,3 +239,5 @@ class IG_Abecedario(object):
         #self.boton_X.setText(_translate("IG4_Aprendizaje", "X"))
         self.boton_Y.setText(_translate("IG4_Aprendizaje", "Y"))
         #self.boton_Z.setText(_translate("IG4_Aprendizaje", "Z"))
+
+        #Las comentadas son señas dinámicas

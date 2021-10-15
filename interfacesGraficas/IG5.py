@@ -53,6 +53,7 @@ class Ui_IG5_Sena(object):
 
     def setup(self,Form):
         self.video = self.crearVideo(Form)
+        self.video.show()
         self.contenedor = self.crearContenedor(Form)
         self.contenedor.setMedia(QtMultimedia.QMediaContent(QtCore.QUrl(self.path)))
         self.contenedor.play()

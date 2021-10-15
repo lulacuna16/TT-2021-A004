@@ -11,6 +11,9 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG4_1_Abecedario as abecedario
 import IG4_2_Numeros as numeros
+import IG4_3_Cuerpo as cuerpo
+import IG4_4_Dias as dias
+import IG4_5_Colores as colores
 import IG2 as G2
 from Clases.Usuario import Usuario
 from os import environ
@@ -21,8 +24,8 @@ class Ui_IG4_Aprendizaje(object):
         IG4_Aprendizaje.resize(950, 404)
         self.verticalLayout = QtWidgets.QVBoxLayout(IG4_Aprendizaje)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.tabs = QtWidgets.QTabWidget(IG4_Aprendizaje)
-        self.tabs.setObjectName("tabs")
+        self.Tabs = QtWidgets.QTabWidget(IG4_Aprendizaje)
+        self.Tabs.setObjectName("Tabs")
         self.tabInicio = QtWidgets.QWidget()
         self.tabInicio.setObjectName("tabInicio")
         self.labelBienvenida = QtWidgets.QLabel(self.tabInicio)
@@ -37,39 +40,63 @@ class Ui_IG4_Aprendizaje(object):
         self.botonRegresar = QtWidgets.QPushButton(self.tabInicio)
         self.botonRegresar.setGeometry(QtCore.QRect(250, 190, 75, 23))
         self.botonRegresar.setObjectName("botonRegresar")
-        self.tabs.addTab(self.tabInicio, "")
+        self.Tabs.addTab(self.tabInicio, "")
 
         self.tabAbecedario = QtWidgets.QWidget()
         self.tabAbecedario.setObjectName("tabAbecedario")
-        self.botonAbecedario = QtWidgets.QPushButton(self.tabAbecedario)
-        self.botonAbecedario.setGeometry(QtCore.QRect(20, 10, 881, 23))
-        self.botonAbecedario.setObjectName("botonAbecedario")
         self.widgetAbecedario = QtWidgets.QWidget(self.tabAbecedario)
-        self.widgetAbecedario.setGeometry(QtCore.QRect(20, 30, 881, 311))
+        self.widgetAbecedario.setGeometry(QtCore.QRect(20, 10, 881, 311))
         self.widgetAbecedario.setObjectName("widgetAbecedario")
         ventanaAbecedario = abecedario.IG_Abecedario()
         ventanaAbecedario.iniciar_Abecedario(self.widgetAbecedario)
         ventanaAbecedario.retranslateUiAbecedario(IG4_Aprendizaje)
-        self.tabs.addTab(self.tabAbecedario, "")
+        self.Tabs.addTab(self.tabAbecedario, "")
 
         self.tabNumeros = QtWidgets.QWidget()
         self.tabNumeros.setObjectName("tabNumeros")
-        self.botonNumeros = QtWidgets.QPushButton(self.tabNumeros)
-        self.botonNumeros.setGeometry(QtCore.QRect(30, 10, 881, 23))
-        self.botonNumeros.setObjectName("botonNumeros")
         self.widgetNumeros = QtWidgets.QWidget(self.tabNumeros)
-        self.widgetNumeros.setGeometry(QtCore.QRect(30, 30, 881, 311))
+        self.widgetNumeros.setGeometry(QtCore.QRect(30, 10, 881, 311))
         self.widgetNumeros.setObjectName("widgetNumeros")
         ventanaNumeros = numeros.IG_Numeros()
         ventanaNumeros.iniciar_Numeros(self.widgetNumeros)
         ventanaNumeros.retranslateUi(IG4_Aprendizaje)
-        self.tabs.addTab(self.tabNumeros, "")
+        self.Tabs.addTab(self.tabNumeros, "")
 
-        self.verticalLayout.addWidget(self.tabs)
+        self.tabCuerpo = QtWidgets.QWidget()
+        self.tabCuerpo.setObjectName("tabCuerpo")
+        self.widgetCuerpo = QtWidgets.QWidget(self.tabCuerpo)
+        self.widgetCuerpo.setGeometry(QtCore.QRect(30, 10, 784, 311))
+        self.widgetCuerpo.setObjectName("widgetCuerpo")
+        ventanaCuerpo = cuerpo.IG_Cuerpo()
+        ventanaCuerpo.iniciar_Cuerpo(self.widgetCuerpo)
+        ventanaCuerpo.retranslateUiCuerpo(IG4_Aprendizaje)
+        self.Tabs.addTab(self.tabCuerpo, "")
+
+        self.tabDias = QtWidgets.QWidget()
+        self.tabDias.setObjectName("tabDias")
+        self.widgetDias = QtWidgets.QWidget(self.tabDias)
+        self.widgetDias.setGeometry(QtCore.QRect(80, 10, 784, 311))
+        self.widgetDias.setObjectName("widgetDias")
+        ventanaDias = dias.IG_Dias()
+        ventanaDias.iniciar_Dias(self.widgetDias)
+        ventanaDias.retranslateUiDias(IG4_Aprendizaje)
+        #self.Tabs.addTab(self.tabDias, "") #Comentada porque tiene señas dinámicas
+
+        self.tabColores = QtWidgets.QWidget()
+        self.tabColores.setObjectName("tabColores")
+        self.widgetColores = QtWidgets.QWidget(self.tabColores)
+        self.widgetColores.setGeometry(QtCore.QRect(60, 10, 784, 311))
+        self.widgetColores.setObjectName("widgetColores")
+        ventanaColores = colores.IG_Colores()
+        ventanaColores.iniciar_Colores(self.widgetColores)
+        ventanaColores.retranslateUiColores(IG4_Aprendizaje)
+        #self.Tabs.addTab(self.tabColores, "") #Comentada porque tiene señas dinámicas
+
+        self.verticalLayout.addWidget(self.Tabs)
         self.Eventos(IG4_Aprendizaje)
 
         self.retranslateUi(IG4_Aprendizaje)
-        self.tabs.setCurrentIndex(0)
+        self.Tabs.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(IG4_Aprendizaje)
 
     def abrirIG2(self,IG4_Aprendizaje):
@@ -93,14 +120,12 @@ class Ui_IG4_Aprendizaje(object):
         self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Presiona sobre una categoría para ver las señas disponibles"))
         self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(0)))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
-        self.tabs.setTabText(self.tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))
-        self.botonAbecedario.setText(_translate("IG4_Aprendizaje", "Abecedario"))
-
-        self.tabs.setTabText(self.tabs.indexOf(self.tabAbecedario), _translate("IG4_Aprendizaje", "Abecedario"))
-
-        self.botonNumeros.setText(_translate("IG4_Aprendizaje", "Números"))
-        self.tabs.setTabText(self.tabs.indexOf(self.tabNumeros), _translate("IG4_Aprendizaje", "Números"))
-
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabAbecedario), _translate("IG4_Aprendizaje", "Abecedario"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabNumeros), _translate("IG4_Aprendizaje", "Números"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabCuerpo), _translate("IG4_Aprendizaje", "Cuerpo"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabDias), _translate("IG4_Aprendizaje", "Días"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tabColores), _translate("IG4_Aprendizaje", "Colores"))
 def suppress_qt_warnings():
     environ["QT_DEVICE_PIXEL_RATIO"] = "0"
     environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
@@ -109,7 +134,7 @@ def suppress_qt_warnings():
 
 if __name__ == "__main__":
     import sys
-    suppress_qt_warnings()
+    #suppress_qt_warnings()
     app = QtWidgets.QApplication(sys.argv)
     IG4_Aprendizaje = QtWidgets.QWidget()
     ui = Ui_IG4_Aprendizaje()

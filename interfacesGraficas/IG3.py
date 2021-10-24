@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG2 as G2
 from Clases.Usuario import Usuario
+import os
 
 class Ui_IG3_ModificacionPerfil(object):
     def setupUi(self, IG3_ModificacionPerfil):
@@ -38,7 +39,7 @@ class Ui_IG3_ModificacionPerfil(object):
 
     def Eventos(self,IG3_ModificacionPerfil):
         self.botonCancelar.clicked.connect(lambda:self.abrirIG2(IG3_ModificacionPerfil))
-        self.botonGuardar.clicked.connect(lambda: self.actualizarNombre(0,IG3_ModificacionPerfil))
+        self.botonGuardar.clicked.connect(lambda: self.actualizarNombre(1,IG3_ModificacionPerfil))
 
 
     def abrirIG2(self,IG3_ModificacionPerfil):
@@ -47,23 +48,29 @@ class Ui_IG3_ModificacionPerfil(object):
         ui=G2.Ui_IG2_MenuUsuario()
         ui.setupUi(self.IIG2)
         self.IIG2.show()
-    def actualizarNombre(self,index,IG3_ModificacionPerfil):
+
+    def actualizarNombre(self,id,IG3_ModificacionPerfil):
         nombre = self.textNombreUsuario.text()
-        usuario = Usuario("")
-        usuario.actualizarUsuarioIndex("usuarios.json",index,nombre)
+        usuario = Usuario()
+        usuario.nombre = nombre
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        usuario.setBD(path)
+        usuario.actualizarUsuarioBDId(id)
         self.abrirIG2(IG3_ModificacionPerfil)
 
     def retranslateUi(self, IG3_ModificacionPerfil):
         _translate = QtCore.QCoreApplication.translate
         IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Form"))
         self.labelNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Nombre Usuario:"))
-        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(0)))
+        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(1)))
         self.botonGuardar.setText(_translate("IG3_ModificacionPerfil", "Guardar"))
         self.botonCancelar.setText(_translate("IG3_ModificacionPerfil", "Cancelar"))
 
-    def nombreUsuario(self,index):
-        usuario = Usuario("")
-        usuario.obtenerUsuarioIndex("usuarios.json",index)
+    def nombreUsuario(self,id):
+        usuario = Usuario()
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        usuario.setBD(path)
+        usuario.obtenerUsuarioBDId(id)
         return usuario.nombre
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ import IG1 as G1
 import IG3 as G3
 import IG4 as G4
 from Clases.Usuario import Usuario
+import os
 
 class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
@@ -70,15 +71,17 @@ class Ui_IG2_MenuUsuario(object):
     def retranslateUi(self, IG2_MenuUsuario):
         _translate = QtCore.QCoreApplication.translate
         IG2_MenuUsuario.setWindowTitle(_translate("IG2_MenuUsuario", "Form"))
-        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(0)))
+        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(1)))
         self.botonModificarPerfil.setText(_translate("IG2_MenuUsuario", "Modificar Perfil"))
         self.botonAprender.setText(_translate("IG2_MenuUsuario", "Aprender"))
         self.botonPracticar.setText(_translate("IG2_MenuUsuario", "Practicar"))
         self.botonRegresarInicio.setText(_translate("IG2_MenuUsuario", "Regresar a Inicio"))
 
-    def nombreUsuario(self,index):
-        usuario = Usuario("")
-        usuario.obtenerUsuarioIndex("usuarios.json",index)
+    def nombreUsuario(self,id):
+        usuario = Usuario()
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        usuario.setBD(path)
+        usuario.obtenerUsuarioBDId(id)
         return usuario.nombre
 
 if __name__ == "__main__":

@@ -16,6 +16,7 @@ import IG4_4_Dias as dias
 import IG4_5_Colores as colores
 import IG2 as G2
 from Clases.Usuario import Usuario
+import os
 from os import environ
 
 class Ui_IG4_Aprendizaje(object):
@@ -108,9 +109,11 @@ class Ui_IG4_Aprendizaje(object):
     def Eventos(self,IG4_Aprendizaje):
         self.botonRegresar.clicked.connect(lambda:self.abrirIG2(IG4_Aprendizaje))
 
-    def nombreUsuario(self, index):
-        usuario = Usuario("")
-        usuario.obtenerUsuarioIndex("usuarios.json", index)
+    def nombreUsuario(self,id):
+        usuario = Usuario()
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        usuario.setBD(path)
+        usuario.obtenerUsuarioBDId(id)
         return usuario.nombre
 
     def retranslateUi(self, IG4_Aprendizaje):
@@ -118,7 +121,7 @@ class Ui_IG4_Aprendizaje(object):
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
         self.labelBienvenida.setText(_translate("IG4_Aprendizaje", "Bienvenido al menú de Aprendizaje"))
         self.labelInstrucciones.setText(_translate("IG4_Aprendizaje", "Presiona sobre una categoría para ver las señas disponibles"))
-        self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(0)))
+        self.labelNombreUsuario.setText(_translate("IG4_Aprendizaje", self.nombreUsuario(1)))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
         self.Tabs.setTabText(self.Tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))
         self.Tabs.setTabText(self.Tabs.indexOf(self.tabAbecedario), _translate("IG4_Aprendizaje", "Abecedario"))

@@ -1,7 +1,7 @@
 from Usuario import Usuario
 import os
 
-path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/BaseDatos/senas.db"
+path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/senas.db"
 # print(path)
 
 usuario = Usuario()
@@ -10,7 +10,7 @@ usuario.setBD(path)
 usuario.obtenerUsuarioBDId(1)
 print(usuario)
 
-usuario.nombre = "Usuario 1"
+usuario.nombre = "User 1"
 usuario.porcentaje = 0.0
 usuario.totalSenas = 0
 usuario.actualizarUsuarioBDId(1)

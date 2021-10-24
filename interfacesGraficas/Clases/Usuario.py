@@ -1,4 +1,4 @@
-from BaseDatos.DataBase import DataBase
+from .DataBase import DataBase
 
 class Usuario:
 
@@ -54,7 +54,7 @@ class Usuario:
             self.__totalSenas = reg[3]
             bd.cerrarConexion()
         except Exception as e:
-            print("Falta ruta base de datos. - " + e.__str__())
+            print(e)
 
     def actualizarUsuarioBDId(self, id):
         try:
@@ -63,4 +63,4 @@ class Usuario:
             bd.actualizar(f'UPDATE usuarios SET nombre="{self.__nombre}", progreso_pnt={self.__porcentaje}, senas_completadas={self.__totalSenas} WHERE id_usuario="{id}"')
             bd.cerrarConexion()
         except Exception as e:
-            print("Falta ruta base de datos. - " + e.__str__())
+            print(e)

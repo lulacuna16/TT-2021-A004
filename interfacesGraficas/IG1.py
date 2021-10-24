@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG2 as G2
 from Clases.Usuario import Usuario
+import os
 
 class Ui_IG1_Bienvenida(object):
     def setupUi(self, IG1_Bienvenida):
@@ -42,12 +43,17 @@ class Ui_IG1_Bienvenida(object):
     def retranslateUi(self, IG1_Bienvenida):
         _translate = QtCore.QCoreApplication.translate
         IG1_Bienvenida.setWindowTitle(_translate("IG1_Bienvenida", "Form"))
-        self.botonUsuario1.setText(_translate("IG1_Bienvenida", self.nombreUsuario(0)))
+        self.botonUsuario1.setText(_translate("IG1_Bienvenida", self.nombreUsuario(1)))
         self.LabelBienvenida.setText(_translate("IG1_Bienvenida", "Selecciona un usuario"))
 
-    def nombreUsuario(self,index):
-        usuario = Usuario("")
-        usuario.obtenerUsuarioIndex("usuarios.json",index)
+    def nombreUsuario(self,id):
+        usuario = Usuario()
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        # print(path)
+        # print(os.path.exists(path))
+        usuario.setBD(path)
+        usuario.obtenerUsuarioBDId(id)
+        # print(usuario)
         return usuario.nombre
 
 if __name__ == "__main__":

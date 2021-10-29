@@ -36,7 +36,7 @@ class Ui_IG4_Aprendizaje(object):
         self.labelInstrucciones.setGeometry(QtCore.QRect(20, 90, 341, 61))
         self.labelInstrucciones.setObjectName("labelInstrucciones")
         self.labelNombreUsuario = QtWidgets.QLabel(self.tabInicio)
-        self.labelNombreUsuario.setGeometry(QtCore.QRect(20, 50, 47, 13))
+        self.labelNombreUsuario.setGeometry(QtCore.QRect(20, 50, 60, 13))
         self.labelNombreUsuario.setObjectName("labelNombreUsuario")
         self.botonRegresar = QtWidgets.QPushButton(self.tabInicio)
         self.botonRegresar.setGeometry(QtCore.QRect(250, 190, 75, 23))

@@ -6,78 +6,180 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>495</width>
-    <height>300</height>
+    <width>500</width>
+    <height>350</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Croissant One</family>
+    <pointsize>10</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="labelNombreUsuario">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>50</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Usuario1</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="botonModificarPerfil">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>50</y>
-     <width>91</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Modificar Perfil</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="botonAprender">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>130</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Aprender</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="botonPracticar">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>130</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Practicar</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="botonRegresarInicio">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>230</y>
-     <width>101</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Regresar a Inicio</string>
-   </property>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(255, 149, 250);
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="labelNombreUsuario">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Usuario1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="botonModificarPerfil">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgb(47, 193, 255);
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Modificar Perfil</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="botonAprender">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgb(47, 193, 255);
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Aprender</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="botonPracticar">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgb(47, 193, 255);
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Practicar</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="botonRegresarInicio">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgb(47, 193, 255);
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Regresar a Inicio</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

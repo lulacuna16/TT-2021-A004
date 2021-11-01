@@ -18,26 +18,133 @@ import os
 class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
         IG2_MenuUsuario.setObjectName("IG2_MenuUsuario")
-        IG2_MenuUsuario.resize(495, 300)
+        IG2_MenuUsuario.resize(500, 350)
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(10)
+        IG2_MenuUsuario.setFont(font)
+        IG2_MenuUsuario.setStyleSheet("QWidget{\n"
+"    background-color: rgb(255, 149, 250);\n"
+"}\n"
+"")
+        self.gridLayout = QtWidgets.QGridLayout(IG2_MenuUsuario)
+        self.gridLayout.setObjectName("gridLayout")
         self.labelNombreUsuario = QtWidgets.QLabel(IG2_MenuUsuario)
-        self.labelNombreUsuario.setGeometry(QtCore.QRect(50, 50, 61, 16))
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(14)
+        self.labelNombreUsuario.setFont(font)
         self.labelNombreUsuario.setObjectName("labelNombreUsuario")
-
+        self.gridLayout.addWidget(self.labelNombreUsuario, 0, 0, 1, 1, QtCore.Qt.AlignHCenter)
         self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
-        self.botonModificarPerfil.setGeometry(QtCore.QRect(330, 50, 91, 21))
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(11)
+        self.botonModificarPerfil.setFont(font)
+        self.botonModificarPerfil.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(47, 193, 255);\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonModificarPerfil.setObjectName("botonModificarPerfil")
-
+        self.gridLayout.addWidget(self.botonModificarPerfil, 0, 2, 1, 1)
         self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
-        self.botonAprender.setGeometry(QtCore.QRect(60, 130, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(11)
+        self.botonAprender.setFont(font)
+        self.botonAprender.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(47, 193, 255);\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonAprender.setObjectName("botonAprender")
+        self.gridLayout.addWidget(self.botonAprender, 1, 0, 1, 1)
         self.botonPracticar = QtWidgets.QPushButton(IG2_MenuUsuario)
-        self.botonPracticar.setGeometry(QtCore.QRect(260, 130, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(11)
+        self.botonPracticar.setFont(font)
+        self.botonPracticar.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(47, 193, 255);\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonPracticar.setObjectName("botonPracticar")
-
+        self.gridLayout.addWidget(self.botonPracticar, 1, 2, 1, 1)
         self.botonRegresarInicio = QtWidgets.QPushButton(IG2_MenuUsuario)
-        self.botonRegresarInicio.setGeometry(QtCore.QRect(150, 230, 101, 23))
+        font = QtGui.QFont()
+        font.setFamily("Croissant One")
+        font.setPointSize(10)
+        self.botonRegresarInicio.setFont(font)
+        self.botonRegresarInicio.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(47, 193, 255);\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonRegresarInicio.setObjectName("botonRegresarInicio")
-
+        self.gridLayout.addWidget(self.botonRegresarInicio, 2, 1, 1, 1)
+        
         self.Eventos(IG2_MenuUsuario)
         self.retranslateUi(IG2_MenuUsuario)
         QtCore.QMetaObject.connectSlotsByName(IG2_MenuUsuario)

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
-    <height>400</height>
+    <width>499</width>
+    <height>284</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-color: rgb(255, 149, 250);
+background-color: rgb(255, 175, 247);
 }
 </string>
   </property>
@@ -48,9 +48,17 @@
        <widget class="QLabel" name="LabelBienvenida">
         <property name="font">
          <font>
-          <family>Croissant One</family>
-          <pointsize>24</pointsize>
+          <family>Segoe Print</family>
+          <pointsize>28</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 28pt &quot;Segoe Print&quot;;
+background-color: rgb(255, 175, 247);
+color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
          <string>Selecciona un usuario</string>
@@ -66,22 +74,6 @@
         </property>
         <property name="margin">
          <number>-300</number>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QFrame" name="frame_3">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>200</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
         </property>
        </widget>
       </item>
@@ -107,6 +99,10 @@
        <bold>false</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 175, 247);
+</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -115,211 +111,65 @@
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
       <property name="leftMargin">
-       <number>50</number>
+       <number>125</number>
       </property>
       <property name="rightMargin">
-       <number>50</number>
+       <number>125</number>
       </property>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="botonUsuario1">
-        <property name="maximumSize">
-         <size>
-          <width>1000000</width>
-          <height>1000000</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Croissant One</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
-	background-color: rgb(47, 193, 255);
-	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:pressed{
-	background-color: rgb(40, 170, 221);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-top: 3px solid rgb(44, 131, 212);
-	border-bottomr: none;
-}</string>
-        </property>
-        <property name="text">
-         <string>Ususario 1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QPushButton" name="botonUsuario4">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Croissant One</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
-	background-color: rgb(47, 193, 255);
-	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:pressed{
-	background-color: rgb(40, 170, 221);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-top: 3px solid rgb(44, 131, 212);
-	border-bottomr: none;
-}</string>
-        </property>
-        <property name="text">
-         <string>Ususario 4</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
-       <widget class="QPushButton" name="botonUsuario2">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Croissant One</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
-	background-color: rgb(47, 193, 255);
-	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:pressed{
-	background-color: rgb(40, 170, 221);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-top: 3px solid rgb(44, 131, 212);
-	border-bottomr: none;
-}</string>
-        </property>
-        <property name="text">
-         <string>Ususario 2</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="botonUsuario3">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Croissant One</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
-	background-color: rgb(47, 193, 255);
-	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:pressed{
-	background-color: rgb(40, 170, 221);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-top: 3px solid rgb(44, 131, 212);
-	border-bottomr: none;
-}</string>
-        </property>
-        <property name="text">
-         <string>Ususario 3</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
        <widget class="QFrame" name="frame_4">
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
         </property>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="botonUsuario1">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe Print</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Usuario 1</string>
         </property>
        </widget>
       </item>

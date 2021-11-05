@@ -29,6 +29,16 @@
     <file>iconos/z.png</file>
   </qresource>
   <qresource prefix="iconosNum">
+    <file>iconos/10.png</file>
+    <file>iconos/20.png</file>
+    <file>iconos/30.png</file>
+    <file>iconos/40.png</file>
+    <file>iconos/50.png</file>
+    <file>iconos/60.png</file>
+    <file>iconos/70.png</file>
+    <file>iconos/80.png</file>
+    <file>iconos/90.png</file>
+    <file>iconos/100.png</file>
     <file>iconos/0.png</file>
     <file>iconos/1.png</file>
     <file>iconos/2.png</file>

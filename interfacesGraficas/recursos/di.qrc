@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="prefijoNuevo">
+    <file>../Imágenes/LUNES.jpg</file>
+  </qresource>
+</RCC>

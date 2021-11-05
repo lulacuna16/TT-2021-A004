@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="prefijoNuevo">
+    <file>../Imágenes/domingo.png</file>
+    <file>../Imágenes/jueves.png</file>
+    <file>../Imágenes/lunes.png</file>
+    <file>../Imágenes/martes.png</file>
+    <file>../Imágenes/miercoles.png</file>
+    <file>../Imágenes/sabado.png</file>
+    <file>../Imágenes/viernes.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="prefijoNuevo">
+    <file>../Imágenes/pelo.png</file>
+    <file>../Imágenes/estomago.png</file>
+    <file>../Imágenes/ojo.png</file>
+    <file>../Imágenes/pulgar.png</file>
+    <file>../Imágenes/oreja.png</file>
+    <file>../Imágenes/uña.png</file>
+    <file>../Imágenes/hombro.png</file>
+    <file>../Imágenes/lengua.png</file>
+    <file>../Imágenes/muñeca.png</file>
+    <file>../Imágenes/nariz.png</file>
+    <file>../Imágenes/cuello.png</file>
+    <file>../Imágenes/espalda.png</file>
+    <file>../Imágenes/diente.png</file>
+    <file>../Imágenes/codo.png</file>
+    <file>../Imágenes/brazo.png</file>
+    <file>../Imágenes/boca.png</file>
+    <file>../Imágenes/mano.png</file>
+  </qresource>
+</RCC>

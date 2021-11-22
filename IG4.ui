@@ -1,0 +1,5639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IG4_Aprendizaje</class>
+ <widget class="QWidget" name="IG4_Aprendizaje">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>-1</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(255, 149, 250);
+	
+	font-size: 15px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="Tabs">
+     <property name="font">
+      <font>
+       <family>Croissant One</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget{
+	font-family: &quot;Croissant One&quot;;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="QWidget" name="tabInicio">
+      <attribute name="title">
+       <string>Inicio</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botonRegresar">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>310</y>
+            <width>151</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Regresar</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>10</y>
+            <width>721</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 24pt &quot;Segoe Print&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Bienvenido al menú de Aprendizaje
+Presiona sobre una categoría para ver 
+las señas disponibles</string>
+          </property>
+          <property name="margin">
+           <number>50</number>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAbecedario">
+      <attribute name="title">
+       <string>Abecedario</string>
+      </attribute>
+      <widget class="QWidget" name="widgetAbecedario" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>831</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <widget class="QGraphicsView" name="imagen_A">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_A">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_B">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/prefijoNuevo/a.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_B">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_C">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_C">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_D">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_D">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_E">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_E">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_F">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_F">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_G">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_G">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>G</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_H">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_H">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>H</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_I">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_I">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>I</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_J">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_J">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>J</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_K">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_K">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>K</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_L">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_L">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>L</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_M">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_M">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>M</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_N">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_N">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_NQ">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_NQ">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ñ</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_O">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_O">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>O</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_P">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_P">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Q">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Q">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Q</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_R">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_R">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>R</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_S">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_S">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>S</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_T">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_T">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>T</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_U">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_U">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>U</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_V">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_V">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>V</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_W">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_W">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>W</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_X">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_X">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Y">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Y">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Z">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Z">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/a.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/b.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/c.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/d.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/e.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/f.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/g.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/h.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/j.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/k.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/l.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>110</y>
+          <width>91</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/m.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/n.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/ñ.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/o.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/p.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/r.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/s.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/t.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/u.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/v.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>210</y>
+          <width>91</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/w.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/x.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/y.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/i.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/q.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/z.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabNumeros">
+      <attribute name="title">
+       <string>Números</string>
+      </attribute>
+      <widget class="QWidget" name="widgetNumeros" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>841</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <widget class="QGraphicsView" name="imagen_1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_3">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_3">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_4">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_4">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_5">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_5">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_6">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_6">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_7">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_7">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_8">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_8">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_9">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_9">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_10">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_20">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_20">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>20</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_30">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_30">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>30</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_40">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_40">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>40</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_50">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_50">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_60">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_60">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>60</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_70">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_70">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>70</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_80">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_80">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>80</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_90">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_90">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>90</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_100">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_100">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/1.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/2.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/3.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/4.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/5.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/6.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/7.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/8.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/9.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/10.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/20.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/30.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/40.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/50.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/60.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/70.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/80.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>110</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/90.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>210</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/100.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCuerpo">
+      <attribute name="title">
+       <string>Cuerpo</string>
+      </attribute>
+      <widget class="QWidget" name="widgetCuerpo" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>741</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <widget class="QGraphicsView" name="imagen_Ojo">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Ojo">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ojo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Boca">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Boca">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Boca</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Brazo">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Brazo">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Brazo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Codo">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Codo">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Codo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Cuello">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Cuello">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Cuello</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Diente">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Diente">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Diente</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Espalda">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Espalda">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Espalda</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Una">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Una">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Uña</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Oreja">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Oreja">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Oreja</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Estomago">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Estomago">
+        <property name="geometry">
+         <rect>
+          <x>114</x>
+          <y>170</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Estómago</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Hombro">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Hombro">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Hombro</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Lengua">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Lengua">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Lengua</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Mano">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Mano">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Mano</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Muneca">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Muneca">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Muñeca</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Nariz">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Nariz">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Nariz</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Pulgar">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Pulgar">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Pulgar</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Pelo">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Pelo">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>270</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Pelo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/brazo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>120</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/mano.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/codo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>10</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/diente.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>-50</y>
+          <width>71</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/cuello.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_55">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/espalda.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>100</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/estomago.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_57">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>100</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/hombro.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>100</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/lengua.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_59">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>100</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/muñeca.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>110</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/nariz.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_63">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>220</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/pelo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>220</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/ojo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_62">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>220</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/pulgar.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>220</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/uña.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>220</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/oreja.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>-20</y>
+          <width>71</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/boca.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabDias">
+      <attribute name="title">
+       <string>Días</string>
+      </attribute>
+      <widget class="QWidget" name="widgetDias" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>761</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <widget class="QGraphicsView" name="imagen_Lunes">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Lunes">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Lunes</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Martes">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Martes">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Martes</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Miercoles">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Miercoles">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Miércoles</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Jueves">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Jueves">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Jueves</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Viernes">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Viernes">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Viernes</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Domingo">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Domingo">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>170</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Domingo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Sabado">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Sabado">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Sabado</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/lunes.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_77">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/martes.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_78">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/miercoles.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_79">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/jueves.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_80">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/viernes.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_81">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>120</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/sabado.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_82">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>120</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/domingo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabColores">
+      <attribute name="title">
+       <string>Colores</string>
+      </attribute>
+      <widget class="QWidget" name="widgetColores" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>784</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <widget class="QGraphicsView" name="imagen_Amarillo">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Amarillo">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Amarillo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Azul">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Azul">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Azul</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Blanco">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Blanco">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Blanco</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Cafe">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>20</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Cafe">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>70</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Café</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Rojo">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Rojo">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Rojo</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Gris">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Gris">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Gris</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Morado">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Morado">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Morado</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Naranja">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Naranja">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Naranja</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Negro">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>120</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Negro">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Negro</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Verde">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Verde">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Verde</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="imagen_Rosa">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>220</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="boton_Rosa">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>Rosa</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_66">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>-20</y>
+          <width>71</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/amarillo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_67">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>-20</y>
+          <width>71</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/azul.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_68">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>220</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/rojo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_69">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>220</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/verde.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_70">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>220</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/rosa.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_71">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>20</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/café.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_72">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/gris.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_73">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>120</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/morado.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_74">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>120</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/naranja.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_75">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>120</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/negro.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_76">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>20</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/blanco.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="recursos/a.qrc"/>
+  <include location="recursos/dias.qrc"/>
+  <include location="recursos/di.qrc"/>
+  <include location="recursos/col.qrc"/>
+  <include location="recursos/cuerpo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

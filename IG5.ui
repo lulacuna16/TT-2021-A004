@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IG5_Sena</class>
+ <widget class="QWidget" name="IG5_Sena">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">	background-color: rgb(255, 149, 250);
+</string>
+  </property>
+  <widget class="QWidget" name="widgetVideoTutorial" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>352</width>
+     <height>640</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonReproducir">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>260</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Reproducir</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonPausar">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>290</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Pausar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonVerificar">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>370</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Verificar seña</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonGrabar">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Grabar seña</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTutorial">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>¿Cómo hacer la seña?</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

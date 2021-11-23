@@ -18,141 +18,20 @@ import os
 class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
         IG2_MenuUsuario.setObjectName("IG2_MenuUsuario")
-        IG2_MenuUsuario.resize(500, 320)
-        font = QtGui.QFont()
-        font.setFamily("Croissant One")
-        font.setPointSize(10)
-        IG2_MenuUsuario.setFont(font)
+        IG2_MenuUsuario.resize(515, 303)
         IG2_MenuUsuario.setStyleSheet("QWidget{\n"
                                       "background-color: rgb(255, 175, 247);\n"
-                                      "}\n"
-                                      "")
-        self.gridLayout = QtWidgets.QGridLayout(IG2_MenuUsuario)
-        self.gridLayout.setObjectName("gridLayout")
-        self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
-        font = QtGui.QFont()
-        font.setFamily("Segoe Print")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.botonAprender.setFont(font)
-        self.botonAprender.setStyleSheet("QPushButton{\n"
-                                         "color: rgb(255, 255, 255);\n"
-                                         "    background-color: rgb(46, 165, 255);\n"
-                                         "    font: 12pt \"Segoe Print\";\n"
-                                         "    border-radius: 11px;\n"
-                                         "    border:none;\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                         "}\n"
-                                         "QPushButton:hover{\n"
-                                         "    background-color: rgb(14, 235, 255);\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                         "}\n"
-                                         "QPushButton:pressed{\n"
-                                         "    background-color: rgb(40, 170, 221);\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
-                                         "}")
-        self.botonAprender.setObjectName("botonAprender")
-        self.gridLayout.addWidget(self.botonAprender, 3, 3, 1, 1)
-        self.botonRegresarInicio = QtWidgets.QPushButton(IG2_MenuUsuario)
-        font = QtGui.QFont()
-        font.setFamily("Segoe Print")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.botonRegresarInicio.setFont(font)
-        self.botonRegresarInicio.setStyleSheet("QPushButton{\n"
-                                               "color: rgb(255, 255, 255);\n"
-                                               "    background-color: rgb(46, 165, 255);\n"
-                                               "    font: 12pt \"Segoe Print\";\n"
-                                               "    border-radius: 11px;\n"
-                                               "    border:none;\n"
-                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                               "}\n"
-                                               "QPushButton:hover{\n"
-                                               "    background-color: rgb(14, 235, 255);\n"
-                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                               "}\n"
-                                               "QPushButton:pressed{\n"
-                                               "    background-color: rgb(40, 170, 221);\n"
-                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                               "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                               "    border-bottomr: none;\n"
-                                               "}\n"
-                                               "")
-        self.botonRegresarInicio.setObjectName("botonRegresarInicio")
-        self.gridLayout.addWidget(self.botonRegresarInicio, 7, 3, 1, 1)
-        self.labelNombreUsuario = QtWidgets.QLabel(IG2_MenuUsuario)
-        font = QtGui.QFont()
-        font.setFamily("Segoe Print")
-        font.setPointSize(16)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.labelNombreUsuario.setFont(font)
-        self.labelNombreUsuario.setStyleSheet("font: 16pt \"Segoe Print\";\n"
-                                              "color: rgb(0, 0, 0);")
-        self.labelNombreUsuario.setObjectName("labelNombreUsuario")
-        self.gridLayout.addWidget(self.labelNombreUsuario, 7, 0, 1, 1)
+                                      "}")
         self.labelBienvenida = QtWidgets.QLabel(IG2_MenuUsuario)
+        self.labelBienvenida.setGeometry(QtCore.QRect(30, 50, 191, 41))
         self.labelBienvenida.setStyleSheet("font: 16pt \"Segoe Print\";")
         self.labelBienvenida.setObjectName("labelBienvenida")
-        self.gridLayout.addWidget(self.labelBienvenida, 2, 0, 3, 1)
-        self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
-        font = QtGui.QFont()
-        font.setFamily("Segoe Print")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.botonModificarPerfil.setFont(font)
-        self.botonModificarPerfil.setStyleSheet("QPushButton{\n"
-                                                "color: rgb(255, 255, 255);\n"
-                                                "    background-color: rgb(46, 165, 255);\n"
-                                                "    font: 12pt \"Segoe Print\";\n"
-                                                "    border-radius: 11px;\n"
-                                                "    border:none;\n"
-                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                                "}\n"
-                                                "QPushButton:hover{\n"
-                                                "    background-color: rgb(14, 235, 255);\n"
-                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                                "}\n"
-                                                "QPushButton:pressed{\n"
-                                                "    background-color: rgb(40, 170, 221);\n"
-                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                                "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                                "    border-bottomr: none;\n"
-                                                "}")
-        self.botonModificarPerfil.setObjectName("botonModificarPerfil")
-        self.gridLayout.addWidget(self.botonModificarPerfil, 6, 3, 1, 1)
+        self.labelNombreUsuario = QtWidgets.QLabel(IG2_MenuUsuario)
+        self.labelNombreUsuario.setGeometry(QtCore.QRect(70, 120, 111, 61))
+        self.labelNombreUsuario.setStyleSheet("font: 16pt \"Segoe Print\";")
+        self.labelNombreUsuario.setObjectName("labelNombreUsuario")
         self.botonPracticar = QtWidgets.QPushButton(IG2_MenuUsuario)
-        font = QtGui.QFont()
-        font.setFamily("Segoe Print")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.botonPracticar.setFont(font)
+        self.botonPracticar.setGeometry(QtCore.QRect(290, 110, 151, 23))
         self.botonPracticar.setStyleSheet("QPushButton{\n"
                                           "color: rgb(255, 255, 255);\n"
                                           "    background-color: rgb(46, 165, 255);\n"
@@ -177,7 +56,84 @@ class Ui_IG2_MenuUsuario(object):
                                           "    border-bottomr: none;\n"
                                           "}")
         self.botonPracticar.setObjectName("botonPracticar")
-        self.gridLayout.addWidget(self.botonPracticar, 4, 3, 1, 1)
+        self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
+        self.botonAprender.setGeometry(QtCore.QRect(290, 50, 151, 23))
+        self.botonAprender.setStyleSheet("QPushButton{\n"
+                                         "color: rgb(255, 255, 255);\n"
+                                         "    background-color: rgb(46, 165, 255);\n"
+                                         "    font: 12pt \"Segoe Print\";\n"
+                                         "    border-radius: 11px;\n"
+                                         "    border:none;\n"
+                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                         "}\n"
+                                         "QPushButton:hover{\n"
+                                         "    background-color: rgb(14, 235, 255);\n"
+                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                         "}\n"
+                                         "QPushButton:pressed{\n"
+                                         "    background-color: rgb(40, 170, 221);\n"
+                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
+                                         "    border-bottomr: none;\n"
+                                         "}")
+        self.botonAprender.setObjectName("botonAprender")
+        self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
+        self.botonModificarPerfil.setGeometry(QtCore.QRect(290, 170, 151, 23))
+        self.botonModificarPerfil.setStyleSheet("QPushButton{\n"
+                                                "color: rgb(255, 255, 255);\n"
+                                                "    background-color: rgb(46, 165, 255);\n"
+                                                "    font: 12pt \"Segoe Print\";\n"
+                                                "    border-radius: 11px;\n"
+                                                "    border:none;\n"
+                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                                "}\n"
+                                                "QPushButton:hover{\n"
+                                                "    background-color: rgb(14, 235, 255);\n"
+                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                                "}\n"
+                                                "QPushButton:pressed{\n"
+                                                "    background-color: rgb(40, 170, 221);\n"
+                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                                "    border-top: 3px solid rgb(44, 131, 212);\n"
+                                                "    border-bottomr: none;\n"
+                                                "}")
+        self.botonModificarPerfil.setObjectName("botonModificarPerfil")
+        self.botonRegresarInicio = QtWidgets.QPushButton(IG2_MenuUsuario)
+        self.botonRegresarInicio.setGeometry(QtCore.QRect(180, 240, 151, 23))
+        self.botonRegresarInicio.setStyleSheet("QPushButton{\n"
+                                               "color: rgb(255, 255, 255);\n"
+                                               "    background-color: rgb(46, 165, 255);\n"
+                                               "    font: 12pt \"Segoe Print\";\n"
+                                               "    border-radius: 11px;\n"
+                                               "    border:none;\n"
+                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                               "}\n"
+                                               "QPushButton:hover{\n"
+                                               "    background-color: rgb(14, 235, 255);\n"
+                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-bottom: 3px solid rgb(44, 131, 212);\n"
+                                               "}\n"
+                                               "QPushButton:pressed{\n"
+                                               "    background-color: rgb(40, 170, 221);\n"
+                                               "    border-left: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-right: 1px solid rgb(44, 131, 212);\n"
+                                               "    border-top: 3px solid rgb(44, 131, 212);\n"
+                                               "    border-bottomr: none;\n"
+                                               "}")
+        self.botonRegresarInicio.setObjectName("botonRegresarInicio")
 
         self.Eventos(IG2_MenuUsuario)
         self.retranslateUi(IG2_MenuUsuario)

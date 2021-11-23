@@ -6,15 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
-    <height>320</height>
+    <width>515</width>
+    <height>303</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <family>Croissant One</family>
-    <pointsize>10</pointsize>
-   </font>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -22,23 +16,51 @@
   <property name="styleSheet">
    <string notr="true">QWidget{
 background-color: rgb(255, 175, 247);
-}
-</string>
+}</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="3" column="3">
-    <widget class="QPushButton" name="botonAprender">
-     <property name="font">
-      <font>
-       <family>Segoe Print</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+  <widget class="QLabel" name="labelBienvenida">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>¡Que gusto verte!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNombreUsuario">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Usuario 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonPracticar">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>110</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
 	background-color: rgb(46, 165, 255);
 	font: 12pt &quot;Segoe Print&quot;;
@@ -61,103 +83,22 @@ QPushButton:pressed{
 	border-top: 3px solid rgb(44, 131, 212);
 	border-bottomr: none;
 }</string>
-     </property>
-     <property name="text">
-      <string>Aprender</string>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="3">
-    <widget class="QPushButton" name="botonRegresarInicio">
-     <property name="font">
-      <font>
-       <family>Segoe Print</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
-	font: 12pt &quot;Segoe Print&quot;;
-	border-radius: 11px;
-	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
-}
-QPushButton:pressed{
-	background-color: rgb(40, 170, 221);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-top: 3px solid rgb(44, 131, 212);
-	border-bottomr: none;
-}
-</string>
-     </property>
-     <property name="text">
-      <string>Regresar a Inicio</string>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="0">
-    <widget class="QLabel" name="labelNombreUsuario">
-     <property name="font">
-      <font>
-       <family>Segoe Print</family>
-       <pointsize>16</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 16pt &quot;Segoe Print&quot;;
-color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string>Usuario 1</string>
-     </property>
-     <property name="margin">
-      <number>50</number>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0" rowspan="3">
-    <widget class="QLabel" name="labelBienvenida">
-     <property name="styleSheet">
-      <string notr="true">font: 16pt &quot;Segoe Print&quot;;</string>
-     </property>
-     <property name="text">
-      <string>¡Que gusto verte!</string>
-     </property>
-     <property name="margin">
-      <number>25</number>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="3">
-    <widget class="QPushButton" name="botonModificarPerfil">
-     <property name="font">
-      <font>
-       <family>Segoe Print</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+   </property>
+   <property name="text">
+    <string>Practicar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonAprender">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
 	background-color: rgb(46, 165, 255);
 	font: 12pt &quot;Segoe Print&quot;;
@@ -180,25 +121,22 @@ QPushButton:pressed{
 	border-top: 3px solid rgb(44, 131, 212);
 	border-bottomr: none;
 }</string>
-     </property>
-     <property name="text">
-      <string>Modificar Perfil</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="3">
-    <widget class="QPushButton" name="botonPracticar">
-     <property name="font">
-      <font>
-       <family>Segoe Print</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+   </property>
+   <property name="text">
+    <string>Aprender</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonModificarPerfil">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>170</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
 	background-color: rgb(46, 165, 255);
 	font: 12pt &quot;Segoe Print&quot;;
@@ -221,13 +159,49 @@ QPushButton:pressed{
 	border-top: 3px solid rgb(44, 131, 212);
 	border-bottomr: none;
 }</string>
-     </property>
-     <property name="text">
-      <string>Practicar</string>
-     </property>
-    </widget>
-   </item>
-  </layout>
+   </property>
+   <property name="text">
+    <string>Modificar perfil</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonRegresarInicio">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>240</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Regresar a inicio</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

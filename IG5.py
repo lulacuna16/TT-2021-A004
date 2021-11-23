@@ -128,7 +128,7 @@ class Ui_IG5_Sena(object):
 "}")
         self.botonGrabar.setObjectName("botonGrabar")
         self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
-        self.labelTutorial.setGeometry(QtCore.QRect(80, 10, 320, 31))
+        self.labelTutorial.setGeometry(QtCore.QRect(80, 10, 400, 31))
         self.labelTutorial.setStyleSheet("font: 16pt \"Segoe Print\";")
         self.labelTutorial.setObjectName("labelTutorial")
 

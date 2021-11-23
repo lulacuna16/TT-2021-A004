@@ -56,7 +56,7 @@ class Usuario:
         except Exception as e:
             print(e)
 
-    def actualizarUsuarioBDId(self, id,nombre):
+    def actualizarUsuarioBDId(self, id):
         try:
             bd = DataBase(self.__path)
             bd.crearConexion()

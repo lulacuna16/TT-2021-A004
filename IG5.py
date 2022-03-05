@@ -155,6 +155,8 @@ class Ui_IG5_Sena(object):
 		self.botonVerificar.setText(_translate("IG5_Sena", "Verificar seña"))
 		self.labelTutorial.setText(_translate("IG5_Sena", "¿Cómo hacer la seña?"))
 		self.botonSalir.setText(_translate("IG5_Sena", "Salir"))
+		# create a timer
+		self.timer = QtCore.QTimer()
 
 	def setNombre(self,nombre):
 		self.labelTutorial.setText("¿Cómo hacer la seña \""+ nombre +"\" ?")
@@ -183,8 +185,6 @@ class Ui_IG5_Sena(object):
 		self.path = path
 
 	def crearCamara(self):
-		# create a timer
-		self.timer = QtCore.QTimer()
 		# set timer timeout callback function
 		self.timer.timeout.connect(self.mostrarCamara)
 		# set control_bt callback clicked  function

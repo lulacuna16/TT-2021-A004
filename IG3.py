@@ -53,7 +53,7 @@ class Ui_IG3_ModificacionPerfil(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.botonGuardar.setObjectName("botonGuardar")
         self.botonCancelar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
@@ -79,7 +79,7 @@ class Ui_IG3_ModificacionPerfil(object):
                                          "    border-left: 1px solid rgb(44, 131, 212);\n"
                                          "    border-right: 1px solid rgb(44, 131, 212);\n"
                                          "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
+                                         "    border-bottom: none;\n"
                                          "}")
         self.botonCancelar.setObjectName("botonCancelar")
         self.Eventos(IG3_ModificacionPerfil)

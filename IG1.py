@@ -101,7 +101,7 @@ class Ui_IG1_Bienvenida(object):
 "    border-left: 1px solid rgb(44, 131, 212);\n"
 "    border-right: 1px solid rgb(44, 131, 212);\n"
 "    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    border-bottom: none;\n"
 "}")
         self.botonUsuario1.setObjectName("botonUsuario1")
         self.IUsuario1(IG1_Bienvenida)

@@ -31,7 +31,7 @@ class IG_Dias(object):
                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
                                        "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                       "    border-bottomr: none;\n"
+                                       "    border-bottom: none;\n"
                                        "}")
         self.boton_Lunes.setObjectName("boton_Lunes")
         self.imagen_Martes = QtWidgets.QGraphicsView(widgetDias)
@@ -60,7 +60,7 @@ class IG_Dias(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Martes.setObjectName("boton_Martes")
         self.imagen_Miercoles = QtWidgets.QGraphicsView(widgetDias)
@@ -89,7 +89,7 @@ class IG_Dias(object):
                                            "    border-left: 1px solid rgb(44, 131, 212);\n"
                                            "    border-right: 1px solid rgb(44, 131, 212);\n"
                                            "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                           "    border-bottomr: none;\n"
+                                           "    border-bottom: none;\n"
                                            "}")
         self.boton_Miercoles.setObjectName("boton_Miercoles")
         self.imagen_Jueves = QtWidgets.QGraphicsView(widgetDias)
@@ -118,7 +118,7 @@ class IG_Dias(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Jueves.setObjectName("boton_Jueves")
         self.imagen_Viernes = QtWidgets.QGraphicsView(widgetDias)
@@ -147,7 +147,7 @@ class IG_Dias(object):
                                          "    border-left: 1px solid rgb(44, 131, 212);\n"
                                          "    border-right: 1px solid rgb(44, 131, 212);\n"
                                          "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
+                                         "    border-bottom: none;\n"
                                          "}")
         self.boton_Viernes.setObjectName("boton_Viernes")
         self.imagen_Domingo = QtWidgets.QGraphicsView(widgetDias)
@@ -176,7 +176,7 @@ class IG_Dias(object):
                                          "    border-left: 1px solid rgb(44, 131, 212);\n"
                                          "    border-right: 1px solid rgb(44, 131, 212);\n"
                                          "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
+                                         "    border-bottom: none;\n"
                                          "}")
         self.boton_Domingo.setObjectName("boton_Domingo")
         self.imagen_Sabado = QtWidgets.QGraphicsView(widgetDias)
@@ -205,7 +205,7 @@ class IG_Dias(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Sabado.setObjectName("boton_Sabado")
         self.label_48 = QtWidgets.QLabel(widgetDias)

@@ -53,7 +53,7 @@ class Ui_IG2_MenuUsuario(object):
                                           "    border-left: 1px solid rgb(44, 131, 212);\n"
                                           "    border-right: 1px solid rgb(44, 131, 212);\n"
                                           "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                          "    border-bottomr: none;\n"
+                                          "    border-bottom: none;\n"
                                           "}")
         self.botonPracticar.setObjectName("botonPracticar")
         self.botonAprender = QtWidgets.QPushButton(IG2_MenuUsuario)
@@ -79,7 +79,7 @@ class Ui_IG2_MenuUsuario(object):
                                          "    border-left: 1px solid rgb(44, 131, 212);\n"
                                          "    border-right: 1px solid rgb(44, 131, 212);\n"
                                          "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
+                                         "    border-bottom: none;\n"
                                          "}")
         self.botonAprender.setObjectName("botonAprender")
         self.botonModificarPerfil = QtWidgets.QPushButton(IG2_MenuUsuario)
@@ -105,7 +105,7 @@ class Ui_IG2_MenuUsuario(object):
                                                 "    border-left: 1px solid rgb(44, 131, 212);\n"
                                                 "    border-right: 1px solid rgb(44, 131, 212);\n"
                                                 "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                                "    border-bottomr: none;\n"
+                                                "    border-bottom: none;\n"
                                                 "}")
         self.botonModificarPerfil.setObjectName("botonModificarPerfil")
         self.botonRegresarInicio = QtWidgets.QPushButton(IG2_MenuUsuario)
@@ -131,7 +131,7 @@ class Ui_IG2_MenuUsuario(object):
                                                "    border-left: 1px solid rgb(44, 131, 212);\n"
                                                "    border-right: 1px solid rgb(44, 131, 212);\n"
                                                "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                               "    border-bottomr: none;\n"
+                                               "    border-bottom: none;\n"
                                                "}")
         self.botonRegresarInicio.setObjectName("botonRegresarInicio")
 

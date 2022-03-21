@@ -10,9 +10,16 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 import sys
+from PIL import Image
 import os
 # import Opencv para camara  -pip install opencv-python-
 import cv2
+import numpy as np
+import glob
+
+
+import tensorflow as tf
+redConv = tf.keras.models.load_model('./modeloNumerosJorge300.h5')
 
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
@@ -46,7 +53,7 @@ class Ui_IG5_Sena(object):
 	"    border-left: 1px solid rgb(44, 131, 212);\n"
 	"    border-right: 1px solid rgb(44, 131, 212);\n"
 	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottomr: none;\n"
+	"    border-bottom: none;\n"
 	"}")
 		self.botonReproducir.setObjectName("botonReproducir")
 		self.botonPausar = QtWidgets.QPushButton(IG5_Sena)
@@ -72,7 +79,7 @@ class Ui_IG5_Sena(object):
 	"    border-left: 1px solid rgb(44, 131, 212);\n"
 	"    border-right: 1px solid rgb(44, 131, 212);\n"
 	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottomr: none;\n"
+	"    border-bottom: none;\n"
 	"}")
 		self.botonPausar.setObjectName("botonPausar")
 		self.botonVerificar = QtWidgets.QPushButton(IG5_Sena)
@@ -98,7 +105,7 @@ class Ui_IG5_Sena(object):
 	"    border-left: 1px solid rgb(44, 131, 212);\n"
 	"    border-right: 1px solid rgb(44, 131, 212);\n"
 	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottomr: none;\n"
+	"    border-bottom: none;\n"
 	"}")
 		self.botonVerificar.setObjectName("botonVerificar")
 		self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
@@ -132,7 +139,7 @@ class Ui_IG5_Sena(object):
 	"    border-left: 1px solid rgb(44, 131, 212);\n"
 	"    border-right: 1px solid rgb(44, 131, 212);\n"
 	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottomr: none;\n"
+	"    border-bottom: none;\n"
 	"}")
 		self.botonSalir.setObjectName("botonSalir")
 		self.lblCamara.raise_()
@@ -202,6 +209,7 @@ class Ui_IG5_Sena(object):
 			ret, image = self.cap.read()
 			# convert image to RGB format
 			image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+			cv2.imwrite('Prueba.jpg', image)
 			# get image infos
 			height, width, channel = image.shape
 			step = channel * width
@@ -209,6 +217,17 @@ class Ui_IG5_Sena(object):
 			qImg = QtGui.QImage(image.data, width, height, step, QtGui.QImage.Format_RGB888)
 			# show image in img_label
 			self.lblCamara.setPixmap(QtGui.QPixmap.fromImage(qImg))
+			path = list(glob.glob('./*.jpg'))
+			img_p = []
+			image = Image.open(path[0])
+			img_p.append(np.array(image.resize((300,300))))
+			img_prueba=np.array(img_p)
+
+			predicciones = redConv.predict(img_prueba)
+			predicciones_etq = np.argmax(predicciones,axis=1)
+			for i in predicciones_etq:
+				print(i+1)
+			
 		except Exception as error:
 			print("No se detecto la camara")
 			print(error)
@@ -230,6 +249,7 @@ class Ui_IG5_Sena(object):
 
 if __name__ == "__main__":
 	import sys
+	
 	app = QtWidgets.QApplication(sys.argv)
 	IG5_Sena = QtWidgets.QWidget()
 	ui = Ui_IG5_Sena()

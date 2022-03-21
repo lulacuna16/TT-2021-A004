@@ -30,7 +30,7 @@ class IG_Cuerpo(object):
                                      "    border-left: 1px solid rgb(44, 131, 212);\n"
                                      "    border-right: 1px solid rgb(44, 131, 212);\n"
                                      "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                     "    border-bottomr: none;\n"
+                                     "    border-bottom: none;\n"
                                      "}")
         self.boton_Ojo.setObjectName("boton_Ojo")
         self.imagen_Boca = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -59,7 +59,7 @@ class IG_Cuerpo(object):
                                       "    border-left: 1px solid rgb(44, 131, 212);\n"
                                       "    border-right: 1px solid rgb(44, 131, 212);\n"
                                       "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                      "    border-bottomr: none;\n"
+                                      "    border-bottom: none;\n"
                                       "}")
         self.boton_Boca.setObjectName("boton_Boca")
         self.imagen_Brazo = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -88,7 +88,7 @@ class IG_Cuerpo(object):
                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
                                        "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                       "    border-bottomr: none;\n"
+                                       "    border-bottom: none;\n"
                                        "}")
         self.boton_Brazo.setObjectName("boton_Brazo")
         self.imagen_Codo = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -117,7 +117,7 @@ class IG_Cuerpo(object):
                                       "    border-left: 1px solid rgb(44, 131, 212);\n"
                                       "    border-right: 1px solid rgb(44, 131, 212);\n"
                                       "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                      "    border-bottomr: none;\n"
+                                      "    border-bottom: none;\n"
                                       "}")
         self.boton_Codo.setObjectName("boton_Codo")
         self.imagen_Cuello = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -146,7 +146,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Cuello.setObjectName("boton_Cuello")
         self.imagen_Diente = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -175,7 +175,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Diente.setObjectName("boton_Diente")
         self.imagen_Espalda = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -204,7 +204,7 @@ class IG_Cuerpo(object):
                                          "    border-left: 1px solid rgb(44, 131, 212);\n"
                                          "    border-right: 1px solid rgb(44, 131, 212);\n"
                                          "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottomr: none;\n"
+                                         "    border-bottom: none;\n"
                                          "}")
         self.boton_Espalda.setObjectName("boton_Espalda")
         self.imagen_Una = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -233,7 +233,7 @@ class IG_Cuerpo(object):
                                      "    border-left: 1px solid rgb(44, 131, 212);\n"
                                      "    border-right: 1px solid rgb(44, 131, 212);\n"
                                      "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                     "    border-bottomr: none;\n"
+                                     "    border-bottom: none;\n"
                                      "}")
         self.boton_Una.setObjectName("boton_Una")
         self.imagen_Oreja = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -262,7 +262,7 @@ class IG_Cuerpo(object):
                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
                                        "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                       "    border-bottomr: none;\n"
+                                       "    border-bottom: none;\n"
                                        "}")
         self.boton_Oreja.setObjectName("boton_Oreja")
         self.imagen_Estomago = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -291,7 +291,7 @@ class IG_Cuerpo(object):
                                           "    border-left: 1px solid rgb(44, 131, 212);\n"
                                           "    border-right: 1px solid rgb(44, 131, 212);\n"
                                           "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                          "    border-bottomr: none;\n"
+                                          "    border-bottom: none;\n"
                                           "}")
         self.boton_Estomago.setObjectName("boton_Estomago")
         self.imagen_Hombro = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -320,7 +320,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Hombro.setObjectName("boton_Hombro")
         self.imagen_Lengua = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -349,7 +349,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Lengua.setObjectName("boton_Lengua")
         self.imagen_Mano = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -378,7 +378,7 @@ class IG_Cuerpo(object):
                                       "    border-left: 1px solid rgb(44, 131, 212);\n"
                                       "    border-right: 1px solid rgb(44, 131, 212);\n"
                                       "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                      "    border-bottomr: none;\n"
+                                      "    border-bottom: none;\n"
                                       "}")
         self.boton_Mano.setObjectName("boton_Mano")
         self.imagen_Muneca = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -407,7 +407,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Muneca.setObjectName("boton_Muneca")
         self.imagen_Nariz = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -436,7 +436,7 @@ class IG_Cuerpo(object):
                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
                                        "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                       "    border-bottomr: none;\n"
+                                       "    border-bottom: none;\n"
                                        "}")
         self.boton_Nariz.setObjectName("boton_Nariz")
         self.imagen_Pulgar = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -465,7 +465,7 @@ class IG_Cuerpo(object):
                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottomr: none;\n"
+                                        "    border-bottom: none;\n"
                                         "}")
         self.boton_Pulgar.setObjectName("boton_Pulgar")
         self.imagen_Pelo = QtWidgets.QGraphicsView(widgetCuerpo)
@@ -494,7 +494,7 @@ class IG_Cuerpo(object):
                                       "    border-left: 1px solid rgb(44, 131, 212);\n"
                                       "    border-right: 1px solid rgb(44, 131, 212);\n"
                                       "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                      "    border-bottomr: none;\n"
+                                      "    border-bottom: none;\n"
                                       "}")
         self.boton_Pelo.setObjectName("boton_Pelo")
         self.label_49 = QtWidgets.QLabel(widgetCuerpo)

@@ -74,7 +74,7 @@ class Ui_IG4_Aprendizaje(object):
 "    border-left: 1px solid rgb(44, 131, 212);\n"
 "    border-right: 1px solid rgb(44, 131, 212);\n"
 "    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    border-bottom: none;\n"
 "}")
         self.botonRegresar.setObjectName("botonRegresar")
         self.label_37 = QtWidgets.QLabel(self.frame_2)

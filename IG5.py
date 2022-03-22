@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 import sys
 from PIL import Image
 import os
+import time
 # import Opencv para camara  -pip install opencv-python-
 import cv2
 import numpy as np
@@ -19,8 +20,9 @@ import glob
 
 
 import tensorflow as tf
-redConv = tf.keras.models.load_model('./modeloNumerosJorge300.h5')
-
+#redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
+global redConv
+global nombreSena
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
 		IG5_Sena.setObjectName("IG5_Sena")
@@ -109,7 +111,7 @@ class Ui_IG5_Sena(object):
 	"}")
 		self.botonVerificar.setObjectName("botonVerificar")
 		self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
-		self.labelTutorial.setGeometry(QtCore.QRect(80, 10, 241, 31))
+		self.labelTutorial.setGeometry(QtCore.QRect(80, 10, 309, 31))
 		self.labelTutorial.setStyleSheet("font: 16pt \"Segoe Print\";")
 		self.labelTutorial.setObjectName("labelTutorial")
 		self.lblCamara = QtWidgets.QLabel(IG5_Sena)
@@ -142,14 +144,30 @@ class Ui_IG5_Sena(object):
 	"    border-bottom: none;\n"
 	"}")
 		self.botonSalir.setObjectName("botonSalir")
+		self.lblSenaCorrecta = QtWidgets.QLabel(IG5_Sena)
+		self.lblSenaCorrecta.setGeometry(QtCore.QRect(520, 250, 161, 61))
+		font = QtGui.QFont()
+		font.setFamily("Segoe Print")
+		font.setPointSize(14)
+		self.lblSenaCorrecta.setFont(font)
+		self.lblSenaCorrecta.setStyleSheet("background-color: rgb(0, 170, 0);\n"
+										   "color: rgb(255, 255, 255);\n"
+										   "border-radius: 11px;\n"
+										   "border:none;\n"
+										   "border-left: 1px solid  rgb(0, 85, 0);\n"
+										   "border-right: 1px solid  rgb(0, 85, 0);\n"
+										   "border-bottom: 3px solid  rgb(0, 85, 0);")
+		self.lblSenaCorrecta.setAlignment(QtCore.Qt.AlignCenter)
+		self.lblSenaCorrecta.setObjectName("lblSenaCorrecta")
 		self.lblCamara.raise_()
+		self.lblSenaCorrecta.close()
 		self.widgetVideoTutorial.raise_()
 		self.botonReproducir.raise_()
 		self.botonPausar.raise_()
 		self.botonVerificar.raise_()
 		self.labelTutorial.raise_()
 		self.botonSalir.raise_()
-
+		self.lblSenaCorrecta.raise_()
 		self.retranslateUi(IG5_Sena)
 		QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
 
@@ -162,11 +180,17 @@ class Ui_IG5_Sena(object):
 		self.botonVerificar.setText(_translate("IG5_Sena", "Verificar seña"))
 		self.labelTutorial.setText(_translate("IG5_Sena", "¿Cómo hacer la seña?"))
 		self.botonSalir.setText(_translate("IG5_Sena", "Salir"))
+		self.lblSenaCorrecta.setText(_translate("IG5_Sena", "Seña correcta "))
 		# create a timer
 		self.timer = QtCore.QTimer()
 
 	def setNombre(self,nombre):
+		global nombreSena
+		nombreSena=nombre
 		self.labelTutorial.setText("¿Cómo hacer la seña \""+ nombre +"\" ?")
+	def setCategoria(self,categoria):
+		global redConv
+		redConv = tf.keras.models.load_model('./modelo'+categoria+'.h5')
 
 	def setup(self, Form):
 		self.video = self.crearVideo(Form)
@@ -222,23 +246,40 @@ class Ui_IG5_Sena(object):
 			image = Image.open(path[0])
 			img_p.append(np.array(image.resize((300,300))))
 			img_prueba=np.array(img_p)
-
+			global redConv
 			predicciones = redConv.predict(img_prueba)
 			predicciones_etq = np.argmax(predicciones,axis=1)
 			for i in predicciones_etq:
 				print(i+1)
+				if self.validacion(str(i+1)):
+					#time.sleep(2)
+					#self.terminar()
+					print("BIEN HECHO")
+			os.remove('./Prueba.jpg')
 			
 		except Exception as error:
-			print("No se detecto la camara")
+			print("No se detectó la cámara")
 			print(error)
 
 
-	def cerrar(self,Form):
+	def validacion(self,prediccion):
+		global nombreSena
+		if prediccion == nombreSena:
+			self.lblSenaCorrecta.show()
+			print("Seña correcta")
+			return True
+			#
+			#self.lblCamara.setStyleSheet("border-color: rgb(0, 170, 0);")
+		else:
+			print("Incorrecta")
+			return False
+	def terminar(self):
 		if self.timer.isActive():
 			# stop timer
 			self.timer.stop()
 			# release video capture
 			self.cap.release()
+	def cerrar(self,Form):
 		Form.close()
 
 	def eventos(self, Form):

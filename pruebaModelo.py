@@ -11,7 +11,7 @@ def a(path):
   load_img_rz = np.array(image.resize((300,300)))
   return load_img_rz
 
-redConv = tf.keras.models.load_model('./modeloNumerosJorge300.h5')
+redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
 
 paths = list(glob.glob('./*.jpg'))
 

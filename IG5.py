@@ -1,3 +1,4 @@
+from statistics import mode
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 import sys
 from PIL import Image
@@ -8,7 +9,7 @@ import numpy as np
 import glob
 import tensorflow as tf
 #redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
-global redConv
+# global redConv
 global nombreSena
 global contador
 contador = 3
@@ -16,6 +17,12 @@ global leyendo
 leyendo = False
 global valido
 valido = 0
+
+redConvs = [tf.keras.models.load_model('./modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modeloAbecedario.h5')]
+modelos = {
+		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
+		1: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "Y"]
+	}
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
 		IG5_Sena.setObjectName("IG5_Sena")
@@ -195,9 +202,12 @@ class Ui_IG5_Sena(object):
 		global nombreSena
 		nombreSena=nombre
 		self.labelTutorial.setText("¿Cómo hacer la seña \""+ nombre +"\" ?")
-	def setCategoria(self,categoria):
-		global redConv
-		redConv = tf.keras.models.load_model('./modelo'+categoria+'.h5')
+
+	# def setCategoria(self,categoria):
+	# 	global redConv
+	# 	for modelo, senas in modelos.items():
+	# 		if nombreSena in senas:
+	# 			redConv = tf.keras.models.load_model('./'+modelo)
 
 	def setup(self, Form):
 		self.video = self.crearVideo(Form)
@@ -272,12 +282,17 @@ class Ui_IG5_Sena(object):
 
 	def validacion(self,imagen):
 		global nombreSena
-		global redConv
+		# global redConv
+		m = 0
+		for modelo, senas in modelos.items():
+			if nombreSena in senas:
+				redConv = redConvs[modelo]
+				m = modelo
 		global leyendo
 		predicciones = redConv.predict(imagen)
 		predicciones_etq = np.argmax(predicciones,axis=1)
 		for i in predicciones_etq:
-			prediccion = i+1
+			prediccion = modelos[m][i]
 			print(prediccion)
 			if str(prediccion) == nombreSena:
 				print("Seña correcta")

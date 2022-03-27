@@ -701,8 +701,8 @@ class IG_Numeros(object):
         ruta += boton.text() + ".wmv"
         #print(os.path.exists(ruta))
         Sena.setPath(ruta)
-        if boton.text() in NumerosEstaticos:
-            Sena.setCategoria("NumerosEstaticos")
+        # if boton.text() in NumerosEstaticos:
+        #     Sena.setCategoria("NumerosEstaticos")
         Sena.setup(self.IIG5)
         self.IIG5.show()
     def retranslateUi(self, IG4_Aprendizaje):

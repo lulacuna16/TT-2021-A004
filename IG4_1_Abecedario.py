@@ -996,7 +996,7 @@ class IG_Abecedario(object):
     def retranslateUiAbecedario(self,IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
-        self.boton_A.setText(_translate("IG4_Aprendizaje","A"))
+        self.boton_A.setText(_translate("IG4_Aprendizaje", "A"))
         self.boton_B.setText(_translate("IG4_Aprendizaje", "B"))
         self.boton_C.setText(_translate("IG4_Aprendizaje", "C"))
         self.boton_D.setText(_translate("IG4_Aprendizaje", "D"))

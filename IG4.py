@@ -19,7 +19,6 @@ from Clases.Usuario import Usuario
 import os
 from os import environ
 
-
 class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
         IG4_Aprendizaje.setObjectName("IG4_Aprendizaje")

@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
-NumerosEstaticos=["1","2","3","4","5","6","7","8"]
+
 class IG_Numeros(object):
     def iniciar_Numeros(self,widgetNumeros):
         self.imagen_1 = QtWidgets.QGraphicsView(widgetNumeros)

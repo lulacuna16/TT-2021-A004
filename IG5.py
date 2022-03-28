@@ -1,8 +1,6 @@
 from statistics import mode
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
-import sys
 from PIL import Image
-import os
 # import Opencv para camara  -pip install opencv-python-
 import cv2
 import numpy as np
@@ -167,6 +165,20 @@ class Ui_IG5_Sena(object):
 								 "")
 		self.labelConteo.setAlignment(QtCore.Qt.AlignCenter)
 		self.labelConteo.setObjectName("labelConteo")
+		self.labelVerificando = QtWidgets.QLabel(IG5_Sena)
+		self.labelVerificando.setGeometry(QtCore.QRect(560, 620, 121, 23))
+		self.labelVerificando.setStyleSheet("color: rgb(255, 255, 255);\n"
+											"    font: 12pt \"Segoe Print\";\n"
+											"    border-radius: 11px;\n"
+											"    border:none;\n"
+											"\n"
+											"    border-left: 1px solid rgb rgb(63, 63, 63);\n"
+											"    border-right: 1px solid rgb rgb(63, 63, 63);\n"
+											"    border-bottom: 3px solid rgb rgb(108, 108, 108);\n"
+											"\n"
+											"background-color: rgb(149, 149, 149);")
+		self.labelVerificando.setAlignment(QtCore.Qt.AlignCenter)
+		self.labelVerificando.setObjectName("labelVerificando")
 
 		self.lblCamara.raise_()
 		self.lblSenaCorrecta.close()
@@ -179,6 +191,8 @@ class Ui_IG5_Sena(object):
 		self.lblSenaCorrecta.raise_()
 		self.labelConteo.raise_()
 		self.labelConteo.close()
+		self.labelVerificando.raise_()
+		self.labelVerificando.close()
 
 		self.retranslateUi(IG5_Sena)
 		QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
@@ -194,6 +208,7 @@ class Ui_IG5_Sena(object):
 		self.botonSalir.setText(_translate("IG5_Sena", "Salir"))
 		self.lblSenaCorrecta.setText(_translate("IG5_Sena", "Seña correcta "))
 		self.labelConteo.setText(_translate("IG5_Sena", "3"))
+		self.labelVerificando.setText(_translate("IG5_Sena", "Verificando..."))
 
 		# create a timer
 		self.timer = QtCore.QTimer()
@@ -202,12 +217,6 @@ class Ui_IG5_Sena(object):
 		global nombreSena
 		nombreSena=nombre
 		self.labelTutorial.setText("¿Cómo hacer la seña \""+ nombre +"\" ?")
-
-	# def setCategoria(self,categoria):
-	# 	global redConv
-	# 	for modelo, senas in modelos.items():
-	# 		if nombreSena in senas:
-	# 			redConv = tf.keras.models.load_model('./'+modelo)
 
 	def setup(self, Form):
 		self.video = self.crearVideo(Form)
@@ -250,9 +259,11 @@ class Ui_IG5_Sena(object):
 		try:
 			# read image in BGR format
 			ret, image = self.cap.read()
+			#conver image to RGBA format for the CNN
+			NImage = cv2.cvtColor(image, cv2.COLOR_RGB2RGBA)
 			# convert image to RGB format
 			image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-			cv2.imwrite('Prueba.jpg', image)
+			cv2.imwrite('Prueba.jpg', NImage)
 			# get image infos
 			height, width, channel = image.shape
 			step = channel * width
@@ -262,17 +273,20 @@ class Ui_IG5_Sena(object):
 			self.lblCamara.setPixmap(QtGui.QPixmap.fromImage(qImg))
 			path = list(glob.glob('./*.jpg'))
 			if leyendo:
+				self.labelVerificando.show()
+				self.botonVerificar.close()
 				img_p = []
 				image = Image.open(path[0])
 				img_p.append(np.array(image.resize((300, 300))))
 				img_prueba = np.array(img_p)
 				if self.validacion(img_prueba):
 					valido += 1
-					if valido == 3:
+					if valido == 4:
 						self.lblSenaCorrecta.show()
-						leyendo = False
+						self.botonVerificar.show()
+						self.labelVerificando.close()
 						self.terminar()
-						os.remove('./Prueba.jpg')
+						#os.remove('./Prueba.jpg')
 				else:
 					valido = 0
 
@@ -301,17 +315,18 @@ class Ui_IG5_Sena(object):
 				print("Incorrecta")
 				return False
 
-
 	def terminar(self):
+		global leyendo, valido
 		if self.timer.isActive():
 			# stop timer
 			self.timer.stop()
 			# release video capture
 			self.cap.release()
+		leyendo = False
+		valido = 0
 	def cerrar(self,Form):
 		self.terminar()
 		Form.close()
-
 
 	def crearTimer(self):
 		self.timerConteo = QtCore.QTimer()
@@ -334,6 +349,8 @@ class Ui_IG5_Sena(object):
 				self.labelConteo.close()
 				contador=3
 				leyendo = True
+				if not self.timer.isActive():
+					self.crearCamara()
 
 	def eventos(self, Form):
 		self.botonReproducir.clicked.connect(self.contenedor.play)

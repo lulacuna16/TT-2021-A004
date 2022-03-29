@@ -1,7 +1,9 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
+from Clases.Progreso import Progreso
 
+NumerosEstaticos=["1","2","3","4","5","6","7","8"]
 class IG_Numeros(object):
     def iniciar_Numeros(self,widgetNumeros):
         self.imagen_1 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -677,6 +679,7 @@ class IG_Numeros(object):
         self.boton_6.clicked.connect(lambda: self.buttonClicked(self.boton_6))
         self.boton_7.clicked.connect(lambda: self.buttonClicked(self.boton_7))
         self.boton_8.clicked.connect(lambda: self.buttonClicked(self.boton_8))
+        self.pintarVerde()
 
         """self.boton_9.clicked.connect(lambda: self.buttonClicked(self.boton_9))
         self.boton_10.clicked.connect(lambda: self.buttonClicked(self.boton_10))
@@ -714,7 +717,7 @@ class IG_Numeros(object):
         self.boton_4.setText(_translate("IG4_Aprendizaje", "4"))
         self.boton_5.setText(_translate("IG4_Aprendizaje", "5"))
         self.boton_6.setText(_translate("IG4_Aprendizaje", "6"))
-        self.boton_7.setText(_translate("IG4_Aprendizaje", "7"))
+        self.boton_7.setText(_translate("IG4_Aprendizaje", "7"))  
         self.boton_8.setText(_translate("IG4_Aprendizaje", "8"))
         self.boton_9.setText(_translate("IG4_Aprendizaje", "9"))
         self.boton_10.setText(_translate("IG4_Aprendizaje", "10"))
@@ -727,6 +730,75 @@ class IG_Numeros(object):
         self.boton_80.setText(_translate("IG4_Aprendizaje", "80"))
         self.boton_90.setText(_translate("IG4_Aprendizaje", "90"))
         self.boton_100.setText(_translate("IG4_Aprendizaje", "100"))
-        
+
 
         # Las comentadas son señas dinámicas
+
+    def pintarVerde(self):
+        style = '''QPushButton{\n
+                color: rgb(255, 255, 255);\n
+                    background-color: rgb(19,207,73);\n
+                    font: 12pt \"Segoe Print\";\n
+                    border-radius: 11px;\n
+                    border:none;\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:hover{\n
+                    background-color: rgb(43,247,101);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:pressed{\n
+                    background-color: rgb(48,182,86);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-top: 3px solid rgb(18,151,56);\n
+                    border-bottom: none;\n
+                }
+                '''
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        correctas = progreso.progresoCategoria(1,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
+        print(correctas)
+        if "1" in correctas:
+            self.boton_1.setStyleSheet(style)
+        if "2" in correctas:
+            self.boton_2.setStyleSheet(style)
+        if "3" in correctas:
+            self.boton_3.setStyleSheet(style)
+        if "4" in correctas:
+            self.boton_4.setStyleSheet(style)
+        if "5" in correctas:
+            self.boton_5.setStyleSheet(style)
+        if "6" in correctas:
+            self.boton_6.setStyleSheet(style)
+        if "7" in correctas:
+            self.boton_7.setStyleSheet(style)
+        if "8" in correctas:
+            self.boton_8.setStyleSheet(style)
+        if "9" in correctas:
+            self.boton_9.setStyleSheet(style)
+        if "10" in correctas:
+            self.boton_10.setStyleSheet(style)
+        if "20" in correctas:
+            self.boton_20.setStyleSheet(style)
+        if "30" in correctas:
+            self.boton_30.setStyleSheet(style)
+        if "40" in correctas:
+            self.boton_40.setStyleSheet(style)
+        if "50" in correctas:
+            self.boton_50.setStyleSheet(style)
+        if "60" in correctas:
+            self.boton_60.setStyleSheet(style)
+        if "70" in correctas:
+            self.boton_70.setStyleSheet(style)
+        if "80" in correctas:
+            self.boton_80.setStyleSheet(style)
+        if "90" in correctas:
+            self.boton_90.setStyleSheet(style)
+        if "100" in correctas:
+            self.boton_100.setStyleSheet(style)

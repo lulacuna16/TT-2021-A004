@@ -1,6 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
+from Clases.Progreso import Progreso
+import time
 
 
 class IG_Abecedario(object):
@@ -979,6 +981,8 @@ class IG_Abecedario(object):
         self.boton_Y.clicked.connect(lambda: self.buttonClicked(self.boton_Y))
         #self.boton_Z.clicked.connect(lambda: self.buttonClicked(self.boton_Z))
 
+        self.pintarVerde()
+
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
@@ -1025,3 +1029,89 @@ class IG_Abecedario(object):
         #self.boton_Z.setText(_translate("IG4_Aprendizaje", "Z"))
 
         #Las comentadas son señas dinámicas
+
+    def pintarVerde(self):
+        style = '''QPushButton{\n
+                color: rgb(255, 255, 255);\n
+                    background-color: rgb(19,207,73);\n
+                    font: 12pt \"Segoe Print\";\n
+                    border-radius: 11px;\n
+                    border:none;\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:hover{\n
+                    background-color: rgb(43,247,101);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:pressed{\n
+                    background-color: rgb(48,182,86);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-top: 3px solid rgb(18,151,56);\n
+                    border-bottom: none;\n
+                }
+                '''
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        correctas = progreso.progresoCategoria(1,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
+        print(correctas)
+
+        if "a" in correctas:
+            self.boton_A.setStyleSheet(style)
+        if "b" in correctas:
+            self.boton_B.setStyleSheet(style)
+        if "c" in correctas:
+            self.boton_C.setStyleSheet(style)
+        if "d" in correctas:
+            self.boton_D.setStyleSheet(style)
+        if "e" in correctas:
+            self.boton_E.setStyleSheet(style)
+        if "f" in correctas:
+            self.boton_F.setStyleSheet(style)
+        if "g" in correctas:
+            self.boton_G.setStyleSheet(style)
+        if "h" in correctas:
+            self.boton_H.setStyleSheet(style)
+        if "i" in correctas:
+            self.boton_I.setStyleSheet(style)
+        if "j" in correctas:
+            self.boton_J.setStyleSheet(style)
+        if "k" in correctas:
+            self.boton_K.setStyleSheet(style)
+        if "l" in correctas:
+            self.boton_L.setStyleSheet(style)
+        if "m" in correctas:
+            self.boton_M.setStyleSheet(style)
+        if "n" in correctas:
+            self.boton_N.setStyleSheet(style)
+        if "ñ" in correctas:
+            self.boton_NQ.setStyleSheet(style)
+        if "o" in correctas:
+            self.boton_O.setStyleSheet(style)
+        if "p" in correctas:
+            self.boton_P.setStyleSheet(style)
+        if "q" in correctas:
+            self.boton_Q.setStyleSheet(style)
+        if "r" in correctas:
+            self.boton_R.setStyleSheet(style)
+        if "s" in correctas:
+            self.boton_S.setStyleSheet(style)
+        if "t" in correctas:
+            self.boton_T.setStyleSheet(style)
+        if "u" in correctas:
+            self.boton_U.setStyleSheet(style)
+        if "v" in correctas:
+            self.boton_V.setStyleSheet(style)
+        if "w" in correctas:
+            self.boton_W.setStyleSheet(style)
+        if "x" in correctas:
+            self.boton_X.setStyleSheet(style)
+        if "y" in correctas:
+            self.boton_Y.setStyleSheet(style)
+        if "z" in correctas:
+            self.boton_Z.setStyleSheet(style)

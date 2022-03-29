@@ -1,4 +1,3 @@
-from statistics import mode
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 from PIL import Image
 # import Opencv para camara  -pip install opencv-python-
@@ -6,6 +5,10 @@ import cv2
 import numpy as np
 import glob
 import tensorflow as tf
+from Clases.Senas import Senas
+from Clases.Progreso import Progreso
+import os
+
 #redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
 # global redConv
 global nombreSena
@@ -287,6 +290,19 @@ class Ui_IG5_Sena(object):
 						self.labelVerificando.close()
 						self.terminar()
 						#os.remove('./Prueba.jpg')
+
+						pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+						sena = Senas()
+						sena.setBD(pathBD)
+						sena.nombre_sena = str(nombreSena).lower()
+						sena.obtenerIdSenaBD()
+
+						progreso = Progreso()
+						progreso.setBD(pathBD)
+						progreso.id_usuario = 1
+						progreso.id_sena = sena.id_sena
+						progreso.insertarProgreso()
+
 				else:
 					valido = 0
 

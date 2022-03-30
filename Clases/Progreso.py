@@ -44,7 +44,7 @@ class Progreso:
         except Exception as e:
             print(e)
 
-    def progresoCategoria(self, id_usuario, id_categoria):
+    def senasCorrectasCategoria(self, id_usuario, id_categoria):
         queryJOIN = f'''
             SELECT
                 s.nombre_sena
@@ -67,5 +67,32 @@ class Progreso:
                 correctas.append(str(row[0]))
             bd.cerrarConexion()
             return correctas
+        except Exception as e:
+            print(e)
+
+    def progresoCategoria(self, id_usuario, id_categoria):
+        queryJOIN = f'''
+            SELECT
+                count(s.nombre_sena)
+                FROM usuarios u
+                INNER JOIN progresos p
+                    ON u.id_usuario = {id_usuario}
+                    AND u.id_usuario = p.id_usuario
+                INNER JOIN senas s
+                    ON p.id_sena = s.id_sena
+                INNER JOIN categorias c
+                    ON s.id_categoria = c.id_categoria
+                    AND c.id_categoria = {id_categoria};
+            '''
+        try:
+            bd = DataBase(self.__path)
+            bd.crearConexion()
+            row = bd.leer(queryJOIN)
+            senasCorrectas = float(row.fetchone()[0])
+            row = bd.leer(f'SELECT COUNT(*) FROM senas WHERE id_categoria = {id_categoria}')
+            totalSenas = float(row.fetchone()[0])
+            porcentaje = (senasCorrectas * 100) / totalSenas
+            bd.cerrarConexion()
+            return porcentaje
         except Exception as e:
             print(e)

@@ -40,7 +40,7 @@
 }</string>
      </property>
      <property name="currentIndex">
-      <number>4</number>
+      <number>5</number>
      </property>
      <widget class="QWidget" name="tabInicio">
       <attribute name="title">
@@ -1444,7 +1444,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/a.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/a.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1463,7 +1463,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/b.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/b.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1482,7 +1482,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/c.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/c.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1501,7 +1501,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/d.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/d.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1520,7 +1520,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/e.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/e.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1539,7 +1539,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/f.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/f.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1558,7 +1558,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/g.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/g.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1577,7 +1577,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/h.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/h.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1596,7 +1596,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/j.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/j.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1615,7 +1615,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/k.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/k.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1634,7 +1634,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/l.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/l.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1653,7 +1653,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/m.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/m.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1672,7 +1672,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/n.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/n.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1691,7 +1691,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/ñ.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/ñ.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1710,7 +1710,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/o.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/o.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1729,7 +1729,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/p.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/p.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1748,7 +1748,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/r.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/r.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1767,7 +1767,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/s.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/s.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1786,7 +1786,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/t.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/t.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1805,7 +1805,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/u.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/u.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1824,7 +1824,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/v.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/v.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1843,7 +1843,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/w.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/w.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1862,7 +1862,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/x.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/x.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1881,7 +1881,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/y.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/y.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1900,7 +1900,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/i.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/i.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1919,7 +1919,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/q.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/q.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1938,12 +1938,43 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosLetras/iconos/z.png</pixmap>
+         <pixmap>:/iconosLetras/iconos/z.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_abecedario">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>811</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+    text-align: center;
+    font: 12pt Segoe Print;
+    font-weight: bold;
+    color: black;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #009688;
+    background-color: #EFEFEF;
+}
+QProgressBar::chunk{
+    border-radius: 6px;
+    background-color: #009688;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tabNumeros">
@@ -2884,7 +2915,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/1.png</pixmap>
+         <pixmap>:/iconosNum/iconos/1.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2903,7 +2934,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/2.png</pixmap>
+         <pixmap>:/iconosNum/iconos/2.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2922,7 +2953,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/3.png</pixmap>
+         <pixmap>:/iconosNum/iconos/3.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2941,7 +2972,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/4.png</pixmap>
+         <pixmap>:/iconosNum/iconos/4.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2960,7 +2991,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/5.png</pixmap>
+         <pixmap>:/iconosNum/iconos/5.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2979,7 +3010,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/6.png</pixmap>
+         <pixmap>:/iconosNum/iconos/6.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2998,7 +3029,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/7.png</pixmap>
+         <pixmap>:/iconosNum/iconos/7.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3017,7 +3048,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/8.png</pixmap>
+         <pixmap>:/iconosNum/iconos/8.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3036,7 +3067,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/9.png</pixmap>
+         <pixmap>:/iconosNum/iconos/9.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3055,7 +3086,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/10.png</pixmap>
+         <pixmap>:/iconosNum/iconos/10.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3074,7 +3105,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/20.png</pixmap>
+         <pixmap>:/iconosNum/iconos/20.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3093,7 +3124,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/30.png</pixmap>
+         <pixmap>:/iconosNum/iconos/30.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3112,7 +3143,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/40.png</pixmap>
+         <pixmap>:/iconosNum/iconos/40.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3131,7 +3162,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/50.png</pixmap>
+         <pixmap>:/iconosNum/iconos/50.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3150,7 +3181,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/60.png</pixmap>
+         <pixmap>:/iconosNum/iconos/60.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3169,7 +3200,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/70.png</pixmap>
+         <pixmap>:/iconosNum/iconos/70.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3188,7 +3219,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/80.png</pixmap>
+         <pixmap>:/iconosNum/iconos/80.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3207,7 +3238,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/90.png</pixmap>
+         <pixmap>:/iconosNum/iconos/90.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -3226,12 +3257,43 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/a.qrc">:/iconosNum/iconos/100.png</pixmap>
+         <pixmap>:/iconosNum/iconos/100.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_numeros">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>811</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+    text-align: center;
+    font: 12pt Segoe Print;
+    font-weight: bold;
+    color: black;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #009688;
+    background-color: #EFEFEF;
+}
+QProgressBar::chunk{
+    border-radius: 6px;
+    background-color: #009688;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tabCuerpo">
@@ -4076,7 +4138,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/brazo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/brazo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4095,7 +4157,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/mano.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/mano.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4114,7 +4176,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/codo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/codo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4133,7 +4195,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/diente.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/diente.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4152,7 +4214,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/cuello.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/cuello.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4171,7 +4233,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/espalda.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/espalda.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4190,7 +4252,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/estomago.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/estomago.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4209,7 +4271,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/hombro.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/hombro.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4228,7 +4290,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/lengua.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/lengua.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4247,7 +4309,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/muñeca.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/muñeca.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4266,7 +4328,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/nariz.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/nariz.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4285,7 +4347,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/pelo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/pelo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4304,7 +4366,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/ojo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/ojo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4323,7 +4385,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/pulgar.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/pulgar.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4342,7 +4404,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/uña.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/uña.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4361,7 +4423,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/oreja.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/oreja.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4380,12 +4442,43 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/cuerpo.qrc">:/prefijoNuevo/Imágenes/boca.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/boca.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_cuerpo">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>811</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+    text-align: center;
+    font: 12pt Segoe Print;
+    font-weight: bold;
+    color: black;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #009688;
+    background-color: #EFEFEF;
+}
+QProgressBar::chunk{
+    border-radius: 6px;
+    background-color: #009688;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tabDias">
@@ -4750,7 +4843,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/lunes.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/lunes.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4769,7 +4862,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/martes.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/martes.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4788,7 +4881,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/miercoles.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/miercoles.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4807,7 +4900,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/jueves.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/jueves.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4826,7 +4919,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/viernes.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/viernes.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4845,7 +4938,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/sabado.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/sabado.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4864,12 +4957,43 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/dias.qrc">:/prefijoNuevo/Imágenes/domingo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/domingo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_dias">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>811</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+    text-align: center;
+    font: 12pt Segoe Print;
+    font-weight: bold;
+    color: black;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #009688;
+    background-color: #EFEFEF;
+}
+QProgressBar::chunk{
+    border-radius: 6px;
+    background-color: #009688;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tabColores">
@@ -5426,7 +5550,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/amarillo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/amarillo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5445,7 +5569,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/azul.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/azul.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5464,7 +5588,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/rojo.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/rojo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5483,7 +5607,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/verde.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/verde.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5502,7 +5626,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/rosa.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/rosa.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5521,7 +5645,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/café.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/café.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5540,7 +5664,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/gris.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/gris.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5559,7 +5683,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/morado.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/morado.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5578,7 +5702,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/naranja.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/naranja.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5597,7 +5721,7 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/negro.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/negro.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -5616,12 +5740,43 @@ QPushButton:pressed{
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="recursos/col.qrc">:/prefijoNuevo/Imágenes/blanco.png</pixmap>
+         <pixmap>:/prefijoNuevo/Imágenes/blanco.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_colores">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>811</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+    text-align: center;
+    font: 12pt Segoe Print;
+    font-weight: bold;
+    color: black;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #009688;
+    background-color: #EFEFEF;
+}
+QProgressBar::chunk{
+    border-radius: 6px;
+    background-color: #009688;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
       </widget>
      </widget>
     </widget>
@@ -5629,11 +5784,9 @@ QPushButton:pressed{
   </layout>
  </widget>
  <resources>
-  <include location="recursos/a.qrc"/>
-  <include location="recursos/dias.qrc"/>
-  <include location="recursos/di.qrc"/>
   <include location="recursos/col.qrc"/>
   <include location="recursos/cuerpo.qrc"/>
+  <include location="recursos/a.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -762,7 +762,7 @@ class IG_Numeros(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        correctas = progreso.progresoCategoria(1,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
+        correctas = progreso.senasCorrectasCategoria(1,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
         print(correctas)
         if "1" in correctas:
             self.boton_1.setStyleSheet(style)

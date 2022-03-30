@@ -1058,7 +1058,7 @@ class IG_Abecedario(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        correctas = progreso.progresoCategoria(1,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
+        correctas = progreso.senasCorrectasCategoria(1,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
         print(correctas)
 
         if "a" in correctas:

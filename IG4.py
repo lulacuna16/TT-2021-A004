@@ -18,6 +18,7 @@ import IG2 as G2
 from Clases.Usuario import Usuario
 import os
 from os import environ
+from Clases.Progreso import Progreso
 
 class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
@@ -131,6 +132,69 @@ class Ui_IG4_Aprendizaje(object):
         ventanaColores.iniciar_Colores(self.widgetColores)
         ventanaColores.retranslateUiColores(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabColores, "")
+
+        # BARRAS DE PROGRESO
+        styleProgressBar ='''
+                        QProgressBar{
+                            text-align: center;
+                            font: 12pt Segoe Print;
+                            font-weight: bold;
+                            color: black;
+                            min-height: 20px;
+                            max-height: 20px;
+                            border-radius: 6px;
+                            border: 1px solid #009688;
+                            background-color: #EFEFEF;
+                        }
+                        QProgressBar::chunk{
+                            border-radius: 6px;
+                            background-color: #009688;
+                        }
+        '''
+        self.progressBar_abecedario = QtWidgets.QProgressBar(self.tabAbecedario)
+        self.progressBar_abecedario.setGeometry(QtCore.QRect(20, 20, 811, 22))
+        self.progressBar_abecedario.setStyleSheet(styleProgressBar)
+        self.progressBar_abecedario.setProperty("value", 0)
+        self.progressBar_abecedario.setObjectName("progressBar_abecedario")
+
+        self.progressBar_numeros = QtWidgets.QProgressBar(self.tabNumeros)
+        self.progressBar_numeros.setGeometry(QtCore.QRect(20, 20, 811, 22))
+        self.progressBar_numeros.setStyleSheet(styleProgressBar)
+        self.progressBar_numeros.setProperty("value", 0)
+        self.progressBar_numeros.setObjectName("progressBar_numeros")
+
+        self.progressBar_cuerpo = QtWidgets.QProgressBar(self.tabCuerpo)
+        self.progressBar_cuerpo.setGeometry(QtCore.QRect(20, 20, 811, 22))
+        self.progressBar_cuerpo.setStyleSheet(styleProgressBar)
+        self.progressBar_cuerpo.setProperty("value", 0)
+        self.progressBar_cuerpo.setObjectName("progressBar_cuerpo")
+
+        self.progressBar_dias = QtWidgets.QProgressBar(self.tabDias)
+        self.progressBar_dias.setGeometry(QtCore.QRect(20, 20, 811, 22))
+        self.progressBar_dias.setStyleSheet(styleProgressBar)
+        self.progressBar_dias.setProperty("value", 0)
+        self.progressBar_dias.setObjectName("progressBar_dias")
+
+        self.progressBar_colores = QtWidgets.QProgressBar(self.tabColores)
+        self.progressBar_colores.setGeometry(QtCore.QRect(20, 20, 811, 22))
+        self.progressBar_colores.setStyleSheet(styleProgressBar)
+        self.progressBar_colores.setProperty("value", 0)
+        self.progressBar_colores.setObjectName("progressBar_colores")
+
+        progreso = Progreso()
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        porcentaje = progreso.progresoCategoria(1,1)
+        self.progressBar_abecedario.setValue(porcentaje)
+        porcentaje = progreso.progresoCategoria(1,2)
+        self.progressBar_numeros.setValue(porcentaje)
+        porcentaje = progreso.progresoCategoria(1,3)
+        self.progressBar_cuerpo.setValue(porcentaje)
+        porcentaje = progreso.progresoCategoria(1,4)
+        self.progressBar_dias.setValue(porcentaje)
+        porcentaje = progreso.progresoCategoria(1,5)
+        self.progressBar_colores.setValue(porcentaje)
 
         self.verticalLayout.addWidget(self.Tabs)
         self.Eventos(IG4_Aprendizaje)

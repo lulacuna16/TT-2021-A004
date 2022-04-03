@@ -1,6 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
 import os
+from Clases.Progreso import Progreso
 
 class IG_Cuerpo(object):
     def iniciar_Cuerpo(self, widgetCuerpo):
@@ -600,6 +601,8 @@ class IG_Cuerpo(object):
         self.label_51.setScaledContents(True)
         self.label_51.setObjectName("label_51")
 
+        self.pintarVerde()
+
         #self.boton_Boca.clicked.connect(lambda: self.buttonClicked(self.boton_Boca))
         #self.boton_Brazo.clicked.connect(lambda: self.buttonClicked(self.boton_Brazo))
         #self.boton_Codo.clicked.connect(lambda: self.buttonClicked(self.boton_Codo))
@@ -653,3 +656,68 @@ class IG_Cuerpo(object):
         self.boton_Pelo.setText(_translate("IG4_Aprendizaje", "Pelo"))
 
         # Las comentadas son señas dinámicas
+
+    def pintarVerde(self):
+        style = '''QPushButton{\n
+                color: rgb(255, 255, 255);\n
+                    background-color: rgb(19,207,73);\n
+                    font: 12pt \"Segoe Print\";\n
+                    border-radius: 11px;\n
+                    border:none;\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:hover{\n
+                    background-color: rgb(43,247,101);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:pressed{\n
+                    background-color: rgb(48,182,86);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-top: 3px solid rgb(18,151,56);\n
+                    border-bottom: none;\n
+                }
+                '''
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        correctas = progreso.senasCorrectasCategoria(1,3) #TRAE LAS SEÑAS (cuerpo) YA REALIZADAS POR EL USUARIO (BD)
+        print(correctas)
+        if "boca" in correctas:
+            self.boton_Boca.setStyleSheet(style)
+        if "brazo" in correctas:
+            self.boton_Brazo.setStyleSheet(style)
+        if "codo" in correctas:
+            self.boton_Codo.setStyleSheet(style)
+        if "cuello" in correctas:
+            self.boton_Cuello.setStyleSheet(style)
+        if "diente" in correctas:
+            self.boton_Diente.setStyleSheet(style)
+        if "espalda" in correctas:
+            self.boton_Espalda.setStyleSheet(style)
+        if "estomago" in correctas:
+            self.boton_Estomago.setStyleSheet(style)
+        if "hombro" in correctas:
+            self.boton_Hombro.setStyleSheet(style)
+        if "lengua" in correctas:
+            self.boton_Lengua.setStyleSheet(style)
+        if "mano" in correctas:
+            self.boton_Mano.setStyleSheet(style)
+        if "muñeca" in correctas:
+            self.boton_Muneca.setStyleSheet(style)
+        if "nariz" in correctas:
+            self.boton_Nariz.setStyleSheet(style)
+        if "ojo" in correctas:
+            self.boton_Ojo.setStyleSheet(style)
+        if "oreja" in correctas:
+            self.boton_Oreja.setStyleSheet(style)
+        if "pelo" in correctas:
+            self.boton_Pelo.setStyleSheet(style)
+        if "pulgar" in correctas:
+            self.boton_Pulgar.setStyleSheet(style)
+        if "uña" in correctas:
+            self.boton_Una.setStyleSheet(style)

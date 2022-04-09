@@ -96,3 +96,15 @@ class Progreso:
             return porcentaje
         except Exception as e:
             print(e)
+
+    def eliminarProgreso(self,id_usuario):
+        query = f'''
+                delete from progresos where id_usuario = {id_usuario};
+            '''
+        try:
+            bd = DataBase(self.__path)
+            bd.crearConexion()
+            bd.borrar(query)
+            bd.cerrarConexion()
+        except Exception as e:
+            print(e)

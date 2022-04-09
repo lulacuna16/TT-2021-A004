@@ -64,3 +64,15 @@ class Usuario:
             bd.cerrarConexion()
         except Exception as e:
             print(e)
+
+    def restablecerUsuario(self,id_usuario):
+        query = f'''
+                UPDATE usuarios SET nombre="Usuario {id_usuario}" WHERE id_usuario={id_usuario};
+            '''
+        try:
+            bd = DataBase(self.__path)
+            bd.crearConexion()
+            bd.borrar(query)
+            bd.cerrarConexion()
+        except Exception as e:
+            print(e)

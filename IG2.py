@@ -148,6 +148,7 @@ class Ui_IG2_MenuUsuario(object):
         IG2_MenuUsuario.hide()
         self.IIG3=QtWidgets.QWidget()
         ui = G3.Ui_IG3_ModificacionPerfil()
+        ui.setIDUsuario(self.id_usuario)
         ui.setupUi(self.IIG3)
         self.IIG3.show()
 
@@ -168,7 +169,7 @@ class Ui_IG2_MenuUsuario(object):
     def retranslateUi(self, IG2_MenuUsuario):
         _translate = QtCore.QCoreApplication.translate
         IG2_MenuUsuario.setWindowTitle(_translate("IG2_MenuUsuario", "Menú de usuario"))
-        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(1)))
+        self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(self.id_usuario)))
         self.botonModificarPerfil.setText(_translate("IG2_MenuUsuario", "Modificar Perfil"))
         self.botonAprender.setText(_translate("IG2_MenuUsuario", "Aprender"))
         self.botonPracticar.setText(_translate("IG2_MenuUsuario", "Practicar"))
@@ -181,6 +182,9 @@ class Ui_IG2_MenuUsuario(object):
         usuario.setBD(path)
         usuario.obtenerUsuarioBDId(id)
         return usuario.nombre
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
 
 if __name__ == "__main__":
     import sys

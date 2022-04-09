@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'IG3.ui'
+# Form implementation generated from reading ui file '.\IG3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -10,7 +10,9 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG2 as G2
+import IG1 as G1
 from Clases.Usuario import Usuario
+from Clases.Progreso import Progreso
 import os
 
 class Ui_IG3_ModificacionPerfil(object):
@@ -18,7 +20,7 @@ class Ui_IG3_ModificacionPerfil(object):
         IG3_ModificacionPerfil.setObjectName("IG3_ModificacionPerfil")
         IG3_ModificacionPerfil.resize(503, 300)
         IG3_ModificacionPerfil.setStyleSheet("background-color: rgb(255, 175, 247);\n"
-                                             "")
+"")
         self.labelNombreUsuario = QtWidgets.QLabel(IG3_ModificacionPerfil)
         self.labelNombreUsuario.setGeometry(QtCore.QRect(150, 30, 201, 21))
         self.labelNombreUsuario.setStyleSheet("font: 14pt \"Segoe Print\";")
@@ -26,62 +28,89 @@ class Ui_IG3_ModificacionPerfil(object):
         self.textNombreUsuario = QtWidgets.QLineEdit(IG3_ModificacionPerfil)
         self.textNombreUsuario.setGeometry(QtCore.QRect(150, 60, 191, 20))
         self.textNombreUsuario.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                             "color: rgb(0, 0, 0);\n"
-                                             "font: 11pt \"Segoe Print\";")
+"color: rgb(0, 0, 0);\n"
+"font: 11pt \"Segoe Print\";")
         self.textNombreUsuario.setInputMask("")
         self.textNombreUsuario.setObjectName("textNombreUsuario")
         self.botonGuardar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
         self.botonGuardar.setGeometry(QtCore.QRect(130, 140, 231, 31))
         self.botonGuardar.setStyleSheet("QPushButton{\n"
-                                        "color: rgb(255, 255, 255);\n"
-                                        "    background-color: rgb(46, 165, 255);\n"
-                                        "    font: 12pt \"Segoe Print\";\n"
-                                        "    border-radius: 11px;\n"
-                                        "    border:none;\n"
-                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color: rgb(14, 235, 255);\n"
-                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color: rgb(40, 170, 221);\n"
-                                        "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                        "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                        "    border-bottom: none;\n"
-                                        "}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(46, 165, 255);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonGuardar.setObjectName("botonGuardar")
         self.botonCancelar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
-        self.botonCancelar.setGeometry(QtCore.QRect(130, 200, 231, 31))
+        self.botonCancelar.setGeometry(QtCore.QRect(130, 240, 231, 31))
         self.botonCancelar.setStyleSheet("QPushButton{\n"
-                                         "color: rgb(255, 255, 255);\n"
-                                         "    background-color: rgb(46, 165, 255);\n"
-                                         "    font: 12pt \"Segoe Print\";\n"
-                                         "    border-radius: 11px;\n"
-                                         "    border:none;\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                         "}\n"
-                                         "QPushButton:hover{\n"
-                                         "    background-color: rgb(14, 235, 255);\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-bottom: 3px solid rgb(44, 131, 212);\n"
-                                         "}\n"
-                                         "QPushButton:pressed{\n"
-                                         "    background-color: rgb(40, 170, 221);\n"
-                                         "    border-left: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-right: 1px solid rgb(44, 131, 212);\n"
-                                         "    border-top: 3px solid rgb(44, 131, 212);\n"
-                                         "    border-bottom: none;\n"
-                                         "}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(46, 165, 255);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
         self.botonCancelar.setObjectName("botonCancelar")
+        self.botonEliminar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
+        self.botonEliminar.setGeometry(QtCore.QRect(130, 190, 231, 31))
+        self.botonEliminar.setStyleSheet("QPushButton{\n"
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(46, 165, 255);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(14, 235, 255);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
+        self.botonEliminar.setObjectName("botonEliminar")
+
         self.Eventos(IG3_ModificacionPerfil)
 
         self.retranslateUi(IG3_ModificacionPerfil)
@@ -89,13 +118,21 @@ class Ui_IG3_ModificacionPerfil(object):
 
     def Eventos(self,IG3_ModificacionPerfil):
         self.botonCancelar.clicked.connect(lambda:self.abrirIG2(IG3_ModificacionPerfil))
-        self.botonGuardar.clicked.connect(lambda: self.actualizarNombre(1,IG3_ModificacionPerfil))
+        self.botonGuardar.clicked.connect(lambda: self.actualizarNombre(self.id_usuario,IG3_ModificacionPerfil))
+        self.botonEliminar.clicked.connect(lambda: self.eliminarPerfil(self.id_usuario,IG3_ModificacionPerfil))
 
+    def abrirIG1(self,IG3_ModificacionPerfil):
+        IG3_ModificacionPerfil.hide()
+        self.IIG1=QtWidgets.QWidget()
+        ui=G1.Ui_IG1_Bienvenida()
+        ui.setupUi(self.IIG1)
+        self.IIG1.show()
 
     def abrirIG2(self,IG3_ModificacionPerfil):
         IG3_ModificacionPerfil.hide()
         self.IIG2=QtWidgets.QWidget()
         ui=G2.Ui_IG2_MenuUsuario()
+        ui.setIDUsuario(self.id_usuario)
         ui.setupUi(self.IIG2)
         self.IIG2.show()
 
@@ -110,11 +147,12 @@ class Ui_IG3_ModificacionPerfil(object):
 
     def retranslateUi(self, IG3_ModificacionPerfil):
         _translate = QtCore.QCoreApplication.translate
-        IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Modificación de perfil"))
-        self.labelNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Nombre Usuario:"))
-        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(1)))
+        IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Form"))
+        self.labelNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Nombre de usuario:"))
+        self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(self.id_usuario)))
         self.botonGuardar.setText(_translate("IG3_ModificacionPerfil", "Guardar"))
         self.botonCancelar.setText(_translate("IG3_ModificacionPerfil", "Cancelar"))
+        self.botonEliminar.setText(_translate("IG3_ModificacionPerfil", "Eliminar usuario"))
 
     def nombreUsuario(self,id):
         usuario = Usuario()
@@ -122,6 +160,19 @@ class Ui_IG3_ModificacionPerfil(object):
         usuario.setBD(path)
         usuario.obtenerUsuarioBDId(id)
         return usuario.nombre
+
+    def eliminarPerfil(self, id_usuario,IG3_ModificacionPerfil):
+        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        usuario = Usuario()
+        usuario.setBD(path)
+        usuario.restablecerUsuario(id_usuario)
+        progreso = Progreso()
+        progreso.setBD(path)
+        progreso.eliminarProgreso(id_usuario)
+        self.abrirIG1(IG3_ModificacionPerfil)
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
 
 if __name__ == "__main__":
     import sys

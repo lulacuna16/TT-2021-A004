@@ -96,7 +96,7 @@ QPushButton:pressed{
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>200</y>
+     <y>240</y>
      <width>231</width>
      <height>31</height>
     </rect>
@@ -128,6 +128,44 @@ QPushButton:pressed{
    </property>
    <property name="text">
     <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonEliminar">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(46, 165, 255);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:hover{
+	background-color: rgb(14, 235, 255);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-bottom: 3px solid rgb(44, 131, 212);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Eliminar usuario</string>
    </property>
   </widget>
  </widget>

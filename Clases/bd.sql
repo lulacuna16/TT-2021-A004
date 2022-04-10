@@ -40,7 +40,7 @@ CREATE TABLE progresos(
 );
 
 -- Categorias
-INSERT INTO categorias (nombre_cat) VALUES ("letras"),("numeros"),("cuerpo"),("colores"),("dias");
+INSERT INTO categorias (nombre_cat) VALUES ("letras"),("numeros"),("cuerpo"),("dias"),("colores");
 
 -- Señas - letras
 INSERT INTO senas (nombre_sena,id_categoria) VALUES ("a",1),("b",1),("c",1),("d",1),("e",1),("f",1),

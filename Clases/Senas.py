@@ -25,7 +25,7 @@ class Senas:
         self.__id_sena = id_sena
     @nombre_sena.setter
     def nombre_sena(self,nombre):
-        self.__nombre_sena = nombre
+        self.__nombre_sena = self.removerTildes(nombre)
     @id_categoria.setter
     def id_categoria(self,id_cat):
         self.__id_categoria = id_cat
@@ -47,3 +47,11 @@ class Senas:
             bd.cerrarConexion()
         except Exception as e:
             print(e)
+
+    def removerTildes(self,cadena):
+        cadena = str(cadena).replace("á","a")
+        cadena = str(cadena).replace("é","e")
+        cadena = str(cadena).replace("í","i")
+        cadena = str(cadena).replace("ó","o")
+        cadena = str(cadena).replace("ú","u")
+        return cadena

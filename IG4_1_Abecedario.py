@@ -984,6 +984,7 @@ class IG_Abecedario(object):
         self.pintarVerde()
 
     def buttonClicked(self, boton):
+        self.IG4.hide()
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setIDUsuario(self.id_usuario)
@@ -1034,6 +1035,9 @@ class IG_Abecedario(object):
 
     def setIDUsuario(self,id_usuario):
         self.id_usuario = id_usuario
+
+    def setIG4(self,IG4):
+        self.IG4 = IG4
 
     def pintarVerde(self):
         style = '''QPushButton{\n

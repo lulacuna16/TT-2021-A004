@@ -1,3 +1,4 @@
+from msilib.schema import tables
 from PyQt5 import QtCore, QtGui, QtWidgets, QtMultimedia, QtMultimediaWidgets
 from PIL import Image
 # import Opencv para camara  -pip install opencv-python-
@@ -7,6 +8,7 @@ import glob
 import tensorflow as tf
 from Clases.Senas import Senas
 from Clases.Progreso import Progreso
+import IG4 as G4
 import os
 
 #redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
@@ -344,6 +346,7 @@ class Ui_IG5_Sena(object):
 	def cerrar(self,Form):
 		self.terminar()
 		Form.close()
+		self.abrirIG4(Form)
 
 	def crearTimer(self):
 		self.timerConteo = QtCore.QTimer()
@@ -378,9 +381,24 @@ class Ui_IG5_Sena(object):
 	def setIDUsuario(self,id_usuario):
 		self.id_usuario = id_usuario
 
+	def abrirIG4(self,IG5_Sena):
+		pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+		sena = Senas()
+		sena.setBD(pathBD)
+		sena.nombre_sena = str(nombreSena).lower()
+		print(sena.nombre_sena)
+		sena.obtenerIdSenaBD()
+
+		IG5_Sena.hide()
+		self.IIG4=QtWidgets.QWidget()
+		ui=G4.Ui_IG4_Aprendizaje()
+		ui.setIDUsuario(self.id_usuario)
+		ui.setupUi(self.IIG4)
+		ui.Tabs.setCurrentIndex(sena.id_categoria)
+		self.IIG4.show()
+
 if __name__ == "__main__":
 	import sys
-	
 	app = QtWidgets.QApplication(sys.argv)
 	IG5_Sena = QtWidgets.QWidget()
 	ui = Ui_IG5_Sena()

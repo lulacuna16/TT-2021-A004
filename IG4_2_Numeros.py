@@ -693,7 +693,9 @@ class IG_Numeros(object):
         self.boton_90.clicked.connect(lambda: self.buttonClicked(self.boton_90))
         self.boton_100.clicked.connect(lambda: self.buttonClicked(self.boton_100))
         """
+
     def buttonClicked(self, boton):
+        self.IG4.hide()
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
         Sena.setIDUsuario(self.id_usuario)
@@ -709,6 +711,7 @@ class IG_Numeros(object):
         #     Sena.setCategoria("NumerosEstaticos")
         Sena.setup(self.IIG5)
         self.IIG5.show()
+
     def retranslateUi(self, IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
@@ -718,7 +721,7 @@ class IG_Numeros(object):
         self.boton_4.setText(_translate("IG4_Aprendizaje", "4"))
         self.boton_5.setText(_translate("IG4_Aprendizaje", "5"))
         self.boton_6.setText(_translate("IG4_Aprendizaje", "6"))
-        self.boton_7.setText(_translate("IG4_Aprendizaje", "7"))  
+        self.boton_7.setText(_translate("IG4_Aprendizaje", "7"))
         self.boton_8.setText(_translate("IG4_Aprendizaje", "8"))
         self.boton_9.setText(_translate("IG4_Aprendizaje", "9"))
         self.boton_10.setText(_translate("IG4_Aprendizaje", "10"))
@@ -736,6 +739,9 @@ class IG_Numeros(object):
 
     def setIDUsuario(self,id_usuario):
         self.id_usuario = id_usuario
+
+    def setIG4(self,IG4):
+        self.IG4 = IG4
 
     def pintarVerde(self):
         style = '''QPushButton{\n

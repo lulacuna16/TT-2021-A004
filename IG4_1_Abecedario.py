@@ -986,6 +986,7 @@ class IG_Abecedario(object):
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
+        Sena.setIDUsuario(self.id_usuario)
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
         ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/abecedario/")
@@ -997,6 +998,7 @@ class IG_Abecedario(object):
         Sena.setup(self.IIG5)
         self.IIG5.show()
         #print(boton.text())
+
     def retranslateUiAbecedario(self,IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
@@ -1030,6 +1032,9 @@ class IG_Abecedario(object):
 
         #Las comentadas son señas dinámicas
 
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
+
     def pintarVerde(self):
         style = '''QPushButton{\n
                 color: rgb(255, 255, 255);\n
@@ -1058,7 +1063,7 @@ class IG_Abecedario(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        correctas = progreso.senasCorrectasCategoria(1,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
+        correctas = progreso.senasCorrectasCategoria(self.id_usuario,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
         print(correctas)
 
         if "a" in correctas:

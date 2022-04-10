@@ -57,13 +57,13 @@ INSERT INTO senas (nombre_sena,id_categoria) VALUES ("cuello",3),("espalda",3),(
     ("lengua",3),("mano",3),("muñeca",3),("nariz",3),("ojo",3),("pelo",3),("pulgar",3),("uña",3),("boca",3),
     ("oreja",3),("brazo",3),("codo",3),("estomago",3);
 
--- Señas - colores
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("amarillo",4),("azul",4),("rojo",4),("verde",4),
-    ("rosa",4),("cafe",4),("morado",4),("naranja",4),("gris",4),("blanco",4),("negro",4);
-
 -- Señas - dias
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("lunes",5),("martes",5),("miercoles",5),("jueves",5),
-    ("viernes",5),("sabado",5),("domingo",5);
+INSERT INTO senas (nombre_sena,id_categoria) VALUES ("lunes",4),("martes",4),("miercoles",4),("jueves",4),
+    ("viernes",4),("sabado",4),("domingo",4);
+
+-- Señas - colores
+INSERT INTO senas (nombre_sena,id_categoria) VALUES ("amarillo",5),("azul",5),("rojo",5),("verde",5),
+    ("rosa",5),("cafe",5),("morado",5),("naranja",5),("gris",5),("blanco",5),("negro",5);
 
 --  Usuarios
 INSERT INTO usuarios (nombre,progreso_pnt,senas_completadas) VALUES ("Usuario 1", 0, 0),

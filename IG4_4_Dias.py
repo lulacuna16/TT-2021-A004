@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
+from Clases.Progreso import Progreso
 import os
 
 
@@ -251,6 +252,8 @@ class IG_Dias(object):
         self.label_82.setScaledContents(True)
         self.label_82.setObjectName("label_82")
 
+        self.pintarVerde()
+
         self.boton_Domingo.clicked.connect(lambda : self.buttonClicked(self.boton_Domingo))
         self.boton_Lunes.clicked.connect(lambda: self.buttonClicked(self.boton_Lunes))
         self.boton_Martes.clicked.connect(lambda: self.buttonClicked(self.boton_Martes))
@@ -258,9 +261,11 @@ class IG_Dias(object):
         self.boton_Jueves.clicked.connect(lambda: self.buttonClicked(self.boton_Jueves))
         self.boton_Viernes.clicked.connect(lambda: self.buttonClicked(self.boton_Viernes))
         self.boton_Sabado.clicked.connect(lambda: self.buttonClicked(self.boton_Sabado))
+
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
+        Sena.setIDUsuario(self.id_usuario)
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
         ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/dias/")
@@ -283,3 +288,51 @@ class IG_Dias(object):
         self.boton_Viernes.setText(_translate("IG4_Aprendizaje", "Viernes"))
         self.boton_Domingo.setText(_translate("IG4_Aprendizaje", "Domingo"))
         self.boton_Sabado.setText(_translate("IG4_Aprendizaje", "Sabado"))
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
+
+    def pintarVerde(self):
+        style = '''QPushButton{\n
+                color: rgb(255, 255, 255);\n
+                    background-color: rgb(19,207,73);\n
+                    font: 12pt \"Segoe Print\";\n
+                    border-radius: 11px;\n
+                    border:none;\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:hover{\n
+                    background-color: rgb(43,247,101);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:pressed{\n
+                    background-color: rgb(48,182,86);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-top: 3px solid rgb(18,151,56);\n
+                    border-bottom: none;\n
+                }
+                '''
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        correctas = progreso.senasCorrectasCategoria(self.id_usuario,4) #TRAE LAS SEÑAS (días) YA REALIZADAS POR EL USUARIO (BD)
+        print(correctas)
+        if "lunes" in correctas:
+            self.boton_Lunes.setStyleSheet(style)
+        if "martes" in correctas:
+            self.boton_Martes.setStyleSheet(style)
+        if "miercoles" in correctas:
+            self.boton_Miercoles.setStyleSheet(style)
+        if "jueves" in correctas:
+            self.boton_Jueves.setStyleSheet(style)
+        if "viernes" in correctas:
+            self.boton_Viernes.setStyleSheet(style)
+        if "sabado" in correctas:
+            self.boton_Sabado.setStyleSheet(style)
+        if "domingo" in correctas:
+            self.boton_Domingo.setStyleSheet(style)

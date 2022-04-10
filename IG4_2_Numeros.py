@@ -696,6 +696,7 @@ class IG_Numeros(object):
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
+        Sena.setIDUsuario(self.id_usuario)
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
         ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/numeros/")
@@ -731,8 +732,10 @@ class IG_Numeros(object):
         self.boton_90.setText(_translate("IG4_Aprendizaje", "90"))
         self.boton_100.setText(_translate("IG4_Aprendizaje", "100"))
 
-
         # Las comentadas son señas dinámicas
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
 
     def pintarVerde(self):
         style = '''QPushButton{\n
@@ -762,7 +765,7 @@ class IG_Numeros(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        correctas = progreso.senasCorrectasCategoria(1,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
+        correctas = progreso.senasCorrectasCategoria(self.id_usuario,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
         print(correctas)
         if "1" in correctas:
             self.boton_1.setStyleSheet(style)

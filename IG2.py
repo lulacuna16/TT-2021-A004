@@ -163,6 +163,7 @@ class Ui_IG2_MenuUsuario(object):
         IG2_MenuUsuario.hide()
         self.IIG4=QtWidgets.QWidget()
         ui = G4.Ui_IG4_Aprendizaje()
+        ui.setIDUsuario(self.id_usuario)
         ui.setupUi(self.IIG4)
         self.IIG4.show()
 

@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG5 as IGSena
+from Clases.Progreso import Progreso
 import os
 
 
@@ -391,6 +392,8 @@ class IG_Colores(object):
         self.label_76.setScaledContents(True)
         self.label_76.setObjectName("label_76")
 
+        self.pintarVerde()
+
         self.boton_Amarillo.clicked.connect(lambda: self.buttonClicked(self.boton_Amarillo))
         self.boton_Azul.clicked.connect(lambda: self.buttonClicked(self.boton_Azul))
         self.boton_Blanco.clicked.connect(lambda: self.buttonClicked(self.boton_Blanco))
@@ -406,6 +409,7 @@ class IG_Colores(object):
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
+        Sena.setIDUsuario(self.id_usuario)
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
         ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/colores/")
@@ -417,6 +421,7 @@ class IG_Colores(object):
         Sena.setup(self.IIG5)
         self.IIG5.show()
         #print(boton.text())
+
     def retranslateUiColores(self,IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
@@ -431,3 +436,59 @@ class IG_Colores(object):
         self.boton_Negro.setText(_translate("IG4_Aprendizaje", "Negro"))
         self.boton_Verde.setText(_translate("IG4_Aprendizaje", "Verde"))
         self.boton_Rosa.setText(_translate("IG4_Aprendizaje", "Rosa"))
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
+
+    def pintarVerde(self):
+        style = '''QPushButton{\n
+                color: rgb(255, 255, 255);\n
+                    background-color: rgb(19,207,73);\n
+                    font: 12pt \"Segoe Print\";\n
+                    border-radius: 11px;\n
+                    border:none;\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:hover{\n
+                    background-color: rgb(43,247,101);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-bottom: 3px solid rgb(18,151,56);\n
+                }\n
+                QPushButton:pressed{\n
+                    background-color: rgb(48,182,86);\n
+                    border-left: 1px solid rgb(18,151,56);\n
+                    border-right: 1px solid rgb(18,151,56);\n
+                    border-top: 3px solid rgb(18,151,56);\n
+                    border-bottom: none;\n
+                }
+                '''
+        pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+        progreso = Progreso()
+        progreso.setBD(pathBD)
+        correctas = progreso.senasCorrectasCategoria(self.id_usuario,5) #TRAE LAS SEÑAS (colores) YA REALIZADAS POR EL USUARIO (BD)
+        print(correctas)
+        if "amarillo" in correctas:
+            self.boton_Amarillo.setStyleSheet(style)
+        if "azul" in correctas:
+            self.boton_Azul.setStyleSheet(style)
+        if "blanco" in correctas:
+            self.boton_Blanco.setStyleSheet(style)
+        if "cafe" in correctas:
+            self.boton_Cafe.setStyleSheet(style)
+        if "gris" in correctas:
+            self.boton_Gris.setStyleSheet(style)
+        if "morado" in correctas:
+            self.boton_Morado.setStyleSheet(style)
+        if "naranja" in correctas:
+            self.boton_Naranja.setStyleSheet(style)
+        if "negro" in correctas:
+            self.boton_Negro.setStyleSheet(style)
+        if "rojo" in correctas:
+            self.boton_Rojo.setStyleSheet(style)
+        if "rosa" in correctas:
+            self.boton_Rosa.setStyleSheet(style)
+        if "verde" in correctas:
+            self.boton_Verde.setStyleSheet(style)

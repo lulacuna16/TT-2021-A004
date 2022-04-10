@@ -620,9 +620,11 @@ class IG_Cuerpo(object):
         self.boton_Pelo.clicked.connect(lambda: self.buttonClicked(self.boton_Pelo))
         self.boton_Pulgar.clicked.connect(lambda: self.buttonClicked(self.boton_Pulgar))
         self.boton_Una.clicked.connect(lambda: self.buttonClicked(self.boton_Una))
+
     def buttonClicked(self, boton):
         self.IIG5=QtWidgets.QWidget()
         Sena = IGSena.Ui_IG5_Sena()
+        Sena.setIDUsuario(self.id_usuario)
         Sena.setupUi(self.IIG5)
         Sena.setNombre(boton.text())
         ruta = ((os.path.dirname(os.path.abspath(__file__))).replace("\\","/") + "/videos/cuerpo/")
@@ -634,6 +636,7 @@ class IG_Cuerpo(object):
         Sena.setup(self.IIG5)
         self.IIG5.show()
         #print(boton.text())
+
     def retranslateUiCuerpo(self,IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Form"))
@@ -656,6 +659,9 @@ class IG_Cuerpo(object):
         self.boton_Pelo.setText(_translate("IG4_Aprendizaje", "Pelo"))
 
         # Las comentadas son señas dinámicas
+
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
 
     def pintarVerde(self):
         style = '''QPushButton{\n
@@ -685,7 +691,7 @@ class IG_Cuerpo(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        correctas = progreso.senasCorrectasCategoria(1,3) #TRAE LAS SEÑAS (cuerpo) YA REALIZADAS POR EL USUARIO (BD)
+        correctas = progreso.senasCorrectasCategoria(self.id_usuario,3) #TRAE LAS SEÑAS (cuerpo) YA REALIZADAS POR EL USUARIO (BD)
         print(correctas)
         if "boca" in correctas:
             self.boton_Boca.setStyleSheet(style)

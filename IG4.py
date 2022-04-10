@@ -89,6 +89,7 @@ class Ui_IG4_Aprendizaje(object):
         self.widgetAbecedario.setGeometry(QtCore.QRect(10, 60, 831, 311))
         self.widgetAbecedario.setObjectName("widgetAbecedario")
         ventanaAbecedario = abecedario.IG_Abecedario()
+        ventanaAbecedario.setIDUsuario(self.id_usuario)
         ventanaAbecedario.iniciar_Abecedario(self.widgetAbecedario)
         ventanaAbecedario.retranslateUiAbecedario(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabAbecedario, "")
@@ -99,6 +100,7 @@ class Ui_IG4_Aprendizaje(object):
         self.widgetNumeros.setGeometry(QtCore.QRect(0, 60, 841, 311))
         self.widgetNumeros.setObjectName("widgetNumeros")
         ventanaNumeros = numeros.IG_Numeros()
+        ventanaNumeros.setIDUsuario(self.id_usuario)
         ventanaNumeros.iniciar_Numeros(self.widgetNumeros)
         ventanaNumeros.retranslateUi(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabNumeros, "")
@@ -109,6 +111,7 @@ class Ui_IG4_Aprendizaje(object):
         self.widgetCuerpo.setGeometry(QtCore.QRect(40, 60, 741, 311))
         self.widgetCuerpo.setObjectName("widgetCuerpo")
         ventanaCuerpo = cuerpo.IG_Cuerpo()
+        ventanaCuerpo.setIDUsuario(self.id_usuario)
         ventanaCuerpo.iniciar_Cuerpo(self.widgetCuerpo)
         ventanaCuerpo.retranslateUiCuerpo(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabCuerpo, "")
@@ -119,6 +122,7 @@ class Ui_IG4_Aprendizaje(object):
         self.widgetDias.setGeometry(QtCore.QRect(10, 100, 761, 241))
         self.widgetDias.setObjectName("widgetDias")
         ventanaDias = dias.IG_Dias()
+        ventanaDias.setIDUsuario(self.id_usuario)
         ventanaDias.iniciar_Dias(self.widgetDias)
         ventanaDias.retranslateUiDias(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabDias, "")
@@ -129,6 +133,7 @@ class Ui_IG4_Aprendizaje(object):
         self.widgetColores.setGeometry(QtCore.QRect(40, 60, 784, 311))
         self.widgetColores.setObjectName("widgetColores")
         ventanaColores = colores.IG_Colores()
+        ventanaColores.setIDUsuario(self.id_usuario)
         ventanaColores.iniciar_Colores(self.widgetColores)
         ventanaColores.retranslateUiColores(IG4_Aprendizaje)
         self.Tabs.addTab(self.tabColores, "")
@@ -185,15 +190,15 @@ class Ui_IG4_Aprendizaje(object):
         pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
         progreso = Progreso()
         progreso.setBD(pathBD)
-        porcentaje = progreso.progresoCategoria(1,1)
+        porcentaje = progreso.progresoCategoria(self.id_usuario,1)
         self.progressBar_abecedario.setValue(porcentaje)
-        porcentaje = progreso.progresoCategoria(1,2)
+        porcentaje = progreso.progresoCategoria(self.id_usuario,2)
         self.progressBar_numeros.setValue(porcentaje)
-        porcentaje = progreso.progresoCategoria(1,3)
+        porcentaje = progreso.progresoCategoria(self.id_usuario,3)
         self.progressBar_cuerpo.setValue(porcentaje)
-        porcentaje = progreso.progresoCategoria(1,4)
+        porcentaje = progreso.progresoCategoria(self.id_usuario,4)
         self.progressBar_dias.setValue(porcentaje)
-        porcentaje = progreso.progresoCategoria(1,5)
+        porcentaje = progreso.progresoCategoria(self.id_usuario,5)
         self.progressBar_colores.setValue(porcentaje)
 
         self.verticalLayout.addWidget(self.Tabs)
@@ -202,29 +207,28 @@ class Ui_IG4_Aprendizaje(object):
         self.retranslateUi(IG4_Aprendizaje)
         self.Tabs.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(IG4_Aprendizaje)
+
     def abrirIG2(self,IG4_Aprendizaje):
         IG4_Aprendizaje.hide()
         self.IIG2=QtWidgets.QWidget()
         ui=G2.Ui_IG2_MenuUsuario()
+        ui.setIDUsuario(self.id_usuario)
         ui.setupUi(self.IIG2)
         self.IIG2.show()
+
     def Eventos(self,IG4_Aprendizaje):
         self.botonRegresar.clicked.connect(lambda:self.abrirIG2(IG4_Aprendizaje))
 
-    def nombreUsuario(self,id):
-        usuario = Usuario()
-        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
-        usuario.setBD(path)
-        usuario.obtenerUsuarioBDId(id)
-        return usuario.nombre
+    def setIDUsuario(self,id_usuario):
+        self.id_usuario = id_usuario
 
     def retranslateUi(self, IG4_Aprendizaje):
         _translate = QtCore.QCoreApplication.translate
         IG4_Aprendizaje.setWindowTitle(_translate("IG4_Aprendizaje", "Menú de aprendizaje"))
         self.botonRegresar.setText(_translate("IG4_Aprendizaje", "Regresar"))
         self.label_37.setText(_translate("IG4_Aprendizaje", "Bienvenido al menú de Aprendizaje\n"
-"Presiona sobre una categoría para ver \n"
-"las señas disponibles"))
+                                                            "Presiona sobre una categoría para ver \n"
+                                                            "las señas disponibles"))
         self.Tabs.setTabText(self.Tabs.indexOf(self.tabInicio), _translate("IG4_Aprendizaje", "Inicio"))
         self.Tabs.setTabText(self.Tabs.indexOf(self.tabAbecedario), _translate("IG4_Aprendizaje", "Abecedario"))
         self.Tabs.setTabText(self.Tabs.indexOf(self.tabNumeros), _translate("IG4_Aprendizaje", "Números"))

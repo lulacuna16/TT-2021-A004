@@ -300,7 +300,7 @@ class Ui_IG5_Sena(object):
 
 						progreso = Progreso()
 						progreso.setBD(pathBD)
-						progreso.id_usuario = 1
+						progreso.id_usuario = self.id_usuario
 						progreso.id_sena = sena.id_sena
 						progreso.insertarProgreso()
 
@@ -374,6 +374,9 @@ class Ui_IG5_Sena(object):
 		self.botonPausar.clicked.connect(self.contenedor.pause)
 		self.botonVerificar.clicked.connect(lambda:self.crearTimer())
 		self.botonSalir.clicked.connect(lambda: self.cerrar(Form))
+
+	def setIDUsuario(self,id_usuario):
+		self.id_usuario = id_usuario
 
 if __name__ == "__main__":
 	import sys

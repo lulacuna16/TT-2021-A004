@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 import IG2 as G2
 import IG1 as G1
 from Clases.Usuario import Usuario
@@ -162,14 +163,60 @@ class Ui_IG3_ModificacionPerfil(object):
         return usuario.nombre
 
     def eliminarPerfil(self, id_usuario,IG3_ModificacionPerfil):
-        path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
-        usuario = Usuario()
-        usuario.setBD(path)
-        usuario.restablecerUsuario(id_usuario)
-        progreso = Progreso()
-        progreso.setBD(path)
-        progreso.eliminarProgreso(id_usuario)
-        self.abrirIG1(IG3_ModificacionPerfil)
+        style = '''
+            QMessageBox{
+                font: 13pt \"Segoe Print\";
+                background-color: rgb(255, 175, 247);
+                color: rgb(0, 0, 0);
+            }
+            QPushButton{
+                color: rgb(255, 255, 255);
+                background-color: rgb(46, 165, 255);
+                font: 12pt \"Segoe Print\";
+                border-radius: 11px;
+                border:none;
+                border-left: 1px solid rgb(44, 131, 212);
+                border-right: 1px solid rgb(44, 131, 212);
+                border-bottom: 3px solid rgb(44, 131, 212);
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            QPushButton:hover{
+                background-color: rgb(14, 235, 255);
+                border-left: 1px solid rgb(44, 131, 212);
+                border-right: 1px solid rgb(44, 131, 212);
+                border-bottom: 3px solid rgb(44, 131, 212);
+            }
+            QPushButton:pressed{
+                background-color: rgb(40, 170, 221);
+                border-left: 1px solid rgb(44, 131, 212);
+                border-right: 1px solid rgb(44, 131, 212);
+                border-top: 3px solid rgb(44, 131, 212);
+                border-bottomr: none;
+            }
+
+        '''
+        msgBox = QMessageBox()
+        msgBox.setWindowTitle("Confirmación")
+        msgBox.setText("Esta acción borrara su progreso actual.")
+        msgBox.setInformativeText("¿Desea continuar?")
+        yes_button = msgBox.addButton('Sí', QMessageBox.YesRole)
+        msgBox.setStandardButtons(QMessageBox.No)
+        msgBox.setDefaultButton(QMessageBox.No)
+        msgBox.setStyleSheet(style)
+        ret = msgBox.exec()
+        if ret == 0:
+            # print("Sí")
+            path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+            usuario = Usuario()
+            usuario.setBD(path)
+            usuario.restablecerUsuario(id_usuario)
+            progreso = Progreso()
+            progreso.setBD(path)
+            progreso.eliminarProgreso(id_usuario)
+            self.abrirIG1(IG3_ModificacionPerfil)
+        # if ret == QMessageBox.No:
+        #     print("No")
 
     def setIDUsuario(self,id_usuario):
         self.id_usuario = id_usuario

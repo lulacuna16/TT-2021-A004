@@ -13,15 +13,18 @@ import os
 
 #redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
 # global redConv
-global nombreSena
-global contador
+global nombreSena #Variable que permite utilizar el nombre de la seña para distintos propósitos
+global contador #Variable para mostrar el contador en pantalla antes de comenzar la validación
 contador = 3
-global leyendo
+global leyendo #Variable que indica que se está llevando a cabo la validación de la seña
 leyendo = False
-global valido
+global valido #Variable que nos permite contar las veces que la seña estática se ha realizado correctamente
 valido = 0
+global tiempoLectura #Variable que controla el tiempo que transcurre mientras se lee una seña.
+tiempoLectura = 0
+tiempoLimite=45
 
-redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2s.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5')]
+redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5')]
 modelos = {
 		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
 		1: ["A", "B", "C", "D", "E", "G", "I", "M", "R", "S"],
@@ -187,6 +190,25 @@ class Ui_IG5_Sena(object):
 		self.labelVerificando.setAlignment(QtCore.Qt.AlignCenter)
 		self.labelVerificando.setObjectName("labelVerificando")
 
+		self.labelInvalido = QtWidgets.QLabel(IG5_Sena)
+		self.labelInvalido.setGeometry(QtCore.QRect(410, 320, 431, 291))
+		self.labelInvalido.setStyleSheet("background-color: rgb(255, 0, 0,0.4);\n"
+										 "font: 35pt \"Segoe Print\";\n"
+										 "color: rgb(255, 255, 255);\n"
+										 "QToolTip {\n" 
+											"background-color: black;\n" 
+										 	"color: white;\n" 
+									        "border: black solid 1px;\n"
+										 "}\n"
+										 )
+		self.labelInvalido.setAlignment(QtCore.Qt.AlignCenter)
+		self.labelInvalido.setWordWrap(True)
+		self.labelInvalido.setObjectName("labelInvalido")
+		self.labelInvalido.setToolTip("Cuando una seña no se valida correctamente, puede ser por la poca o demasiada "
+									  "ilumación del ambiente que no le permite a la cámara capturar su gesto adecuadamente. "
+									  "Otras de las razones puede ser la distancia que hay entre la cámara y usted, cambie "
+									  "dichos parámetros e intente de nuevo.")
+
 		self.lblCamara.raise_()
 		self.lblSenaCorrecta.close()
 		self.widgetVideoTutorial.raise_()
@@ -200,6 +222,8 @@ class Ui_IG5_Sena(object):
 		self.labelConteo.close()
 		self.labelVerificando.raise_()
 		self.labelVerificando.close()
+		self.labelInvalido.raise_()
+		self.labelInvalido.close()
 
 		self.retranslateUi(IG5_Sena)
 		QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
@@ -216,6 +240,10 @@ class Ui_IG5_Sena(object):
 		self.lblSenaCorrecta.setText(_translate("IG5_Sena", "Seña correcta "))
 		self.labelConteo.setText(_translate("IG5_Sena", "3"))
 		self.labelVerificando.setText(_translate("IG5_Sena", "Verificando..."))
+		self.labelInvalido.setText(_translate("IG5_Sena", "No se pudo validar la seña, intente de nuevo."))
+		self.labelInvalido.setToolTip(_translate("IG5_Sena",
+		"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n""<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n""background-color: rgb(255, 175, 247);\n""p, li { white-space: pre-wrap; }\n"
+		"</style></head><body style=\" font-family:\'Segoe Print\'; font-size:35pt; font-weight:400; font-style:normal;\">\n""<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Cuando una seña no se valida correctamente, puede ser por la poca o demasiada ilumación del ambiente que no le permite a la cámara capturar su gesto adecuadamente. Otras de las razones puede ser la distancia que hay entre la cámara y usted, cambie dichos parámetros e intente de nuevo.</span></p></body></html>"))
 
 		# create a timer
 		self.timer = QtCore.QTimer()
@@ -262,7 +290,7 @@ class Ui_IG5_Sena(object):
 
 	# view camera
 	def mostrarCamara(self):
-		global leyendo, valido
+		global leyendo, valido, tiempoLectura
 		try:
 			# read image in BGR format
 			ret, image = self.cap.read()
@@ -286,29 +314,38 @@ class Ui_IG5_Sena(object):
 				image = Image.open(path[0])
 				img_p.append(np.array(image.resize((300, 300))))
 				img_prueba = np.array(img_p)
-				if self.validacion(img_prueba):
-					valido += 1
-					if valido == 4:
-						self.lblSenaCorrecta.show()
-						self.botonVerificar.show()
-						self.labelVerificando.close()
-						self.terminar()
-						#os.remove('./Prueba.jpg')
+				tiempoLectura += 1
+				if tiempoLectura < tiempoLimite:
+					if self.validacion(img_prueba):
+						valido += 1
+						if valido == 4:
+							self.lblSenaCorrecta.show()
+							self.botonVerificar.show()
+							self.labelVerificando.close()
+							self.terminar()
+							#os.remove('./Prueba.jpg')
 
-						pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
-						sena = Senas()
-						sena.setBD(pathBD)
-						sena.nombre_sena = str(nombreSena).lower()
-						sena.obtenerIdSenaBD()
+							pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+							sena = Senas()
+							sena.setBD(pathBD)
+							sena.nombre_sena = str(nombreSena).lower()
+							sena.obtenerIdSenaBD()
 
-						progreso = Progreso()
-						progreso.setBD(pathBD)
-						progreso.id_usuario = self.id_usuario
-						progreso.id_sena = sena.id_sena
-						progreso.insertarProgreso()
+							progreso = Progreso()
+							progreso.setBD(pathBD)
+							progreso.id_usuario = self.id_usuario
+							progreso.id_sena = sena.id_sena
+							progreso.insertarProgreso()
 
+					else:
+						valido = 0
 				else:
-					valido = 0
+					self.labelInvalido.show()
+					print("No se pudo validar")
+					self.botonVerificar.show()
+					self.labelVerificando.close()
+					self.terminar()
+					tiempoLectura=0
 
 		except Exception as error:
 			print("No se detectó la cámara")
@@ -359,6 +396,7 @@ class Ui_IG5_Sena(object):
 	def iniciar_conteo(self):
 		global contador, leyendo
 		self.lblSenaCorrecta.close()
+		self.labelInvalido.close()
 		self.labelConteo.show()
 		self.labelConteo.setText(str(contador))
 		contador = contador-1

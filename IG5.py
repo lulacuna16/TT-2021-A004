@@ -16,21 +16,30 @@ import os
 global nombreSena #Variable que permite utilizar el nombre de la seña para distintos propósitos
 global contador #Variable para mostrar el contador en pantalla antes de comenzar la validación
 contador = 3
-global leyendo #Variable que indica que se está llevando a cabo la validación de la seña
-leyendo = False
+global leyendoEstatica #Variable que indica que se está llevando a cabo la validación de la seña estatica
+leyendoEstatica = False
+global leyendoCiclo #Variable que indica que se está llevando a cabo la validación de la seña ciclica
+leyendoCiclo = False
+global leyendoDinamica #Variable que indica que se está llevando a cabo la validación de la seña dinámica cambiante
+leyendoDinamica= False
 global valido #Variable que nos permite contar las veces que la seña estática se ha realizado correctamente
 valido = 0
 global tiempoLectura #Variable que controla el tiempo que transcurre mientras se lee una seña.
 tiempoLectura = 0
 tiempoLimite=45
 
-redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5')]
+redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5'),tf.keras.models.load_model('./modelos/modeloDias.h5')]
 modelos = {
 		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
 		1: ["A", "B", "C", "D", "E", "G", "I", "M", "R", "S"],
 		2: ["F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y"],
-		3: ["Cuello", "Diente", "Espalda", "Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"]
+		3: ["Cuello", "Diente", "Espalda", "Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"],
+		4: ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"]
 	}
+Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "R", "S"
+			"F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y","Cuello", "Diente", "Espalda",
+			"Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"]
+Ciclo = ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"]
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
 		IG5_Sena.setObjectName("IG5_Sena")
@@ -119,7 +128,7 @@ class Ui_IG5_Sena(object):
 	"}")
 		self.botonVerificar.setObjectName("botonVerificar")
 		self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
-		self.labelTutorial.setGeometry(QtCore.QRect(80, 10, 309, 31))
+		self.labelTutorial.setGeometry(QtCore.QRect(240, 10, 381, 31))
 		self.labelTutorial.setStyleSheet("font: 16pt \"Segoe Print\";")
 		self.labelTutorial.setObjectName("labelTutorial")
 		self.lblCamara = QtWidgets.QLabel(IG5_Sena)
@@ -290,7 +299,7 @@ class Ui_IG5_Sena(object):
 
 	# view camera
 	def mostrarCamara(self):
-		global leyendo, valido, tiempoLectura
+		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido, tiempoLectura
 		try:
 			# read image in BGR format
 			ret, image = self.cap.read()
@@ -307,51 +316,17 @@ class Ui_IG5_Sena(object):
 			# show image in img_label
 			self.lblCamara.setPixmap(QtGui.QPixmap.fromImage(qImg))
 			path = list(glob.glob('./*.jpg'))
-			if leyendo:
-				self.labelVerificando.show()
-				self.botonVerificar.close()
-				img_p = []
-				image = Image.open(path[0])
-				img_p.append(np.array(image.resize((300, 300))))
-				img_prueba = np.array(img_p)
-				tiempoLectura += 1
-				if tiempoLectura < tiempoLimite:
-					if self.validacion(img_prueba):
-						valido += 1
-						if valido == 4:
-							self.lblSenaCorrecta.show()
-							self.botonVerificar.show()
-							self.labelVerificando.close()
-							self.terminar()
-							#os.remove('./Prueba.jpg')
+			if leyendoEstatica:
+				self.validacionEstatica(path)
+			if leyendoCiclo:
+				self.validacionCiclo(path)
 
-							pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
-							sena = Senas()
-							sena.setBD(pathBD)
-							sena.nombre_sena = str(nombreSena).lower()
-							sena.obtenerIdSenaBD()
-
-							progreso = Progreso()
-							progreso.setBD(pathBD)
-							progreso.id_usuario = self.id_usuario
-							progreso.id_sena = sena.id_sena
-							progreso.insertarProgreso()
-
-					else:
-						valido = 0
-				else:
-					self.labelInvalido.show()
-					print("No se pudo validar")
-					self.botonVerificar.show()
-					self.labelVerificando.close()
-					self.terminar()
-					tiempoLectura=0
 
 		except Exception as error:
 			print("No se detectó la cámara")
 			print(error)
 
-	def validacion(self,imagen):
+	def comprobacion(self, imagen, ):
 		global nombreSena
 		# global redConv
 		m = 0
@@ -359,7 +334,6 @@ class Ui_IG5_Sena(object):
 			if nombreSena in senas:
 				redConv = redConvs[modelo]
 				m = modelo
-		global leyendo
 		predicciones = redConv.predict(imagen)
 		predicciones_etq = np.argmax(predicciones,axis=1)
 		for i in predicciones_etq:
@@ -372,15 +346,101 @@ class Ui_IG5_Sena(object):
 				print("Incorrecta")
 				return False
 
+	def validacionEstatica(self,path):
+		global valido, tiempoLectura
+		self.labelVerificando.show()
+		self.botonVerificar.close()
+		img_p = []
+		image = Image.open(path[0])
+		img_p.append(np.array(image.resize((300, 300))))
+		img_prueba = np.array(img_p)
+		tiempoLectura += 1
+		if tiempoLectura < tiempoLimite:
+			if self.comprobacion(img_prueba):
+				valido += 1
+				if valido == 4:
+					self.lblSenaCorrecta.show()
+					self.botonVerificar.show()
+					self.labelVerificando.close()
+					self.terminar()
+					#os.remove('./Prueba.jpg')
+
+					pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+					sena = Senas()
+					sena.setBD(pathBD)
+					sena.nombre_sena = str(nombreSena).lower()
+					sena.obtenerIdSenaBD()
+
+					progreso = Progreso()
+					progreso.setBD(pathBD)
+					progreso.id_usuario = self.id_usuario
+					progreso.id_sena = sena.id_sena
+					progreso.insertarProgreso()
+
+			else:
+				valido = 0
+		else:
+			self.labelInvalido.show()
+			print("No se pudo validar")
+			self.botonVerificar.show()
+			self.labelVerificando.close()
+			self.terminar()
+			tiempoLectura = 0
+
+	def validacionCiclo(self,path):
+		global valido, tiempoLectura
+		self.labelVerificando.show()
+		self.botonVerificar.close()
+		img_p = []
+		image = Image.open(path[0])
+		img_p.append(np.array(image.resize((300, 300))))
+		img_prueba = np.array(img_p)
+		tiempoLectura += 1
+		if tiempoLectura < tiempoLimite:
+			if self.comprobacion(img_prueba):
+				valido += 1
+				if valido == 6:
+					self.lblSenaCorrecta.show()
+					self.botonVerificar.show()
+					self.labelVerificando.close()
+					self.terminar()
+					# os.remove('./Prueba.jpg')
+
+					pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/Clases/senas.db"
+					sena = Senas()
+					sena.setBD(pathBD)
+					sena.nombre_sena = str(nombreSena).lower()
+					sena.obtenerIdSenaBD()
+
+					progreso = Progreso()
+					progreso.setBD(pathBD)
+					progreso.id_usuario = self.id_usuario
+					progreso.id_sena = sena.id_sena
+					progreso.insertarProgreso()
+
+			else:
+				valido = 0
+		else:
+			self.labelInvalido.show()
+			print("No se pudo validar")
+			self.botonVerificar.show()
+			self.labelVerificando.close()
+			self.terminar()
+			tiempoLectura = 0
+
+
 	def terminar(self):
-		global leyendo, valido
+		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido
 		if self.timer.isActive():
 			# stop timer
 			self.timer.stop()
 			# release video capture
 			self.cap.release()
-		leyendo = False
+		leyendoEstatica = False
+		leyendoCiclo = False
+		leyendoDinamica = False
 		valido = 0
+
 	def cerrar(self,Form):
 		self.terminar()
 		Form.close()
@@ -394,7 +454,7 @@ class Ui_IG5_Sena(object):
 			self.timerConteo.start(1000)
 
 	def iniciar_conteo(self):
-		global contador, leyendo
+		global contador, leyendoEstatica, leyendoCiclo, leyendoDinamica, nombreSena
 		self.lblSenaCorrecta.close()
 		self.labelInvalido.close()
 		self.labelConteo.show()
@@ -407,7 +467,12 @@ class Ui_IG5_Sena(object):
 				self.timerConteo.stop()
 				self.labelConteo.close()
 				contador=3
-				leyendo = True
+				if nombreSena in Estatica:
+					leyendoEstatica = True
+				if nombreSena in Ciclo:
+					leyendoCiclo = True
+				"""if nombreSena in Dinamica:
+					leyendoDinamica = True"""
 				if not self.timer.isActive():
 					self.crearCamara()
 

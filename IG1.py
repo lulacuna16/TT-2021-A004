@@ -228,3 +228,4 @@ if __name__ == "__main__":
     ui.setupUi(IG1_Bienvenida)
     IG1_Bienvenida.show()
     app.exec_()
+

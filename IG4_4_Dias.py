@@ -288,7 +288,7 @@ class IG_Dias(object):
         self.boton_Jueves.setText(_translate("IG4_Aprendizaje", "Jueves"))
         self.boton_Viernes.setText(_translate("IG4_Aprendizaje", "Viernes"))
         self.boton_Domingo.setText(_translate("IG4_Aprendizaje", "Domingo"))
-        self.boton_Sabado.setText(_translate("IG4_Aprendizaje", "Sabado"))
+        self.boton_Sabado.setText(_translate("IG4_Aprendizaje", "Sábado"))
 
     def setIDUsuario(self,id_usuario):
         self.id_usuario = id_usuario

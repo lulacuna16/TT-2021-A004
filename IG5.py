@@ -26,8 +26,10 @@ global valido #Variable que nos permite contar las veces que la seña estática 
 valido = 0
 global tiempoLectura #Variable que controla el tiempo que transcurre mientras se lee una seña.
 tiempoLectura = 0
-tiempoLimite=45
-
+#Cada 3 unidades representan 1 segundo
+tiempoLimiteE=60
+tiempoLimiteD=90
+global m, redConv #Variable para precargar el modelo para evaluar la seña
 redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5'),tf.keras.models.load_model('./modelos/modeloDias.h5')]
 modelos = {
 		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
@@ -239,7 +241,7 @@ class Ui_IG5_Sena(object):
 
 	def retranslateUi(self, IG5_Sena):
 		_translate = QtCore.QCoreApplication.translate
-		IG5_Sena.setWindowTitle(_translate("IG5_Sena", "Form"))
+		IG5_Sena.setWindowTitle(_translate("IG5_Sena", "Aprendiendo seña"))
 		IG5_Sena.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
 		self.botonReproducir.setText(_translate("IG5_Sena", "Reproducir"))
 		self.botonPausar.setText(_translate("IG5_Sena", "Pausar"))
@@ -258,9 +260,13 @@ class Ui_IG5_Sena(object):
 		self.timer = QtCore.QTimer()
 
 	def setNombre(self,nombre):
-		global nombreSena
+		global nombreSena, m, redConv
 		nombreSena=nombre
 		self.labelTutorial.setText("¿Cómo hacer la seña \""+ nombre +"\" ?")
+		for modelo, senas in modelos.items():
+			if nombreSena in senas:
+				redConv = redConvs[modelo]
+				m = modelo
 
 	def setup(self, Form):
 		self.video = self.crearVideo(Form)
@@ -320,20 +326,17 @@ class Ui_IG5_Sena(object):
 				self.validacionEstatica(path)
 			if leyendoCiclo:
 				self.validacionCiclo(path)
+			if leyendoDinamica:
+				self.validacionCiclo(path)
 
 
 		except Exception as error:
 			print("No se detectó la cámara")
 			print(error)
 
-	def comprobacion(self, imagen, ):
-		global nombreSena
-		# global redConv
-		m = 0
-		for modelo, senas in modelos.items():
-			if nombreSena in senas:
-				redConv = redConvs[modelo]
-				m = modelo
+	def comprobacion(self, imagen):
+		global nombreSena, m, redConv
+
 		predicciones = redConv.predict(imagen)
 		predicciones_etq = np.argmax(predicciones,axis=1)
 		for i in predicciones_etq:
@@ -355,7 +358,7 @@ class Ui_IG5_Sena(object):
 		img_p.append(np.array(image.resize((300, 300))))
 		img_prueba = np.array(img_p)
 		tiempoLectura += 1
-		if tiempoLectura < tiempoLimite:
+		if tiempoLectura < tiempoLimiteE:
 			if self.comprobacion(img_prueba):
 				valido += 1
 				if valido == 4:
@@ -363,6 +366,7 @@ class Ui_IG5_Sena(object):
 					self.botonVerificar.show()
 					self.labelVerificando.close()
 					self.terminar()
+					tiempoLectura=0
 					#os.remove('./Prueba.jpg')
 
 					pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
@@ -384,7 +388,7 @@ class Ui_IG5_Sena(object):
 			print("No se pudo validar")
 			self.botonVerificar.show()
 			self.labelVerificando.close()
-			self.terminar()
+			self.reiniciar()
 			tiempoLectura = 0
 
 	def validacionCiclo(self,path):
@@ -396,7 +400,7 @@ class Ui_IG5_Sena(object):
 		img_p.append(np.array(image.resize((300, 300))))
 		img_prueba = np.array(img_p)
 		tiempoLectura += 1
-		if tiempoLectura < tiempoLimite:
+		if tiempoLectura < tiempoLimiteD:
 			if self.comprobacion(img_prueba):
 				valido += 1
 				if valido == 6:
@@ -404,6 +408,7 @@ class Ui_IG5_Sena(object):
 					self.botonVerificar.show()
 					self.labelVerificando.close()
 					self.terminar()
+					tiempoLectura = 0
 					# os.remove('./Prueba.jpg')
 
 					pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/Clases/senas.db"
@@ -417,7 +422,6 @@ class Ui_IG5_Sena(object):
 					progreso.id_usuario = self.id_usuario
 					progreso.id_sena = sena.id_sena
 					progreso.insertarProgreso()
-
 			else:
 				valido = 0
 		else:
@@ -425,17 +429,19 @@ class Ui_IG5_Sena(object):
 			print("No se pudo validar")
 			self.botonVerificar.show()
 			self.labelVerificando.close()
-			self.terminar()
+			self.reiniciar()
 			tiempoLectura = 0
 
-
 	def terminar(self):
-		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido
 		if self.timer.isActive():
 			# stop timer
 			self.timer.stop()
 			# release video capture
 			self.cap.release()
+		self.reiniciar()
+
+	def reiniciar(self):
+		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido
 		leyendoEstatica = False
 		leyendoCiclo = False
 		leyendoDinamica = False

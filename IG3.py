@@ -148,7 +148,7 @@ class Ui_IG3_ModificacionPerfil(object):
 
     def retranslateUi(self, IG3_ModificacionPerfil):
         _translate = QtCore.QCoreApplication.translate
-        IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Form"))
+        IG3_ModificacionPerfil.setWindowTitle(_translate("IG3_ModificacionPerfil", "Modificación de perfil"))
         self.labelNombreUsuario.setText(_translate("IG3_ModificacionPerfil", "Nombre de usuario:"))
         self.textNombreUsuario.setText(_translate("IG3_ModificacionPerfil", self.nombreUsuario(self.id_usuario)))
         self.botonGuardar.setText(_translate("IG3_ModificacionPerfil", "Guardar"))

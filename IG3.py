@@ -20,6 +20,8 @@ class Ui_IG3_ModificacionPerfil(object):
     def setupUi(self, IG3_ModificacionPerfil):
         IG3_ModificacionPerfil.setObjectName("IG3_ModificacionPerfil")
         IG3_ModificacionPerfil.resize(503, 300)
+        IG3_ModificacionPerfil.setMaximumSize(QtCore.QSize(503, 300))
+        IG3_ModificacionPerfil.setMinimumSize(QtCore.QSize(503, 300))
         IG3_ModificacionPerfil.setStyleSheet("background-color: rgb(255, 175, 247);\n"
 "")
         self.labelNombreUsuario = QtWidgets.QLabel(IG3_ModificacionPerfil)

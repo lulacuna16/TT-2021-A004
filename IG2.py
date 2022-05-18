@@ -19,6 +19,8 @@ class Ui_IG2_MenuUsuario(object):
     def setupUi(self, IG2_MenuUsuario):
         IG2_MenuUsuario.setObjectName("IG2_MenuUsuario")
         IG2_MenuUsuario.resize(515, 303)
+        IG2_MenuUsuario.setMaximumSize(QtCore.QSize(515, 303))
+        IG2_MenuUsuario.setMinimumSize(QtCore.QSize(515, 303))
         IG2_MenuUsuario.setStyleSheet("QWidget{\n"
                                       "background-color: rgb(255, 175, 247);\n"
                                       "}")

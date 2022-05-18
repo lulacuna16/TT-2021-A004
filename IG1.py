@@ -17,7 +17,10 @@ class Ui_IG1_Bienvenida(object):
     def setupUi(self, IG1_Bienvenida):
         IG1_Bienvenida.setObjectName("IG1_Bienvenida")
         IG1_Bienvenida.resize(669, 416)
+        IG1_Bienvenida.setMaximumSize(QtCore.QSize(669, 416))
+        IG1_Bienvenida.setMinimumSize(QtCore.QSize(669, 416))
         IG1_Bienvenida.setLayoutDirection(QtCore.Qt.LeftToRight)
+        #IG1_Bienvenida.setWindowFlag(QtCore.Qt.WindowMaximizeButtonHint, False)
         IG1_Bienvenida.setStyleSheet("QWidget{\n"
 "background-color: rgb(255, 175, 247);\n"
 "}\n"
@@ -224,6 +227,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     IG1_Bienvenida = QtWidgets.QWidget()
+    #IG1_Bienvenida.setWindowFlag(QtCore.Qt.WindowMaximizeButtonHint, False)
     ui = Ui_IG1_Bienvenida()
     ui.setupUi(IG1_Bienvenida)
     IG1_Bienvenida.show()

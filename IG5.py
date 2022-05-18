@@ -46,6 +46,8 @@ class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
 		IG5_Sena.setObjectName("IG5_Sena")
 		IG5_Sena.resize(865, 693)
+		IG5_Sena.setMaximumSize(QtCore.QSize(865, 693))
+		IG5_Sena.setMinimumSize(QtCore.QSize(865, 693))
 		IG5_Sena.setStyleSheet("    background-color: rgb(255, 149, 250);\n"
 	"")
 		self.widgetVideoTutorial = QtWidgets.QWidget(IG5_Sena)

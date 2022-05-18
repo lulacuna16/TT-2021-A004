@@ -24,6 +24,8 @@ class Ui_IG4_Aprendizaje(object):
     def setupUi(self, IG4_Aprendizaje):
         IG4_Aprendizaje.setObjectName("IG4_Aprendizaje")
         IG4_Aprendizaje.resize(874, 492)
+        IG4_Aprendizaje.setMaximumSize(QtCore.QSize(874, 492))
+        IG4_Aprendizaje.setMinimumSize(QtCore.QSize(874, 492))
         font = QtGui.QFont()
         font.setPointSize(-1)
         IG4_Aprendizaje.setFont(font)

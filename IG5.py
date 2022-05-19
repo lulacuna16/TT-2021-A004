@@ -52,7 +52,7 @@ modelos = {
 		6: ["10", "20", "100"],
 		7: ["40", "50", "60"]
 	}
-Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "R", "S"
+Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "R", "S",
 			"F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y","Cuello", "Diente", "Espalda",
 			"Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"]
 Ciclo = ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"]

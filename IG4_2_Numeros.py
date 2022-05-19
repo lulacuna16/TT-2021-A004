@@ -681,18 +681,17 @@ class IG_Numeros(object):
         self.boton_8.clicked.connect(lambda: self.buttonClicked(self.boton_8))
         self.pintarVerde()
 
-        """self.boton_9.clicked.connect(lambda: self.buttonClicked(self.boton_9))
+        """self.boton_9.clicked.connect(lambda: self.buttonClicked(self.boton_9))"""
         self.boton_10.clicked.connect(lambda: self.buttonClicked(self.boton_10))
         self.boton_20.clicked.connect(lambda: self.buttonClicked(self.boton_20))
-        self.boton_30.clicked.connect(lambda: self.buttonClicked(self.boton_30))
+        """self.boton_30.clicked.connect(lambda: self.buttonClicked(self.boton_30))
         self.boton_40.clicked.connect(lambda: self.buttonClicked(self.boton_40))
         self.boton_50.clicked.connect(lambda: self.buttonClicked(self.boton_50))
         self.boton_60.clicked.connect(lambda: self.buttonClicked(self.boton_60))
         self.boton_70.clicked.connect(lambda: self.buttonClicked(self.boton_70))
         self.boton_80.clicked.connect(lambda: self.buttonClicked(self.boton_80))
-        self.boton_90.clicked.connect(lambda: self.buttonClicked(self.boton_90))
+        self.boton_90.clicked.connect(lambda: self.buttonClicked(self.boton_90))"""
         self.boton_100.clicked.connect(lambda: self.buttonClicked(self.boton_100))
-        """
 
     def buttonClicked(self, boton):
         self.IG4.hide()

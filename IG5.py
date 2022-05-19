@@ -22,6 +22,8 @@ global leyendoCiclo #Variable que indica que se está llevando a cabo la validac
 leyendoCiclo = False
 global leyendoDinamica #Variable que indica que se está llevando a cabo la validación de la seña dinámica cambiante
 leyendoDinamica= False
+global leyendoPatron #Variable que indica que se está llevando a cabo la validación de la seña dinámica cambiante con patrón 
+leyendoPatron= False
 global valido #Variable que nos permite contar las veces que la seña estática se ha realizado correctamente
 valido = 0
 global tiempoLectura #Variable que controla el tiempo que transcurre mientras se lee una seña.
@@ -30,18 +32,40 @@ tiempoLectura = 0
 tiempoLimiteE=60
 tiempoLimiteD=90
 global m, redConv #Variable para precargar el modelo para evaluar la seña
-redConvs = [tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),tf.keras.models.load_model('./modelos/modeloCuerpo.h5'),tf.keras.models.load_model('./modelos/modeloDias.h5')]
+redConvs = [
+	tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),
+	tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),
+	tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),
+	tf.keras.models.load_model('./modelos/modeloCuerpo.h5'),
+	tf.keras.models.load_model('./modelos/modeloDias.h5'),
+	tf.keras.models.load_model('./modelos/modeloNumeros307080.h5'),
+	tf.keras.models.load_model('./modelos/modeloNumeros1020100.h5'),
+	tf.keras.models.load_model('./modelos/modeloNumeros456.h5')
+]
 modelos = {
 		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
 		1: ["A", "B", "C", "D", "E", "G", "I", "M", "R", "S"],
 		2: ["F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y"],
 		3: ["Cuello", "Diente", "Espalda", "Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"],
-		4: ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"]
+		4: ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"],
+		5: ["30", "70", "80"],
+		6: ["10", "20", "100"],
+		7: ["40", "50", "60"]
 	}
 Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "R", "S"
 			"F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y","Cuello", "Diente", "Espalda",
 			"Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"]
 Ciclo = ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"]
+Patron = ["10", "20", "100", "30", "70", "80", "40", "50", "60"]
+
+patrones = {
+		"10": 	[2,3],
+		"20":	[4,5,4,5,4,5],
+		"100": 	[0,1],
+		"30": 	[0,1,0,1,0,1],
+		"70": 	[2,4,2,4,2,4],
+		"80": 	[3,4,3,4,3,4]
+	}
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
 		IG5_Sena.setObjectName("IG5_Sena")
@@ -307,7 +331,7 @@ class Ui_IG5_Sena(object):
 
 	# view camera
 	def mostrarCamara(self):
-		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido, tiempoLectura
+		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido, tiempoLectura, leyendoPatron
 		try:
 			# read image in BGR format
 			ret, image = self.cap.read()
@@ -330,6 +354,8 @@ class Ui_IG5_Sena(object):
 				self.validacionCiclo(path)
 			if leyendoDinamica:
 				self.validacionCiclo(path)
+			if leyendoPatron:
+				self.validacionPatron(path)
 
 
 		except Exception as error:
@@ -349,6 +375,18 @@ class Ui_IG5_Sena(object):
 				return True
 			else:
 				print("Incorrecta")
+				return False
+
+	def comprobacionPatron(self, imagen , valorEsperado):
+		global nombreSena, m, redConv
+		predicciones = redConv.predict(imagen)
+		predicciones_etq = np.argmax(predicciones,axis=1)
+		for i in predicciones_etq:
+			# prediccion = modelos[m][i]
+			print(i,valorEsperado)
+			if i == valorEsperado:
+				return True
+			else:
 				return False
 
 	def validacionEstatica(self,path):
@@ -434,6 +472,48 @@ class Ui_IG5_Sena(object):
 			self.reiniciar()
 			tiempoLectura = 0
 
+	def validacionPatron(self,path):
+		global valido, tiempoLectura
+		self.labelVerificando.show()
+		self.botonVerificar.close()
+		img_p = []
+		image = Image.open(path[0])
+		img_p.append(np.array(image.resize((300, 300))))
+		img_prueba = np.array(img_p)
+		tiempoLectura += 1
+		print(valido)
+		# if tiempoLectura < tiempoLimiteD:
+		if self.comprobacionPatron(img_prueba,patrones[nombreSena][valido]):
+			valido += 1
+			print('vi un lindo gatito')
+
+			if valido == len(patrones[nombreSena]):
+				self.lblSenaCorrecta.show()
+				self.botonVerificar.show()
+				self.labelVerificando.close()
+				self.terminar()
+				tiempoLectura = 0
+				# os.remove('./Prueba.jpg')
+
+				pathBD = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/Clases/senas.db"
+				sena = Senas()
+				sena.setBD(pathBD)
+				sena.nombre_sena = str(nombreSena).lower()
+				sena.obtenerIdSenaBD()
+
+				progreso = Progreso()
+				progreso.setBD(pathBD)
+				progreso.id_usuario = self.id_usuario
+				progreso.id_sena = sena.id_sena
+				progreso.insertarProgreso()
+		# else:
+		# 	self.labelInvalido.show()
+		# 	print("No se pudo validar")
+		# 	self.botonVerificar.show()
+		# 	self.labelVerificando.close()
+		# 	self.reiniciar()
+		# 	tiempoLectura = 0
+
 	def terminar(self):
 		if self.timer.isActive():
 			# stop timer
@@ -443,10 +523,11 @@ class Ui_IG5_Sena(object):
 		self.reiniciar()
 
 	def reiniciar(self):
-		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido
+		global leyendoEstatica, leyendoCiclo, leyendoDinamica, valido, leyendoPatron
 		leyendoEstatica = False
 		leyendoCiclo = False
 		leyendoDinamica = False
+		leyendoPatron = False
 		valido = 0
 
 	def cerrar(self,Form):
@@ -462,7 +543,7 @@ class Ui_IG5_Sena(object):
 			self.timerConteo.start(1000)
 
 	def iniciar_conteo(self):
-		global contador, leyendoEstatica, leyendoCiclo, leyendoDinamica, nombreSena
+		global contador, leyendoEstatica, leyendoCiclo, leyendoDinamica, nombreSena, leyendoPatron
 		self.lblSenaCorrecta.close()
 		self.labelInvalido.close()
 		self.labelConteo.show()
@@ -479,6 +560,8 @@ class Ui_IG5_Sena(object):
 					leyendoEstatica = True
 				if nombreSena in Ciclo:
 					leyendoCiclo = True
+				if nombreSena in Patron:
+					leyendoPatron = True
 				"""if nombreSena in Dinamica:
 					leyendoDinamica = True"""
 				if not self.timer.isActive():

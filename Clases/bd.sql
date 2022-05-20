@@ -20,6 +20,7 @@ CREATE TABLE categorias(
 CREATE TABLE senas(
     id_sena INTEGER PRIMARY KEY ASC,
     nombre_sena VARCHAR(30),
+    tipo_sena INTEGER NOT NULL,
     id_categoria INTEGER NOT NULL,
     FOREIGN KEY (id_categoria)
         REFERENCES categorias (id_categoria)
@@ -43,27 +44,27 @@ CREATE TABLE progresos(
 INSERT INTO categorias (nombre_cat) VALUES ("letras"),("numeros"),("cuerpo"),("dias"),("colores");
 
 -- Señas - letras
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("a",1),("b",1),("c",1),("d",1),("e",1),("f",1),
-    ("g",1),("h",1),("i",1),("j",1),("k",1),("l",1),("m",1),("n",1),("ñ",1),("o",1),("p",1),
-    ("q",1),("r",1),("s",1),("t",1),("u",1),("v",1),("w",1),("x",1),("y",1),("z",1);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("a",0,1),("b",0,1),("c",0,1),("d",0,1),("e",0,1),("f",0,1),
+            ("g",0,1),("h",0,1),("i",0,1),("j",1,1),("k",1,1),("l",0,1),("m",0,1),("n",0,1),("ñ",1,1),("o",0,1),("p",0,1),
+            ("q",1,1),("r",0,1),("s",0,1),("t",0,1),("u",0,1),("v",0,1),("w",0,1),("x",1,1),("y",0,1),("z",1,1);
 
 -- Señas - numeros
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("1",2),("2",2),("3",2),("4",2),("5",2),("6",2),
-    ("7",2),("8",2),("9",2),("10",2),("20",2),("30",2),("40",2),("50",2),("60",2),("70",2),("80",2),
-    ("90",2),("100",2);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("1",0,2),("2",0,2),("3",0,2),("4",0,2),("5",0,2),("6",0,2),
+        ("7",0,2),("8",0,2),("9",1,2),("10",1,2),("20",1,2),("30",1,2),("40",1,2),("50",1,2),("60",1,2),("70",1,2),("80",1,2),
+        ("90",1,2),("100",1,2);
 
 -- Señas - cuerpo
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("cuello",3),("espalda",3),("diente",3),("hombro",3),
-    ("lengua",3),("mano",3),("muñeca",3),("nariz",3),("ojo",3),("pelo",3),("pulgar",3),("uña",3),("boca",3),
-    ("oreja",3),("brazo",3),("codo",3),("estomago",3);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("boca",0,3),("brazo",1,3),("codo",1,3),("cuello",0,3),("diente",0,3),
+    ("espalda",0,3),("estomago",0,3),("hombro",0,3),("lengua",0,3),("mano",0,3),("muñeca",0,3),("nariz",0,3),("ojo",0,3),("oreja",1,3),
+    ("pelo",0,3),("pulgar",0,3),("uña",0,3);
 
 -- Señas - dias
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("lunes",4),("martes",4),("miercoles",4),("jueves",4),
-    ("viernes",4),("sabado",4),("domingo",4);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("lunes",1,4),("martes",1,4),("miercoles",1,4),("jueves",1,4),
+    ("viernes",1,4),("sabado",1,4),("domingo",1,4);
 
 -- Señas - colores
-INSERT INTO senas (nombre_sena,id_categoria) VALUES ("amarillo",5),("azul",5),("rojo",5),("verde",5),
-    ("rosa",5),("cafe",5),("morado",5),("naranja",5),("gris",5),("blanco",5),("negro",5);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("amarillo",1,5),("azul",1,5),("rojo",1,5),("verde",1,5),
+    ("rosa",1,5),("cafe",1,5),("morado",1,5),("naranja",1,5),("gris",1,5),("blanco",1,5),("negro",1,5);
 
 --  Usuarios
 INSERT INTO usuarios (nombre,progreso_pnt,senas_completadas) VALUES ("Usuario 1", 0, 0),

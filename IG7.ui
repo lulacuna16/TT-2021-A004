@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IG7_test</class>
+ <widget class="QWidget" name="IG7_test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1134</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(250, 215, 160);
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="boton_siguiente">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>560</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Siguiente</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion2_t1">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>90</y>
+     <width>301</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion1_t1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>90</y>
+     <width>301</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion0_t1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>301</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_instruccion">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>1071</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Segoe Print&quot;;
+background-color: rgb(250, 215, 160);
+color: rgb(156, 100, 12);
+qproperty-alignment: AlignCenter;</string>
+   </property>
+   <property name="text">
+    <string>Instrucción</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widgetVideoTutorial" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>301</width>
+     <height>441</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion1_t2">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>220</y>
+     <width>219</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Opción 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion2_t2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>350</y>
+     <width>219</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Opción 3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_opcion0_t2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>220</y>
+     <width>219</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Opción 1</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

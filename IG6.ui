@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IG6_SeccionPractica</class>
+ <widget class="QWidget" name="IG6_SeccionPractica">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(250, 215, 160);
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label_instruccion">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>0</y>
+     <width>681</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 26pt &quot;Segoe Print&quot;;
+background-color: rgb(250, 215, 160);
+color: rgb(156, 100, 12);
+qproperty-alignment: AlignCenter;</string>
+   </property>
+   <property name="text">
+    <string>Selecciona categoría</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>541</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="boton_abecedario">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Abecedario</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="boton_numeros">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Números</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="boton_cuerpo">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cuerpo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="boton_dias">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Días</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="boton_colores">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Colores</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="boton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>430</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Regresar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

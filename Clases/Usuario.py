@@ -72,7 +72,7 @@ class Usuario:
         try:
             bd = DataBase(self.__path)
             bd.crearConexion()
-            bd.borrar(query)
+            bd.actualizar(query)
             bd.cerrarConexion()
         except Exception as e:
             print(e)

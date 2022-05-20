@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>874</width>
-    <height>492</height>
+    <height>488</height>
    </rect>
   </property>
   <property name="font">
@@ -20,7 +20,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-color: rgb(255, 149, 250);
+background-color: rgb(250, 215, 160);
 	
 	font-size: 15px;
 }</string>
@@ -67,19 +67,19 @@
           <property name="styleSheet">
            <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -103,12 +103,13 @@ QPushButton:pressed{
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">font: 24pt &quot;Segoe Print&quot;;</string>
+           <string notr="true">font: 24pt &quot;Segoe Print&quot;;
+color: rgb(156, 100, 12);</string>
           </property>
           <property name="text">
-           <string>Bienvenido al menú de Aprendizaje
+           <string>Bienvenido al menú de Aprendizaje.
 Presiona sobre una categoría para ver 
-las señas disponibles</string>
+las señas disponibles.</string>
           </property>
           <property name="margin">
            <number>50</number>
@@ -153,19 +154,19 @@ las señas disponibles</string>
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -204,19 +205,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -252,19 +253,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -300,19 +301,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -348,19 +349,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -396,19 +397,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -444,19 +445,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -492,19 +493,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -512,8 +513,7 @@ QPushButton:pressed{
 	border-right: 1px solid rgb(44, 131, 212);
 	border-top: 3px solid rgb(44, 131, 212);
 	border-bottomr: none;
-}
-</string>
+}</string>
         </property>
         <property name="text">
          <string>H</string>
@@ -541,19 +541,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -589,19 +589,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -637,19 +637,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -685,19 +685,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -733,19 +733,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -781,19 +781,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -829,19 +829,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -877,19 +877,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -925,19 +925,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -973,19 +973,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1021,19 +1021,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1069,19 +1069,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1117,19 +1117,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1165,19 +1165,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1213,19 +1213,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1261,19 +1261,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1309,19 +1309,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1357,19 +1357,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -1405,19 +1405,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2012,19 +2012,19 @@ QProgressBar::chunk{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2060,19 +2060,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2108,19 +2108,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2156,19 +2156,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2204,19 +2204,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2252,19 +2252,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2300,19 +2300,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2348,19 +2348,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2396,19 +2396,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2444,19 +2444,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2492,19 +2492,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2540,19 +2540,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2588,19 +2588,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2636,19 +2636,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2684,19 +2684,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2732,19 +2732,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2780,19 +2780,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2828,19 +2828,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -2876,19 +2876,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3331,19 +3331,19 @@ QProgressBar::chunk{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3379,19 +3379,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3427,19 +3427,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3475,19 +3475,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3523,19 +3523,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3543,7 +3543,8 @@ QPushButton:pressed{
 	border-right: 1px solid rgb(44, 131, 212);
 	border-top: 3px solid rgb(44, 131, 212);
 	border-bottomr: none;
-}</string>
+}
+</string>
         </property>
         <property name="text">
          <string>Cuello</string>
@@ -3571,19 +3572,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3619,19 +3620,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3667,19 +3668,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3715,19 +3716,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3763,19 +3764,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3811,19 +3812,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3859,19 +3860,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3907,19 +3908,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -3955,19 +3956,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4003,19 +4004,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4051,19 +4052,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4099,19 +4100,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4516,19 +4517,19 @@ QProgressBar::chunk{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4564,19 +4565,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4612,19 +4613,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4660,19 +4661,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4708,19 +4709,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4756,19 +4757,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -4804,19 +4805,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5031,19 +5032,19 @@ QProgressBar::chunk{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5079,19 +5080,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5127,19 +5128,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5175,19 +5176,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5223,19 +5224,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5271,19 +5272,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5319,19 +5320,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5367,19 +5368,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5415,19 +5416,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5463,19 +5464,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -5511,19 +5512,19 @@ QPushButton:pressed{
         <property name="styleSheet">
          <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);

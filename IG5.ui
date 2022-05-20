@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">	background-color: rgb(255, 149, 250);
+   <string notr="true">background-color: rgb(250, 215, 160);
 </string>
   </property>
   <widget class="QWidget" name="widgetVideoTutorial" native="true">
@@ -39,19 +39,19 @@
    <property name="styleSheet">
     <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -77,19 +77,19 @@ QPushButton:pressed{
    <property name="styleSheet">
     <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -115,19 +115,19 @@ QPushButton:pressed{
    <property name="styleSheet">
     <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -151,7 +151,8 @@ QPushButton:pressed{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;Segoe Print&quot;;</string>
+    <string notr="true">font: 16pt &quot;Segoe Print&quot;;
+color: rgb(156, 100, 12);</string>
    </property>
    <property name="text">
     <string>¿Cómo hacer la seña?</string>
@@ -191,19 +192,19 @@ QPushButton:pressed{
    <property name="styleSheet">
     <string notr="true">QPushButton{
 color: rgb(255, 255, 255);
-	background-color: rgb(46, 165, 255);
+	background-color: rgb(156, 100, 12);
 	font: 12pt &quot;Segoe Print&quot;;
 	border-radius: 11px;
 	border:none;
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
 }
 QPushButton:hover{
-	background-color: rgb(14, 235, 255);
-	border-left: 1px solid rgb(44, 131, 212);
-	border-right: 1px solid rgb(44, 131, 212);
-	border-bottom: 3px solid rgb(44, 131, 212);
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
 }
 QPushButton:pressed{
 	background-color: rgb(40, 170, 221);
@@ -259,6 +260,7 @@ border-bottom: 3px solid  rgb(0, 85, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(170, 170, 255,0.4);
+color: rgb(156, 100, 12);
 font: 140pt &quot;MS Shell Dlg 2&quot;;
 
 </string>

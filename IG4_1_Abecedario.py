@@ -29,11 +29,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_A.setObjectName("boton_A")
         self.imagen_B = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -58,11 +58,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_B.setObjectName("boton_B")
         self.imagen_C = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -87,11 +87,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_C.setObjectName("boton_C")
         self.imagen_D = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -116,11 +116,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_D.setObjectName("boton_D")
         self.imagen_E = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -145,11 +145,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_E.setObjectName("boton_E")
         self.imagen_F = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -174,11 +174,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_F.setObjectName("boton_F")
         self.imagen_G = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -203,11 +203,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_G.setObjectName("boton_G")
         self.imagen_H = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -232,11 +232,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_H.setObjectName("boton_H")
         self.imagen_I = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -261,11 +261,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_I.setObjectName("boton_I")
         self.imagen_J = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -290,11 +290,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_J.setObjectName("boton_J")
         self.imagen_K = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -319,11 +319,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_K.setObjectName("boton_K")
         self.imagen_L = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -348,11 +348,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_L.setObjectName("boton_L")
         self.imagen_M = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -377,11 +377,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_M.setObjectName("boton_M")
         self.imagen_N = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -406,11 +406,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_N.setObjectName("boton_N")
         self.imagen_NQ = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -435,11 +435,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_NQ.setObjectName("boton_NQ")
         self.imagen_O = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -464,11 +464,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_O.setObjectName("boton_O")
         self.imagen_P = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -493,11 +493,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_P.setObjectName("boton_P")
         self.imagen_Q = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -522,11 +522,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Q.setObjectName("boton_Q")
         self.imagen_R = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -551,11 +551,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_R.setObjectName("boton_R")
         self.imagen_S = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -580,11 +580,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_S.setObjectName("boton_S")
         self.imagen_T = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -609,11 +609,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_T.setObjectName("boton_T")
         self.imagen_U = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -638,11 +638,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_U.setObjectName("boton_U")
         self.imagen_V = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -667,11 +667,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_V.setObjectName("boton_V")
         self.imagen_W = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -696,11 +696,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_W.setObjectName("boton_W")
         self.imagen_X = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -725,11 +725,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_X.setObjectName("boton_X")
         self.imagen_Y = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -754,11 +754,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Y.setObjectName("boton_Y")
         self.imagen_Z = QtWidgets.QGraphicsView(widgetAbecedario)
@@ -783,11 +783,11 @@ class IG_Abecedario(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Z.setObjectName("boton_Z")
         self.label = QtWidgets.QLabel(widgetAbecedario)

@@ -28,11 +28,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Amarillo.setObjectName("boton_Amarillo")
         self.imagen_Azul = QtWidgets.QGraphicsView(widgetColores)
@@ -57,11 +57,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Azul.setObjectName("boton_Azul")
         self.imagen_Blanco = QtWidgets.QGraphicsView(widgetColores)
@@ -86,11 +86,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Blanco.setObjectName("boton_Blanco")
         self.imagen_Cafe = QtWidgets.QGraphicsView(widgetColores)
@@ -115,11 +115,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Cafe.setObjectName("boton_Cafe")
         self.imagen_Rojo = QtWidgets.QGraphicsView(widgetColores)
@@ -144,11 +144,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Rojo.setObjectName("boton_Rojo")
         self.imagen_Gris = QtWidgets.QGraphicsView(widgetColores)
@@ -173,11 +173,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Gris.setObjectName("boton_Gris")
         self.imagen_Morado = QtWidgets.QGraphicsView(widgetColores)
@@ -202,11 +202,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Morado.setObjectName("boton_Morado")
         self.imagen_Naranja = QtWidgets.QGraphicsView(widgetColores)
@@ -231,13 +231,12 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
-"}"  "    border-bottom: none;\n"
-                                         "}")
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
+"}")
         self.boton_Naranja.setObjectName("boton_Naranja")
         self.imagen_Negro = QtWidgets.QGraphicsView(widgetColores)
         self.imagen_Negro.setGeometry(QtCore.QRect(490, 120, 51, 41))
@@ -261,12 +260,12 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
-"}}")
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
+"}")
         self.boton_Negro.setObjectName("boton_Negro")
         self.imagen_Verde = QtWidgets.QGraphicsView(widgetColores)
         self.imagen_Verde.setGeometry(QtCore.QRect(450, 220, 51, 41))
@@ -290,11 +289,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Verde.setObjectName("boton_Verde")
         self.imagen_Rosa = QtWidgets.QGraphicsView(widgetColores)
@@ -319,11 +318,11 @@ class IG_Colores(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_Rosa.setObjectName("boton_Rosa")
         self.label_66 = QtWidgets.QLabel(widgetColores)

@@ -56,11 +56,11 @@ class Ui_IG3_ModificacionPerfil(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.botonGuardar.setObjectName("botonGuardar")
         self.botonCancelar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
@@ -82,11 +82,11 @@ class Ui_IG3_ModificacionPerfil(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.botonCancelar.setObjectName("botonCancelar")
         self.botonEliminar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
@@ -108,11 +108,11 @@ class Ui_IG3_ModificacionPerfil(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.botonEliminar.setObjectName("botonEliminar")
 
@@ -196,7 +196,7 @@ class Ui_IG3_ModificacionPerfil(object):
                 border-left: 1px solid rgb(44, 131, 212);
                 border-right: 1px solid rgb(44, 131, 212);
                 border-top: 3px solid rgb(44, 131, 212);
-                border-bottomr: none;
+                border-bottom: none;
             }
 
         '''

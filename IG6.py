@@ -53,10 +53,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_abecedario.setObjectName("boton_abecedario")
 		self.gridLayout.addWidget(self.boton_abecedario, 0, 0, 1, 1)
@@ -78,10 +79,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_numeros.setObjectName("boton_numeros")
 		self.gridLayout.addWidget(self.boton_numeros, 0, 2, 1, 1)
@@ -103,10 +105,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_cuerpo.setObjectName("boton_cuerpo")
 		self.gridLayout.addWidget(self.boton_cuerpo, 1, 1, 1, 1)
@@ -128,10 +131,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_dias.setObjectName("boton_dias")
 		self.gridLayout.addWidget(self.boton_dias, 2, 0, 1, 1)
@@ -153,10 +157,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_colores.setObjectName("boton_colores")
 		self.gridLayout.addWidget(self.boton_colores, 2, 2, 1, 1)
@@ -179,10 +184,11 @@ class Ui_IG6_SeccionPractica(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
 		self.boton_regresar.setObjectName("boton_regresar")
 

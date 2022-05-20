@@ -28,11 +28,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_1.setObjectName("boton_1")
         self.imagen_2 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -57,11 +57,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_2.setObjectName("boton_2")
         self.imagen_3 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -86,11 +86,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_3.setObjectName("boton_3")
         self.imagen_4 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -115,11 +115,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_4.setObjectName("boton_4")
         self.imagen_5 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -144,11 +144,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_5.setObjectName("boton_5")
         self.imagen_6 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -173,11 +173,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_6.setObjectName("boton_6")
         self.imagen_7 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -202,11 +202,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_7.setObjectName("boton_7")
         self.imagen_8 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -231,11 +231,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_8.setObjectName("boton_8")
         self.imagen_9 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -260,11 +260,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_9.setObjectName("boton_9")
         self.imagen_10 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -289,11 +289,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_10.setObjectName("boton_10")
         self.imagen_20 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -318,11 +318,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_20.setObjectName("boton_20")
         self.imagen_30 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -347,11 +347,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_30.setObjectName("boton_30")
         self.imagen_40 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -376,11 +376,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_40.setObjectName("boton_40")
         self.imagen_50 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -405,11 +405,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_50.setObjectName("boton_50")
         self.imagen_60 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -434,11 +434,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_60.setObjectName("boton_60")
         self.imagen_70 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -463,11 +463,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_70.setObjectName("boton_70")
         self.imagen_80 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -492,11 +492,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_80.setObjectName("boton_80")
         self.imagen_90 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -521,11 +521,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_90.setObjectName("boton_90")
         self.imagen_100 = QtWidgets.QGraphicsView(widgetNumeros)
@@ -550,11 +550,11 @@ class IG_Numeros(object):
 "    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
-"    background-color: rgb(40, 170, 221);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottomr: none;\n"
+"    background-color: rgb(120, 66, 18);\n"
+"    border-left: 1px solid  rgb(120, 66, 18);\n"
+"    border-right: 1px solid  rgb(120, 66, 18);\n"
+"    border-top: 3px solid  rgb(120, 66, 18);\n"
+"    border-bottom: none;\n"
 "}")
         self.boton_100.setObjectName("boton_100")
         self.label_28 = QtWidgets.QLabel(widgetNumeros)

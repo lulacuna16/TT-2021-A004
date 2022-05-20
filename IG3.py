@@ -22,36 +22,38 @@ class Ui_IG3_ModificacionPerfil(object):
         IG3_ModificacionPerfil.resize(503, 300)
         IG3_ModificacionPerfil.setMaximumSize(QtCore.QSize(503, 300))
         IG3_ModificacionPerfil.setMinimumSize(QtCore.QSize(503, 300))
-        IG3_ModificacionPerfil.setStyleSheet("background-color: rgb(255, 175, 247);\n"
+        IG3_ModificacionPerfil.setStyleSheet("background-color: rgb(250, 215, 160);\n"
 "")
         self.labelNombreUsuario = QtWidgets.QLabel(IG3_ModificacionPerfil)
         self.labelNombreUsuario.setGeometry(QtCore.QRect(150, 30, 201, 21))
-        self.labelNombreUsuario.setStyleSheet("font: 14pt \"Segoe Print\";")
+        self.labelNombreUsuario.setStyleSheet("font: 14pt \"Segoe Print\";\n"
+"color: rgb(156, 100, 12);")
         self.labelNombreUsuario.setObjectName("labelNombreUsuario")
         self.textNombreUsuario = QtWidgets.QLineEdit(IG3_ModificacionPerfil)
         self.textNombreUsuario.setGeometry(QtCore.QRect(150, 60, 191, 20))
         self.textNombreUsuario.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
-"font: 11pt \"Segoe Print\";")
+"font: 11pt \"Segoe Print\";\n"
+"")
         self.textNombreUsuario.setInputMask("")
         self.textNombreUsuario.setObjectName("textNombreUsuario")
         self.botonGuardar = QtWidgets.QPushButton(IG3_ModificacionPerfil)
         self.botonGuardar.setGeometry(QtCore.QRect(130, 140, 231, 31))
         self.botonGuardar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
@@ -65,19 +67,19 @@ class Ui_IG3_ModificacionPerfil(object):
         self.botonCancelar.setGeometry(QtCore.QRect(130, 240, 231, 31))
         self.botonCancelar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
@@ -91,19 +93,19 @@ class Ui_IG3_ModificacionPerfil(object):
         self.botonEliminar.setGeometry(QtCore.QRect(130, 190, 231, 31))
         self.botonEliminar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"

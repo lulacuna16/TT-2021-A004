@@ -22,7 +22,7 @@ class Ui_IG1_Bienvenida(object):
         IG1_Bienvenida.setLayoutDirection(QtCore.Qt.LeftToRight)
         #IG1_Bienvenida.setWindowFlag(QtCore.Qt.WindowMaximizeButtonHint, False)
         IG1_Bienvenida.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 175, 247);\n"
+"background-color: rgb(250, 215, 160);\n"
 "}\n"
 "")
         self.gridLayout_2 = QtWidgets.QGridLayout(IG1_Bienvenida)
@@ -43,8 +43,8 @@ class Ui_IG1_Bienvenida(object):
         font.setWeight(50)
         self.LabelBienvenida.setFont(font)
         self.LabelBienvenida.setStyleSheet("font: 28pt \"Segoe Print\";\n"
-"background-color: rgb(255, 175, 247);\n"
-"color: rgb(0, 0, 0);")
+"background-color: rgb(250, 215, 160);\n"
+"color: rgb(156, 100, 12);")
         self.LabelBienvenida.setTextFormat(QtCore.Qt.RichText)
         self.LabelBienvenida.setScaledContents(True)
         self.LabelBienvenida.setAlignment(QtCore.Qt.AlignCenter)
@@ -59,7 +59,7 @@ class Ui_IG1_Bienvenida(object):
         font.setBold(False)
         font.setWeight(50)
         self.frame_2.setFont(font)
-        self.frame_2.setStyleSheet("background-color: rgb(255, 175, 247);\n"
+        self.frame_2.setStyleSheet("background-color: rgb(250, 215, 160);\n"
 "")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -80,19 +80,19 @@ class Ui_IG1_Bienvenida(object):
         self.botonUsuario1.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.botonUsuario1.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
@@ -106,19 +106,19 @@ class Ui_IG1_Bienvenida(object):
         self.botonUsuario3 = QtWidgets.QPushButton(self.frame_2)
         self.botonUsuario3.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
@@ -132,19 +132,19 @@ class Ui_IG1_Bienvenida(object):
         self.botonUsuario2 = QtWidgets.QPushButton(self.frame_2)
         self.botonUsuario2.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
@@ -158,19 +158,19 @@ class Ui_IG1_Bienvenida(object):
         self.botonUsuario4 = QtWidgets.QPushButton(self.frame_2)
         self.botonUsuario4.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"

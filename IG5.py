@@ -72,92 +72,93 @@ class Ui_IG5_Sena(object):
 		IG5_Sena.resize(865, 693)
 		IG5_Sena.setMaximumSize(QtCore.QSize(865, 693))
 		IG5_Sena.setMinimumSize(QtCore.QSize(865, 693))
-		IG5_Sena.setStyleSheet("    background-color: rgb(255, 149, 250);\n"
-	"")
+		IG5_Sena.setStyleSheet("background-color: rgb(250, 215, 160);\n"
+"")
 		self.widgetVideoTutorial = QtWidgets.QWidget(IG5_Sena)
 		self.widgetVideoTutorial.setGeometry(QtCore.QRect(30, 50, 352, 640))
 		self.widgetVideoTutorial.setObjectName("widgetVideoTutorial")
 		self.botonReproducir = QtWidgets.QPushButton(IG5_Sena)
 		self.botonReproducir.setGeometry(QtCore.QRect(470, 150, 101, 23))
 		self.botonReproducir.setStyleSheet("QPushButton{\n"
-	"color: rgb(255, 255, 255);\n"
-	"    background-color: rgb(46, 165, 255);\n"
-	"    font: 12pt \"Segoe Print\";\n"
-	"    border-radius: 11px;\n"
-	"    border:none;\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:hover{\n"
-	"    background-color: rgb(14, 235, 255);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:pressed{\n"
-	"    background-color: rgb(40, 170, 221);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottom: none;\n"
-	"}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
 		self.botonReproducir.setObjectName("botonReproducir")
 		self.botonPausar = QtWidgets.QPushButton(IG5_Sena)
 		self.botonPausar.setGeometry(QtCore.QRect(680, 150, 101, 23))
 		self.botonPausar.setStyleSheet("QPushButton{\n"
-	"color: rgb(255, 255, 255);\n"
-	"    background-color: rgb(46, 165, 255);\n"
-	"    font: 12pt \"Segoe Print\";\n"
-	"    border-radius: 11px;\n"
-	"    border:none;\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:hover{\n"
-	"    background-color: rgb(14, 235, 255);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:pressed{\n"
-	"    background-color: rgb(40, 170, 221);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottom: none;\n"
-	"}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
 		self.botonPausar.setObjectName("botonPausar")
 		self.botonVerificar = QtWidgets.QPushButton(IG5_Sena)
 		self.botonVerificar.setGeometry(QtCore.QRect(560, 620, 121, 23))
 		self.botonVerificar.setStyleSheet("QPushButton{\n"
-	"color: rgb(255, 255, 255);\n"
-	"    background-color: rgb(46, 165, 255);\n"
-	"    font: 12pt \"Segoe Print\";\n"
-	"    border-radius: 11px;\n"
-	"    border:none;\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:hover{\n"
-	"    background-color: rgb(14, 235, 255);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:pressed{\n"
-	"    background-color: rgb(40, 170, 221);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottom: none;\n"
-	"}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
 		self.botonVerificar.setObjectName("botonVerificar")
 		self.labelTutorial = QtWidgets.QLabel(IG5_Sena)
 		self.labelTutorial.setGeometry(QtCore.QRect(240, 10, 381, 31))
-		self.labelTutorial.setStyleSheet("font: 16pt \"Segoe Print\";")
+		self.labelTutorial.setStyleSheet("font: 16pt \"Segoe Print\";\n"
+"color: rgb(156, 100, 12);")
 		self.labelTutorial.setObjectName("labelTutorial")
 		self.lblCamara = QtWidgets.QLabel(IG5_Sena)
 		self.lblCamara.setGeometry(QtCore.QRect(410, 320, 431, 291))
@@ -166,28 +167,28 @@ class Ui_IG5_Sena(object):
 		self.botonSalir = QtWidgets.QPushButton(IG5_Sena)
 		self.botonSalir.setGeometry(QtCore.QRect(740, 10, 121, 23))
 		self.botonSalir.setStyleSheet("QPushButton{\n"
-	"color: rgb(255, 255, 255);\n"
-	"    background-color: rgb(46, 165, 255);\n"
-	"    font: 12pt \"Segoe Print\";\n"
-	"    border-radius: 11px;\n"
-	"    border:none;\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:hover{\n"
-	"    background-color: rgb(14, 235, 255);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-bottom: 3px solid rgb(44, 131, 212);\n"
-	"}\n"
-	"QPushButton:pressed{\n"
-	"    background-color: rgb(40, 170, 221);\n"
-	"    border-left: 1px solid rgb(44, 131, 212);\n"
-	"    border-right: 1px solid rgb(44, 131, 212);\n"
-	"    border-top: 3px solid rgb(44, 131, 212);\n"
-	"    border-bottom: none;\n"
-	"}")
+"color: rgb(255, 255, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
+"    font: 12pt \"Segoe Print\";\n"
+"    border-radius: 11px;\n"
+"    border:none;\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(40, 170, 221);\n"
+"    border-left: 1px solid rgb(44, 131, 212);\n"
+"    border-right: 1px solid rgb(44, 131, 212);\n"
+"    border-top: 3px solid rgb(44, 131, 212);\n"
+"    border-bottomr: none;\n"
+"}")
 		self.botonSalir.setObjectName("botonSalir")
 		self.lblSenaCorrecta = QtWidgets.QLabel(IG5_Sena)
 		self.lblSenaCorrecta.setGeometry(QtCore.QRect(520, 250, 161, 61))
@@ -196,20 +197,21 @@ class Ui_IG5_Sena(object):
 		font.setPointSize(14)
 		self.lblSenaCorrecta.setFont(font)
 		self.lblSenaCorrecta.setStyleSheet("background-color: rgb(0, 170, 0);\n"
-										   "color: rgb(255, 255, 255);\n"
-										   "border-radius: 11px;\n"
-										   "border:none;\n"
-										   "border-left: 1px solid  rgb(0, 85, 0);\n"
-										   "border-right: 1px solid  rgb(0, 85, 0);\n"
-										   "border-bottom: 3px solid  rgb(0, 85, 0);")
+"color: rgb(255, 255, 255);\n"
+"border-radius: 11px;\n"
+"border:none;\n"
+"border-left: 1px solid  rgb(0, 85, 0);\n"
+"border-right: 1px solid  rgb(0, 85, 0);\n"
+"border-bottom: 3px solid  rgb(0, 85, 0);")
 		self.lblSenaCorrecta.setAlignment(QtCore.Qt.AlignCenter)
 		self.lblSenaCorrecta.setObjectName("lblSenaCorrecta")
 		self.labelConteo = QtWidgets.QLabel(IG5_Sena)
 		self.labelConteo.setGeometry(QtCore.QRect(410, 320, 431, 291))
 		self.labelConteo.setStyleSheet("background-color: rgb(170, 170, 255,0.4);\n"
-								 "font: 180pt \"Segoe Print\";\n"
-								 "\n"
-								 "")
+"color: rgb(156, 100, 12);\n"
+"font: 140pt \"MS Shell Dlg 2\";\n"
+"\n"
+"")
 		self.labelConteo.setAlignment(QtCore.Qt.AlignCenter)
 		self.labelConteo.setObjectName("labelConteo")
 		self.labelVerificando = QtWidgets.QLabel(IG5_Sena)

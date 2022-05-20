@@ -30,10 +30,11 @@ class Ui_IG4_Aprendizaje(object):
         font.setPointSize(-1)
         IG4_Aprendizaje.setFont(font)
         IG4_Aprendizaje.setStyleSheet("QWidget{\n"
-"    background-color: rgb(255, 149, 250);\n"
+"background-color: rgb(250, 215, 160);\n"
 "    \n"
 "    font-size: 15px;\n"
-"}")
+"}"
+                                      )
         self.verticalLayout = QtWidgets.QVBoxLayout(IG4_Aprendizaje)
         self.verticalLayout.setObjectName("verticalLayout")
         self.Tabs = QtWidgets.QTabWidget(IG4_Aprendizaje)
@@ -57,31 +58,32 @@ class Ui_IG4_Aprendizaje(object):
         self.botonRegresar.setGeometry(QtCore.QRect(330, 310, 151, 41))
         self.botonRegresar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(46, 165, 255);\n"
+"    background-color: rgb(156, 100, 12);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    border-left: 1px solid rgb(156, 100, 12);\n"
+"    border-right: 1px solid rgb(156, 100, 12);\n"
+"    border-bottom: 3px solid rgb(156, 100, 12);\n"
 "}\n"
 "QPushButton:hover{\n"
-"    background-color: rgb(14, 235, 255);\n"
-"    border-left: 1px solid rgb(44, 131, 212);\n"
-"    border-right: 1px solid rgb(44, 131, 212);\n"
-"    border-bottom: 3px solid rgb(44, 131, 212);\n"
+"    background-color: rgb(248, 196, 113);\n"
+"    border-left: 1px solid rgb(248, 196, 113);\n"
+"    border-right: 1px solid rgb(248, 196, 113);\n"
+"    border-bottom: 3px solid rgb(248, 196, 113);\n"
 "}\n"
 "QPushButton:pressed{\n"
 "    background-color: rgb(40, 170, 221);\n"
 "    border-left: 1px solid rgb(44, 131, 212);\n"
 "    border-right: 1px solid rgb(44, 131, 212);\n"
 "    border-top: 3px solid rgb(44, 131, 212);\n"
-"    border-bottom: none;\n"
+"    border-bottomr: none;\n"
 "}")
         self.botonRegresar.setObjectName("botonRegresar")
         self.label_37 = QtWidgets.QLabel(self.frame_2)
         self.label_37.setGeometry(QtCore.QRect(50, 10, 721, 251))
-        self.label_37.setStyleSheet("font: 24pt \"Segoe Print\";")
+        self.label_37.setStyleSheet("font: 24pt \"Segoe Print\";\n"
+"color: rgb(156, 100, 12);")
         self.label_37.setObjectName("label_37")
         self.gridLayout.addWidget(self.frame_2, 0, 0, 1, 1)
         self.Tabs.addTab(self.tabInicio, "")

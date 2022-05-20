@@ -152,6 +152,8 @@ class Ui_IG7_test(object):
 
 		#----------------#
 
+		self.eventos(IG7_test)
+
 		#setupVideo
 		self.video = self.crearVideo(IG7_test)
 
@@ -173,8 +175,20 @@ class Ui_IG7_test(object):
 
 	def retranslateUi(self, IG7_test):
 		_translate = QtCore.QCoreApplication.translate
-		IG7_test.setWindowTitle(_translate("IG7_test", "Form"))
+		IG7_test.setWindowTitle(_translate("IG7_test", "Cuestionario"))
 		self.boton_siguiente.setText(_translate("IG7_test", "Siguiente"))
+
+	def eventos(self,IG7_Test):
+		self.boton_opcion0_t1.clicked.connect(lambda: self.seleccionarOpcion_t1(0))
+		self.boton_opcion1_t1.clicked.connect(lambda: self.seleccionarOpcion_t1(1))
+		self.boton_opcion2_t1.clicked.connect(lambda: self.seleccionarOpcion_t1(2))
+		self.boton_opcion0_t2.clicked.connect(lambda: self.seleccionarOpcion_t2(0))
+		self.boton_opcion1_t2.clicked.connect(lambda: self.seleccionarOpcion_t2(1))
+		self.boton_opcion2_t2.clicked.connect(lambda: self.seleccionarOpcion_t2(2))
+		self.boton_siguiente.clicked.connect(lambda: self.siguiente(IG7_Test))
+
+	def setIDUsuario(self,id):
+		self.id_usuario = id
 
 	def setCuestionario(self,test):
 		self.cuestionario = test
@@ -237,6 +251,25 @@ class Ui_IG7_test(object):
 			self.widgetVideoTutorial.setVisible(True)
 			self.setupVideo(IG7_Test)
 
+	def siguiente(self,IG7_Test):
+		if self.numPregunta < self.cuestionario.MAXPREGUNTAS:
+			if self.opcionActiva == -1:
+				print("Seleccione una opción primero")
+			else:
+				sena = self.cuestionario.preguntas[self.numPregunta][self.opcionActiva]
+				self.cuestionario.agregarRespuesta(sena)
+				# print(self.cuestionario.respuestas)
+				self.numPregunta += 1
+				if not self.numPregunta == self.cuestionario.MAXPREGUNTAS:
+					self.init()
+					self.ocultarBotones()
+					self.mostrarPregunta(IG7_Test)
+				else:
+					print(self.cuestionario.solucion)
+					print(self.cuestionario.respuestas)
+					print(self.cuestionario.verResultado())
+					self.ventanaResultados(IG7_Test)
+
 	def getPathMultimedia(self):
 		self.pathMult = "videos/"
 		if self.cuestionario.id_categoria == 1:
@@ -263,7 +296,7 @@ class Ui_IG7_test(object):
 		style = '''
 			QPushButton{
 				border-radius: 5px;
-				border: 3px solid  rgb(247, 197, 112);
+				border: 3px solid  rgb(80,45,12);
 			}
 		'''
 		self.init()
@@ -315,6 +348,88 @@ class Ui_IG7_test(object):
 		self.widgetVideoTutorial.setLayout(caja)
 		return videoOutput
 
+	def seleccionarOpcion_t2(self,opcion):
+		style = '''
+			QPushButton{
+				background-color: rgb(130,60,22);
+				color: rgb(255, 255, 255);
+				font: 12pt \"Segoe Print\";
+				border-radius: 11px;
+				border:none;
+				border-left: 1px solid rgb(140,65,23);
+				border-right: 1px solid rgb(140,65,23);
+				border-bottom: 3px solid rgb(140,65,23);
+			}
+		'''
+		self.init()
+		self.opcionActiva = opcion
+		self.botones_opciones_t2[opcion].setStyleSheet(style)
+		# print(self.opcionActiva)
+
+	# Ver resultados
+	def ventanaResultados(self,IG7_Test):
+		style = '''
+			QMessageBox{
+				font: 13pt \"Segoe Print\";
+				background-color: rgb(250, 215, 160);
+				color: rgb(156, 100, 12);
+			}
+			QPushButton{
+				color: rgb(255, 255, 255);
+			    background-color: rgb(156, 100, 12);
+			    font: 12pt \"Segoe Print\";
+			    border-radius: 11px;
+			    border:none;
+			    border-left: 1px solid rgb(156, 100, 12);
+			    border-right: 1px solid rgb(156, 100, 12);
+			    border-bottom: 3px solid rgb(156, 100, 12);
+			}
+			QPushButton:hover{
+			    background-color: rgb(248, 196, 113);
+			    border-left: 1px solid rgb(248, 196, 113);
+			    border-right: 1px solid rgb(248, 196, 113);
+			    border-bottom: 3px solid rgb(248, 196, 113);
+			}
+			QPushButton:pressed{
+			    background-color: rgb(40, 170, 221);
+			    border-left: 1px solid rgb(44, 131, 212);
+			    border-right: 1px solid rgb(44, 131, 212);
+			    border-top: 3px solid rgb(44, 131, 212);
+			}
+		'''
+		msgBox = QMessageBox()
+		msgBox.setWindowTitle("Resultado")
+
+		calif = round((self.cuestionario.verResultado() * 10) / self.cuestionario.MAXPREGUNTAS, 2)
+		if(calif >= 8):
+			titulo = "FELIDADES"
+		elif(calif >= 6):
+			titulo = "BUEN TRABAJO"
+		else:
+			titulo = "SIGUE PRACTICANDO"
+		mensaje = f"Tu resultado es: {self.cuestionario.verResultado()}/{self.cuestionario.MAXPREGUNTAS}\t\n\tCalificación: {calif}"
+		msgBox.setText(titulo)
+		msgBox.setInformativeText(mensaje)
+		button_respuetas = msgBox.addButton('Ver respuestas', QMessageBox.YesRole)
+		button_regresar = msgBox.addButton('Menú de práctica', QMessageBox.NoRole)
+		msgBox.setStyleSheet(style)
+		ret = msgBox.exec()
+		if ret == 0:
+			# self.verRespuestas(IG7_Test)
+			self.abrirIG6(IG7_Test)
+		if ret == 1:
+			self.abrirIG6(IG7_Test)
+
+	def abrirIG6(self,IG7):
+		IG7.hide()
+		self.IG6 = QtWidgets.QWidget()
+		ui = G6.Ui_IG6_SeccionPractica()
+		ui.setupUi(self.IG6)
+		ui.setIDUsuario(self.id_usuario)
+		self.IG6.show()
+
+	# Ver respuestas
+
 if __name__ == "__main__":
 	import sys
 	import os
@@ -325,11 +440,12 @@ if __name__ == "__main__":
 	cuestionario = Practica()
 	path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
 	cuestionario.setBD(path)
-	cuestionario.id_categoria = 5
+	cuestionario.id_categoria = 4
 	cuestionario.crearPreguntas()
 
 	ui.setCuestionario(cuestionario)
 
+	ui.setIDUsuario(1)
 	ui.setupUi(IG7_test)
 	IG7_test.show()
 	sys.exit(app.exec_())

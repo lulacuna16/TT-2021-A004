@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import IG1 as G1
 import IG3 as G3
 import IG4 as G4
+import IG6 as G6
 from Clases.Usuario import Usuario
 import os
 
@@ -147,6 +148,7 @@ class Ui_IG2_MenuUsuario(object):
         self.botonModificarPerfil.clicked.connect(lambda:self.abrirIG3(IG2_MenuUsuario))
         self.botonRegresarInicio.clicked.connect(lambda:self.abrirIG1(IG2_MenuUsuario))
         self.botonAprender.clicked.connect(lambda: self.abrirIG4(IG2_MenuUsuario))
+        self.botonPracticar.clicked.connect(lambda:self.abrirIG6(IG2_MenuUsuario))
 
     def abrirIG3(self,IG2_MenuUsuario):
         IG2_MenuUsuario.hide()
@@ -170,6 +172,14 @@ class Ui_IG2_MenuUsuario(object):
         ui.setIDUsuario(self.id_usuario)
         ui.setupUi(self.IIG4)
         self.IIG4.show()
+
+    def abrirIG6(self,IG2_MenuUsuario):
+        IG2_MenuUsuario.hide()
+        self.IIG6=QtWidgets.QWidget()
+        ui = G6.Ui_IG6_SeccionPractica()
+        ui.setIDUsuario(self.id_usuario)
+        ui.setupUi(self.IIG6)
+        self.IIG6.show()
 
     def retranslateUi(self, IG2_MenuUsuario):
         _translate = QtCore.QCoreApplication.translate

@@ -54,17 +54,17 @@ INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("1",0,2),("2",0,2
         ("90",1,2),("100",1,2);
 
 -- Señas - cuerpo
-INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("boca",0,3),("brazo",1,3),("codo",1,3),("cuello",0,3),("diente",0,3),
-    ("espalda",0,3),("estomago",0,3),("hombro",0,3),("lengua",0,3),("mano",0,3),("muñeca",0,3),("nariz",0,3),("ojo",0,3),("oreja",1,3),
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("boca",1,3),("brazo",1,3),("codo",1,3),("cuello",0,3),("diente",0,3),
+    ("espalda",0,3),("estómago",0,3),("hombro",0,3),("lengua",0,3),("mano",0,3),("muñeca",0,3),("nariz",0,3),("ojo",0,3),("oreja",1,3),
     ("pelo",0,3),("pulgar",0,3),("uña",0,3);
 
 -- Señas - dias
-INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("lunes",1,4),("martes",1,4),("miercoles",1,4),("jueves",1,4),
-    ("viernes",1,4),("sabado",1,4),("domingo",1,4);
+INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("lunes",1,4),("martes",1,4),("miércoles",1,4),("jueves",1,4),
+    ("viernes",1,4),("sábado",1,4),("domingo",1,4);
 
 -- Señas - colores
 INSERT INTO senas (nombre_sena,tipo_sena,id_categoria) VALUES ("amarillo",1,5),("azul",1,5),("rojo",1,5),("verde",1,5),
-    ("rosa",1,5),("cafe",1,5),("morado",1,5),("naranja",1,5),("gris",1,5),("blanco",1,5),("negro",1,5);
+    ("rosa",1,5),("café",1,5),("morado",1,5),("naranja",1,5),("gris",1,5),("blanco",1,5),("negro",1,5);
 
 --  Usuarios
 INSERT INTO usuarios (nombre,progreso_pnt,senas_completadas) VALUES ("Usuario 1", 0, 0),

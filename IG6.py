@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import IG7 as G7
+import IG2 as G2
 from Clases.Practica import Practica
 import os
 
@@ -192,7 +193,7 @@ class Ui_IG6_SeccionPractica(object):
 
 	def retranslateUi(self, IG6_SeccionPractica):
 		_translate = QtCore.QCoreApplication.translate
-		IG6_SeccionPractica.setWindowTitle(_translate("IG6_SeccionPractica", "Form"))
+		IG6_SeccionPractica.setWindowTitle(_translate("IG6_SeccionPractica", "Nenú de práctica"))
 		self.label_instruccion.setText(_translate("IG6_SeccionPractica", "Selecciona categoría"))
 		self.boton_abecedario.setText(_translate("IG6_SeccionPractica", "Abecedario"))
 		self.boton_numeros.setText(_translate("IG6_SeccionPractica", "Números"))
@@ -208,6 +209,9 @@ class Ui_IG6_SeccionPractica(object):
 		self.boton_dias.clicked.connect(lambda: self.abrirIG7(IG6,4))
 		self.boton_colores.clicked.connect(lambda: self.abrirIG7(IG6,5))
 
+	def setIDUsuario(self,id):
+		self.id_usuario = id
+
 	def abrirIG7(self,IG6,categoria):
 		IG6.hide()
 		self.IG7_Test = QtWidgets.QWidget()
@@ -221,8 +225,17 @@ class Ui_IG6_SeccionPractica(object):
 		cuestionario.crearPreguntas()
 
 		ui.setCuestionario(cuestionario)
+		ui.setIDUsuario(self.id_usuario)
 		ui.setupUi(self.IG7_Test)
 		self.IG7_Test.show()
+
+	def abrirIG2(self,IG6):
+		IG6.hide()
+		self.IIG2=QtWidgets.QWidget()
+		ui = G2.Ui_IG2_MenuUsuario
+		ui.setIDUsuario(self.id_usuario)
+		ui.setupUi(self.IIG2)
+		self.IIG2.show()
 
 
 if __name__ == "__main__":
@@ -231,5 +244,6 @@ if __name__ == "__main__":
 	IG6_SeccionPractica = QtWidgets.QWidget()
 	ui = Ui_IG6_SeccionPractica()
 	ui.setupUi(IG6_SeccionPractica)
+	ui.setIDUsuario(1)
 	IG6_SeccionPractica.show()
 	sys.exit(app.exec_())

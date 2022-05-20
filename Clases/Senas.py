@@ -29,6 +29,7 @@ class Senas:
     @nombre_sena.setter
     def nombre_sena(self,nombre):
         self.__nombre_sena = self.removerTildes(nombre)
+        self.__nombre_sena = nombre
     @tipo_sena.setter
     def tipo_sena(self,tipoSena):
         self.__tipo_sena = tipoSena

@@ -603,9 +603,9 @@ class IG_Cuerpo(object):
 
         self.pintarVerde()
 
-        #self.boton_Boca.clicked.connect(lambda: self.buttonClicked(self.boton_Boca))
-        #self.boton_Brazo.clicked.connect(lambda: self.buttonClicked(self.boton_Brazo))
-        #self.boton_Codo.clicked.connect(lambda: self.buttonClicked(self.boton_Codo))
+        self.boton_Boca.clicked.connect(lambda: self.buttonClicked(self.boton_Boca))
+        self.boton_Brazo.clicked.connect(lambda: self.buttonClicked(self.boton_Brazo))
+        self.boton_Codo.clicked.connect(lambda: self.buttonClicked(self.boton_Codo))
         self.boton_Cuello.clicked.connect(lambda: self.buttonClicked(self.boton_Cuello))
         self.boton_Diente.clicked.connect(lambda: self.buttonClicked(self.boton_Diente))
         self.boton_Espalda.clicked.connect(lambda: self.buttonClicked(self.boton_Espalda))
@@ -616,7 +616,7 @@ class IG_Cuerpo(object):
         self.boton_Muneca.clicked.connect(lambda: self.buttonClicked(self.boton_Muneca))
         self.boton_Nariz.clicked.connect(lambda: self.buttonClicked(self.boton_Nariz))
         self.boton_Ojo.clicked.connect(lambda: self.buttonClicked(self.boton_Ojo))
-        #self.boton_Oreja.clicked.connect(lambda: self.buttonClicked(self.boton_Oreja))
+        self.boton_Oreja.clicked.connect(lambda: self.buttonClicked(self.boton_Oreja))
         self.boton_Pelo.clicked.connect(lambda: self.buttonClicked(self.boton_Pelo))
         self.boton_Pulgar.clicked.connect(lambda: self.buttonClicked(self.boton_Pulgar))
         self.boton_Una.clicked.connect(lambda: self.buttonClicked(self.boton_Una))
@@ -658,8 +658,6 @@ class IG_Cuerpo(object):
         self.boton_Nariz.setText(_translate("IG4_Aprendizaje", "Nariz"))
         self.boton_Pulgar.setText(_translate("IG4_Aprendizaje", "Pulgar"))
         self.boton_Pelo.setText(_translate("IG4_Aprendizaje", "Pelo"))
-
-        # Las comentadas son señas dinámicas
 
     def setIDUsuario(self,id_usuario):
         self.id_usuario = id_usuario

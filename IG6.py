@@ -17,7 +17,8 @@ import os
 class Ui_IG6_SeccionPractica(object):
 	def setupUi(self, IG6_SeccionPractica):
 		IG6_SeccionPractica.setObjectName("IG6_SeccionPractica")
-		IG6_SeccionPractica.resize(817, 482)
+		IG6_SeccionPractica.setMaximumSize(QtCore.QSize(817, 482))
+		IG6_SeccionPractica.setMinimumSize(QtCore.QSize(817, 482))
 		IG6_SeccionPractica.setStyleSheet("QWidget{\n"
 "background-color: rgb(250, 215, 160);\n"
 "}\n"
@@ -199,7 +200,7 @@ class Ui_IG6_SeccionPractica(object):
 
 	def retranslateUi(self, IG6_SeccionPractica):
 		_translate = QtCore.QCoreApplication.translate
-		IG6_SeccionPractica.setWindowTitle(_translate("IG6_SeccionPractica", "Nenú de práctica"))
+		IG6_SeccionPractica.setWindowTitle(_translate("IG6_SeccionPractica", "Menú de práctica"))
 		self.label_instruccion.setText(_translate("IG6_SeccionPractica", "Selecciona categoría"))
 		self.boton_abecedario.setText(_translate("IG6_SeccionPractica", "Abecedario"))
 		self.boton_numeros.setText(_translate("IG6_SeccionPractica", "Números"))
@@ -214,6 +215,7 @@ class Ui_IG6_SeccionPractica(object):
 		self.boton_cuerpo.clicked.connect(lambda: self.abrirIG7(IG6,3))
 		self.boton_dias.clicked.connect(lambda: self.abrirIG7(IG6,4))
 		self.boton_colores.clicked.connect(lambda: self.abrirIG7(IG6,5))
+		self.boton_regresar.clicked.connect(lambda: self.abrirIG2(IG6))
 
 	def setIDUsuario(self,id):
 		self.id_usuario = id
@@ -238,7 +240,7 @@ class Ui_IG6_SeccionPractica(object):
 	def abrirIG2(self,IG6):
 		IG6.hide()
 		self.IIG2=QtWidgets.QWidget()
-		ui = G2.Ui_IG2_MenuUsuario
+		ui = G2.Ui_IG2_MenuUsuario()
 		ui.setIDUsuario(self.id_usuario)
 		ui.setupUi(self.IIG2)
 		self.IIG2.show()

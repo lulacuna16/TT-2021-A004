@@ -50,7 +50,7 @@ class Practica:
                 self.__MAXPREGUNTAS = 7
             #Creando solución
             self.__crearSolucion()
-            print(self.__solucion)
+            # print(self.__solucion)
 
             #Creando preguntas
             senas = self.__getSenas()

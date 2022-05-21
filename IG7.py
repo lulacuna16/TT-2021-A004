@@ -18,7 +18,8 @@ import IG6 as G6
 class Ui_IG7_test(object):
 	def setupUi(self, IG7_test):
 		IG7_test.setObjectName("IG7_test")
-		IG7_test.resize(1134, 611)
+		IG7_test.setMaximumSize(QtCore.QSize(1134, 611))
+		IG7_test.setMinimumSize(QtCore.QSize(1134, 611))
 		IG7_test.setStyleSheet("QWidget{\n"
 "background-color: rgb(250, 215, 160);\n"
 "}\n"
@@ -265,9 +266,9 @@ class Ui_IG7_test(object):
 					self.ocultarBotones()
 					self.mostrarPregunta(IG7_Test)
 				else:
-					print(self.cuestionario.solucion)
-					print(self.cuestionario.respuestas)
-					print(self.cuestionario.verResultado())
+					# print(self.cuestionario.solucion)
+					# print(self.cuestionario.respuestas)
+					# print(self.cuestionario.verResultado())
 					self.ventanaResultados(IG7_Test)
 
 	def getPathMultimedia(self):
@@ -391,10 +392,11 @@ class Ui_IG7_test(object):
 			    border-bottom: 3px solid rgb(248, 196, 113);
 			}
 			QPushButton:pressed{
-			    background-color: rgb(40, 170, 221);
-			    border-left: 1px solid rgb(44, 131, 212);
-			    border-right: 1px solid rgb(44, 131, 212);
-			    border-top: 3px solid rgb(44, 131, 212);
+			    background-color: rgb(120, 66, 18);
+			    border-left: 1px solid  rgb(120, 66, 18);
+			    border-right: 1px solid  rgb(120, 66, 18);
+			    border-top: 3px solid  rgb(120, 66, 18);
+			    border-bottom: none;
 			}
 		'''
 		msgBox = QMessageBox()
@@ -415,8 +417,8 @@ class Ui_IG7_test(object):
 		msgBox.setStyleSheet(style)
 		ret = msgBox.exec()
 		if ret == 0:
-			# self.verRespuestas(IG7_Test)
-			self.abrirIG6(IG7_Test)
+			self.verRespuestas(IG7_Test)
+			# self.abrirIG6(IG7_Test)
 		if ret == 1:
 			self.abrirIG6(IG7_Test)
 
@@ -429,6 +431,134 @@ class Ui_IG7_test(object):
 		self.IG6.show()
 
 	# Ver respuestas
+	def verRespuestas(self,IG7):
+		self.numPregunta = 0
+		self.ocultarBotones()
+		self.desactivarBotones()
+		self.boton_siguiente.clicked.connect(lambda: self.siguienteRespuesta(IG7))
+
+		self.initRespuesta()
+		self.mostraPyR(IG7)
+
+	def desactivarBotones(self):
+		for i in range(3):
+			self.botones_opciones_t1[i].disconnect()
+			self.botones_opciones_t2[i].disconnect()
+			self.botones_opciones_t1[i].clicked.connect(lambda: self.desconectarBotones())
+			self.botones_opciones_t2[i].clicked.connect(lambda: self.desconectarBotones())
+		self.boton_siguiente.disconnect()
+
+	def mostraPyR(self,IG7_Test):
+		if self.cuestionario.preguntas[self.numPregunta][0].tipo_sena == 0:	# Seña estatica
+			sena = self.cuestionario.solucion[self.numPregunta]
+			self.label_instruccion.setText("Selecciona la imagen correspondiente a la seña: " + sena.nombre_sena)
+			for i in range(3):
+				self.botones_opciones_t1[i].setVisible(True)
+				self.imagenBoton(self.numPregunta)
+				self.pintarRespuesta_t1()
+		else: 															# Seña dinámica
+			self.label_instruccion.setText("¿A cuál seña corresponde el video?")
+			for i in range(3):
+				self.botones_opciones_t2[i].setVisible(True)
+			self.textoBotones()
+			self.pintarRespuesta_t2()
+			self.widgetVideoTutorial.setVisible(True)
+			self.setupVideo(IG7_Test)
+
+	def initRespuesta(self):
+		# Botones T1
+		style = '''
+			QPushButton{
+				border: none;
+				border-radius: 5px;
+			}
+		'''
+		for i in range(3):
+			self.botones_opciones_t1[i].setStyleSheet(style)
+
+		# Botones T2
+		style = '''
+			QPushButton{
+				color: rgb(255, 255, 255);
+			    background-color: rgb(156, 100, 12);
+			    font: 12pt \"Segoe Print\";
+			    border-radius: 11px;
+			    border:none;
+			    border-left: 1px solid rgb(156, 100, 12);
+			    border-right: 1px solid rgb(156, 100, 12);
+			    border-bottom: 3px solid rgb(156, 100, 12);
+			}
+		'''
+		for i in range(3):
+			self.botones_opciones_t2[i].setStyleSheet(style)
+
+	def pintarRespuesta_t1(self):
+		styleCorrecto = '''
+			QPushButton{
+				border-radius: 5px;
+				border: 3px solid  rgb(63,198,0);
+			}
+		'''
+		styleIncorrecto = '''
+			QPushButton{
+				border-radius: 5px;
+				border: 3px solid  rgb(250,0,0);
+			}
+		'''
+		for i in range(3):
+			if self.cuestionario.preguntas[self.numPregunta][i].id_sena == self.cuestionario.solucion[self.numPregunta].id_sena:
+				self.botones_opciones_t1[i].setStyleSheet(styleCorrecto)
+			elif self.cuestionario.preguntas[self.numPregunta][i].id_sena == self.cuestionario.respuestas[self.numPregunta].id_sena:
+				if self.cuestionario.respuestas[self.numPregunta].id_sena != self.cuestionario.solucion[self.numPregunta].id_sena:
+					self.botones_opciones_t1[i].setStyleSheet(styleIncorrecto)
+
+	def pintarRespuesta_t2(self):
+		styleIncorrecto = '''
+			QPushButton{
+				color: rgb(255, 255, 255);
+				background-color: rgb(250,0,0);
+				font: 12pt \"Segoe Print\";
+				border-radius: 11px;
+				border:none;
+				border-left: 1px solid rgb(143,7,7);
+				border-right: 1px solid rgb(143,7,7);
+				border-bottom: 3px solid rgb(143,7,7);
+			}
+		'''
+		styleCorrecto = '''
+			QPushButton{
+				color: rgb(255, 255, 255);
+				background-color: rgb(17,130,75);
+				font: 12pt \"Segoe Print\";
+				border-radius: 11px;
+				border:none;
+				border-left: 1px solid rgb(15,92,55);
+				border-right: 1px solid rgb(15,92,55);
+				border-bottom: 3px solid rgb(15,92,55);
+			}
+		'''
+		for i in range(3):
+			if self.cuestionario.preguntas[self.numPregunta][i].id_sena == self.cuestionario.solucion[self.numPregunta].id_sena:
+				self.botones_opciones_t2[i].setStyleSheet(styleCorrecto)
+			elif self.cuestionario.preguntas[self.numPregunta][i].id_sena == self.cuestionario.respuestas[self.numPregunta].id_sena:
+				if self.cuestionario.respuestas[self.numPregunta].id_sena != self.cuestionario.solucion[self.numPregunta].id_sena:
+					self.botones_opciones_t2[i].setStyleSheet(styleIncorrecto)
+
+	def siguienteRespuesta(self,IG7_Test):
+		if self.numPregunta < self.cuestionario.MAXPREGUNTAS:
+			self.numPregunta += 1
+			if not self.numPregunta == self.cuestionario.MAXPREGUNTAS:
+				self.init()
+				self.ocultarBotones()
+				self.mostraPyR(IG7_Test)
+			else:
+				# print(self.cuestionario.solucion)
+				# print(self.cuestionario.respuestas)
+				# print(self.cuestionario.verResultado())
+				self.ventanaResultados(IG7_Test)
+
+	def desconectarBotones(self):
+		pass
 
 if __name__ == "__main__":
 	import sys

@@ -170,35 +170,34 @@ class Ui_IG3_ModificacionPerfil(object):
         style = '''
             QMessageBox{
                 font: 13pt \"Segoe Print\";
-                background-color: rgb(255, 175, 247);
-                color: rgb(0, 0, 0);
+                background-color: rgb(250, 215, 160);
+                color: rgb(156, 100, 12);
             }
             QPushButton{
                 color: rgb(255, 255, 255);
-                background-color: rgb(46, 165, 255);
+                background-color: rgb(156, 100, 12);
                 font: 12pt \"Segoe Print\";
                 border-radius: 11px;
                 border:none;
-                border-left: 1px solid rgb(44, 131, 212);
-                border-right: 1px solid rgb(44, 131, 212);
-                border-bottom: 3px solid rgb(44, 131, 212);
-                padding-left: 20px;
-                padding-right: 20px;
+                border-left: 1px solid rgb(156, 100, 12);
+                border-right: 1px solid rgb(156, 100, 12);
+                border-bottom: 3px solid rgb(156, 100, 12);
+                padding-left: 10px;
+                padding-right: 10px;
             }
             QPushButton:hover{
-                background-color: rgb(14, 235, 255);
-                border-left: 1px solid rgb(44, 131, 212);
-                border-right: 1px solid rgb(44, 131, 212);
-                border-bottom: 3px solid rgb(44, 131, 212);
+                background-color: rgb(248, 196, 113);
+                border-left: 1px solid rgb(248, 196, 113);
+                border-right: 1px solid rgb(248, 196, 113);
+                border-bottom: 3px solid rgb(248, 196, 113);
             }
             QPushButton:pressed{
-                background-color: rgb(40, 170, 221);
-                border-left: 1px solid rgb(44, 131, 212);
-                border-right: 1px solid rgb(44, 131, 212);
-                border-top: 3px solid rgb(44, 131, 212);
+                background-color: rgb(120, 66, 18);
+                border-left: 1px solid  rgb(120, 66, 18);
+                border-right: 1px solid  rgb(120, 66, 18);
+                border-top: 3px solid  rgb(120, 66, 18);
                 border-bottom: none;
             }
-
         '''
         msgBox = QMessageBox()
         msgBox.setWindowTitle("Confirmación")

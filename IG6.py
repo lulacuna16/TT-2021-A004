@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import IG7 as G7
 import IG2 as G2
 from Clases.Practica import Practica
+from Clases.Progreso import Progreso
 import os
 
 class Ui_IG6_SeccionPractica(object):
@@ -170,13 +171,13 @@ class Ui_IG6_SeccionPractica(object):
 		self.boton_regresar.setGeometry(QtCore.QRect(330, 430, 151, 31))
 		self.boton_regresar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(156, 100, 12);\n"
+"    background-color: rgb(181, 116, 11);\n"
 "    font: 12pt \"Segoe Print\";\n"
 "    border-radius: 11px;\n"
 "    border:none;\n"
-"    border-left: 1px solid rgb(156, 100, 12);\n"
-"    border-right: 1px solid rgb(156, 100, 12);\n"
-"    border-bottom: 3px solid rgb(156, 100, 12);\n"
+"    border-left: 1px solid rgb(122, 79, 10);\n"
+"    border-right: 1px solid rgb(122, 79, 10);\n"
+"    border-bottom: 3px solid rgb(122, 79, 10);\n"
 "}\n"
 "QPushButton:hover{\n"
 "    background-color: rgb(248, 196, 113);\n"
@@ -193,7 +194,9 @@ class Ui_IG6_SeccionPractica(object):
 "}")
 		self.boton_regresar.setObjectName("boton_regresar")
 
+		self.botones = [self.boton_abecedario,self.boton_numeros,self.boton_cuerpo,self.boton_dias,self.boton_colores]
 		self.eventos(IG6_SeccionPractica)
+		self.desabilitarBotones()
 
 		self.retranslateUi(IG6_SeccionPractica)
 		QtCore.QMetaObject.connectSlotsByName(IG6_SeccionPractica)
@@ -245,6 +248,27 @@ class Ui_IG6_SeccionPractica(object):
 		ui.setupUi(self.IIG2)
 		self.IIG2.show()
 
+	def desabilitarBotones(self):
+		style = '''
+			QPushButton{
+				color: rgba(255, 255, 255,120);
+				background-color: rgba(156, 100, 12,120);
+				font: 12pt \"Segoe Print\";
+				border-radius: 11px;
+				border:none;
+				border-left: 1px solid rgb(156, 100, 12);
+				border-right: 1px solid rgb(156, 100, 12);
+				border-bottom: 3px solid rgb(156, 100, 12);
+			}
+		'''
+		progreso = Progreso()
+		path = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/Clases/senas.db"
+		progreso.setBD(path)
+		for i in range(5):
+			porcentaje = progreso.progresoCategoria(self.id_usuario, i+1)
+			if porcentaje != 100:
+				self.botones[i].setEnabled(False)
+				self.botones[i].setStyleSheet(style)
 
 if __name__ == "__main__":
 	import sys

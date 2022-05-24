@@ -426,8 +426,8 @@ class Ui_IG7_test(object):
 		IG7.hide()
 		self.IG6 = QtWidgets.QWidget()
 		ui = G6.Ui_IG6_SeccionPractica()
-		ui.setupUi(self.IG6)
 		ui.setIDUsuario(self.id_usuario)
+		ui.setupUi(self.IG6)
 		self.IG6.show()
 
 	# Ver respuestas

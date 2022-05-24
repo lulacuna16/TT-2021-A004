@@ -325,18 +325,18 @@ class IG_Dias(object):
         progreso = Progreso()
         progreso.setBD(pathBD)
         correctas = progreso.senasCorrectasCategoria(self.id_usuario,4) #TRAE LAS SEÑAS (días) YA REALIZADAS POR EL USUARIO (BD)
-        print(correctas)
+        # print(correctas)
         if "lunes" in correctas:
             self.boton_Lunes.setStyleSheet(style)
         if "martes" in correctas:
             self.boton_Martes.setStyleSheet(style)
-        if "miercoles" in correctas:
+        if "miércoles" in correctas:
             self.boton_Miercoles.setStyleSheet(style)
         if "jueves" in correctas:
             self.boton_Jueves.setStyleSheet(style)
         if "viernes" in correctas:
             self.boton_Viernes.setStyleSheet(style)
-        if "sabado" in correctas:
+        if "sábado" in correctas:
             self.boton_Sabado.setStyleSheet(style)
         if "domingo" in correctas:
             self.boton_Domingo.setStyleSheet(style)

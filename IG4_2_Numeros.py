@@ -770,7 +770,7 @@ class IG_Numeros(object):
         progreso = Progreso()
         progreso.setBD(pathBD)
         correctas = progreso.senasCorrectasCategoria(self.id_usuario,2) #TRAE LAS SEÑAS (numeros) YA REALIZADAS POR EL USUARIO (BD)
-        print(correctas)
+        # print(correctas)
         if "1" in correctas:
             self.boton_1.setStyleSheet(style)
         if "2" in correctas:

@@ -473,14 +473,14 @@ class IG_Colores(object):
         progreso = Progreso()
         progreso.setBD(pathBD)
         correctas = progreso.senasCorrectasCategoria(self.id_usuario,5) #TRAE LAS SEÑAS (colores) YA REALIZADAS POR EL USUARIO (BD)
-        print(correctas)
+        # print(correctas)
         if "amarillo" in correctas:
             self.boton_Amarillo.setStyleSheet(style)
         if "azul" in correctas:
             self.boton_Azul.setStyleSheet(style)
         if "blanco" in correctas:
             self.boton_Blanco.setStyleSheet(style)
-        if "cafe" in correctas:
+        if "café" in correctas:
             self.boton_Cafe.setStyleSheet(style)
         if "gris" in correctas:
             self.boton_Gris.setStyleSheet(style)

@@ -1065,7 +1065,7 @@ class IG_Abecedario(object):
         progreso = Progreso()
         progreso.setBD(pathBD)
         correctas = progreso.senasCorrectasCategoria(self.id_usuario,1) #TRAE LAS SEÑAS YA REALIZADAS POR EL USUARIO (BD)
-        print(correctas)
+        # print(correctas)
 
         if "a" in correctas:
             self.boton_A.setStyleSheet(style)

@@ -694,7 +694,7 @@ class IG_Cuerpo(object):
         progreso = Progreso()
         progreso.setBD(pathBD)
         correctas = progreso.senasCorrectasCategoria(self.id_usuario,3) #TRAE LAS SEÑAS (cuerpo) YA REALIZADAS POR EL USUARIO (BD)
-        print(correctas)
+        # print(correctas)
         if "boca" in correctas:
             self.boton_Boca.setStyleSheet(style)
         if "brazo" in correctas:
@@ -707,7 +707,7 @@ class IG_Cuerpo(object):
             self.boton_Diente.setStyleSheet(style)
         if "espalda" in correctas:
             self.boton_Espalda.setStyleSheet(style)
-        if "estomago" in correctas:
+        if "estómago" in correctas:
             self.boton_Estomago.setStyleSheet(style)
         if "hombro" in correctas:
             self.boton_Hombro.setStyleSheet(style)

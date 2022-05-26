@@ -13,14 +13,22 @@
   <property name="windowTitle">
    <string>Instrucciones</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(250, 215, 160);
+</string>
+  </property>
   <widget class="QLabel" name="labelInicio">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>190</x>
      <y>20</y>
-     <width>161</width>
+     <width>201</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;Segoe Print&quot;;
+color: rgb(156, 100, 12);</string>
    </property>
    <property name="text">
     <string>Para utilizar la aplicación:</string>
@@ -35,8 +43,12 @@
      <x>50</x>
      <y>50</y>
      <width>501</width>
-     <height>291</height>
+     <height>301</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Segoe Print&quot;;
+color: rgb(156, 100, 12);</string>
    </property>
    <property name="text">
     <string>1. Adopte una posición cómoda frente a tu computadora.

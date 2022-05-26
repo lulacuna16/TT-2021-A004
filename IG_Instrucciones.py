@@ -1,3 +1,6 @@
+
+
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'IG_Instrucciones.ui'
@@ -15,12 +18,18 @@ class Ui_IG_Instrucciones(object):
     def setupUi(self, IG_Instrucciones):
         IG_Instrucciones.setObjectName("IG_Instrucciones")
         IG_Instrucciones.resize(588, 379)
+        IG_Instrucciones.setStyleSheet("background-color: rgb(250, 215, 160);\n"
+"")
         self.labelInicio = QtWidgets.QLabel(IG_Instrucciones)
         self.labelInicio.setGeometry(QtCore.QRect(210, 20, 161, 16))
+        self.labelInicio.setStyleSheet("font: 9pt \"Segoe Print\";\n"
+"color: rgb(156, 100, 12);")
         self.labelInicio.setAlignment(QtCore.Qt.AlignCenter)
         self.labelInicio.setObjectName("labelInicio")
         self.labelInstrucciones = QtWidgets.QLabel(IG_Instrucciones)
         self.labelInstrucciones.setGeometry(QtCore.QRect(50, 50, 501, 291))
+        self.labelInstrucciones.setStyleSheet("font: 6pt \"Segoe Print\";\n"
+"color: rgb(156, 100, 12);")
         self.labelInstrucciones.setTextFormat(QtCore.Qt.PlainText)
         self.labelInstrucciones.setAlignment(QtCore.Qt.AlignJustify|QtCore.Qt.AlignVCenter)
         self.labelInstrucciones.setWordWrap(True)

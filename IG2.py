@@ -187,7 +187,7 @@ class Ui_IG2_MenuUsuario(object):
         self.labelNombreUsuario.setText(_translate("IG2_MenuUsuario", self.nombreUsuario(self.id_usuario)))
         self.botonModificarPerfil.setText(_translate("IG2_MenuUsuario", "Modificar Perfil"))
         self.botonAprender.setText(_translate("IG2_MenuUsuario", "Aprender"))
-        self.botonPracticar.setText(_translate("IG2MenuUsuario", "Practicar"))
+        self.botonPracticar.setText(_translate("IG2_MenuUsuario", "Practicar"))
         self.botonRegresarInicio.setText(_translate("IG2_MenuUsuario", "Regresar a Inicio"))
         self.labelBienvenida.setText(_translate("IG2_MenuUsuario", "¡Que gusto verte!"))
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IG_Instrucciones</class>
+ <widget class="QWidget" name="IG_Instrucciones">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Instrucciones</string>
+  </property>
+  <widget class="QLabel" name="labelInicio">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>20</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Para utilizar la aplicación:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelInstrucciones">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>501</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1. Adopte una posición cómoda frente a tu computadora.
+
+2. Asegúrese de que la distancia entre la cámara y usted sea la adecuada, de tal modo que se pueda captar sus manos o su cuerpo, utilice la vista previa de la cámara como apoyo.
+
+3.Antes de validar su seña, puede visualizar el videotutorial a la izquierda de la pantalla de la aplicación (puede utilizar los botones de Reproducir o Pausar las veces que desee).
+
+4.Para comenzar a validar la seña, presione el botón Verificar y espere a que termine el conteo que se muestra en la vista previa de la cámara.
+*Mientras la aplicación está verificando su movimiento, el botón Verificar se deshabilita y aparece la leyenda &quot;Verificando...&quot;.
+
+5.Si se trata de una seña dinámica, haga el movimiento de manera graduada y lenta, para que el sistema pueda leerlo de manera correcta.
+**Si la seña no se ha podido verificar en 20 segundos (señas estáticas) o 30 segundos (señas dinámicas) en la vista previa aparecerá un mensaje notificándole.
+
+6. Cuando se haya validado la seña, la vista previa de la cámara se detendrá y arriba de ella una leyenda que indique que la seña fue correcta.
+
+7.Para regresar a la Sección de Aprendizaje presione el botón Salir. </string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

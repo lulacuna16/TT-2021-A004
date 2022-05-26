@@ -10,6 +10,7 @@ from Clases.Senas import Senas
 from Clases.Progreso import Progreso
 import IG4 as G4
 import os
+import IG_Instrucciones as instrucciones
 
 #redConv = tf.keras.models.load_model('./modeloNumerosEstaticos.h5')
 # global redConv
@@ -81,7 +82,7 @@ class Ui_IG5_Sena(object):
 		self.widgetVideoTutorial.setGeometry(QtCore.QRect(30, 50, 352, 640))
 		self.widgetVideoTutorial.setObjectName("widgetVideoTutorial")
 		self.botonReproducir = QtWidgets.QPushButton(IG5_Sena)
-		self.botonReproducir.setGeometry(QtCore.QRect(470, 150, 101, 23))
+		self.botonReproducir.setGeometry(QtCore.QRect(440, 120, 101, 23))
 		self.botonReproducir.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
 "    background-color: rgb(156, 100, 12);\n"
@@ -107,7 +108,7 @@ class Ui_IG5_Sena(object):
 "}")
 		self.botonReproducir.setObjectName("botonReproducir")
 		self.botonPausar = QtWidgets.QPushButton(IG5_Sena)
-		self.botonPausar.setGeometry(QtCore.QRect(680, 150, 101, 23))
+		self.botonPausar.setGeometry(QtCore.QRect(670, 120, 101, 23))
 		self.botonPausar.setStyleSheet("QPushButton{\n"
 "color: rgb(255, 255, 255);\n"
 "    background-color: rgb(156, 100, 12);\n"
@@ -246,10 +247,33 @@ class Ui_IG5_Sena(object):
 		self.labelInvalido.setAlignment(QtCore.Qt.AlignCenter)
 		self.labelInvalido.setWordWrap(True)
 		self.labelInvalido.setObjectName("labelInvalido")
-		self.labelInvalido.setToolTip("Cuando una seña no se valida correctamente, puede ser por la poca o demasiada "
-									  "ilumación del ambiente que no le permite a la cámara capturar su gesto adecuadamente. "
-									  "Otras de las razones puede ser la distancia que hay entre la cámara y usted, cambie "
-									  "dichos parámetros e intente de nuevo.")
+
+		self.botonInstrucciones = QtWidgets.QPushButton(IG5_Sena)
+		self.botonInstrucciones.setGeometry(QtCore.QRect(540, 180, 131, 23))
+		self.botonInstrucciones.setStyleSheet("QPushButton{\n"
+											  "color: rgb(255, 255, 255);\n"
+											  "    background-color: rgb(156, 100, 12);\n"
+											  "    font: 12pt \"Segoe Print\";\n"
+											  "    border-radius: 11px;\n"
+											  "    border:none;\n"
+											  "    border-left: 1px solid rgb(156, 100, 12);\n"
+											  "    border-right: 1px solid rgb(156, 100, 12);\n"
+											  "    border-bottom: 3px solid rgb(156, 100, 12);\n"
+											  "}\n"
+											  "QPushButton:hover{\n"
+											  "    background-color: rgb(248, 196, 113);\n"
+											  "    border-left: 1px solid rgb(248, 196, 113);\n"
+											  "    border-right: 1px solid rgb(248, 196, 113);\n"
+											  "    border-bottom: 3px solid rgb(248, 196, 113);\n"
+											  "}\n"
+											  "QPushButton:pressed{\n"
+											  "    background-color: rgb(40, 170, 221);\n"
+											  "    border-left: 1px solid rgb(44, 131, 212);\n"
+											  "    border-right: 1px solid rgb(44, 131, 212);\n"
+											  "    border-top: 3px solid rgb(44, 131, 212);\n"
+											  "    border-bottomr: none;\n"
+											  "}")
+		self.botonInstrucciones.setObjectName("botonInstrucciones")
 
 		self.lblCamara.raise_()
 		self.lblSenaCorrecta.close()
@@ -266,6 +290,7 @@ class Ui_IG5_Sena(object):
 		self.labelVerificando.close()
 		self.labelInvalido.raise_()
 		self.labelInvalido.close()
+		self.botonInstrucciones.raise_()
 
 		self.retranslateUi(IG5_Sena)
 		QtCore.QMetaObject.connectSlotsByName(IG5_Sena)
@@ -283,10 +308,7 @@ class Ui_IG5_Sena(object):
 		self.labelConteo.setText(_translate("IG5_Sena", "3"))
 		self.labelVerificando.setText(_translate("IG5_Sena", "Verificando..."))
 		self.labelInvalido.setText(_translate("IG5_Sena", "No se pudo validar la seña, intente de nuevo."))
-		self.labelInvalido.setToolTip(_translate("IG5_Sena",
-		"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n""<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n""background-color: rgb(255, 175, 247);\n""p, li { white-space: pre-wrap; }\n"
-		"</style></head><body style=\" font-family:\'Segoe Print\'; font-size:35pt; font-weight:400; font-style:normal;\">\n""<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Cuando una seña no se valida correctamente, puede ser por la poca o demasiada ilumación del ambiente que no le permite a la cámara capturar su gesto adecuadamente. Otras de las razones puede ser la distancia que hay entre la cámara y usted, cambie dichos parámetros e intente de nuevo.</span></p></body></html>"))
-
+		self.botonInstrucciones.setText(_translate("IG5_Sena", "Instrucciones"))
 		# create a timer
 		self.timer = QtCore.QTimer()
 
@@ -490,7 +512,7 @@ class Ui_IG5_Sena(object):
 		# if tiempoLectura < tiempoLimiteD:
 		if self.comprobacionPatron(img_prueba,patrones[nombreSena][valido]):
 			valido += 1
-			print('vi un lindo gatito')
+			#print('vi un lindo gatito')
 
 			if valido == len(patrones[nombreSena]):
 				self.lblSenaCorrecta.show()
@@ -577,7 +599,7 @@ class Ui_IG5_Sena(object):
 		self.botonPausar.clicked.connect(self.contenedor.pause)
 		self.botonVerificar.clicked.connect(lambda:self.crearTimer())
 		self.botonSalir.clicked.connect(lambda: self.cerrar(Form))
-
+		self.botonInstrucciones.clicked.connect(lambda: self.abrirInstrucciones())
 	def setIDUsuario(self,id_usuario):
 		self.id_usuario = id_usuario
 
@@ -597,6 +619,11 @@ class Ui_IG5_Sena(object):
 		ui.Tabs.setCurrentIndex(sena.id_categoria)
 		self.IIG4.show()
 
+	def abrirInstrucciones(self):
+		self.IGinstrucciones=QtWidgets.QWidget()
+		ui=instrucciones.Ui_IG_Instrucciones()
+		ui.setupUi(self.IGinstrucciones)
+		self.IGinstrucciones.show()
 if __name__ == "__main__":
 	import sys
 	app = QtWidgets.QApplication(sys.argv)

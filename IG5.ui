@@ -30,8 +30,8 @@
   <widget class="QPushButton" name="botonReproducir">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>150</y>
+     <x>440</x>
+     <y>120</y>
      <width>101</width>
      <height>23</height>
     </rect>
@@ -68,8 +68,8 @@ QPushButton:pressed{
   <widget class="QPushButton" name="botonPausar">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>150</y>
+     <x>670</x>
+     <y>120</y>
      <width>101</width>
      <height>23</height>
     </rect>
@@ -272,6 +272,44 @@ font: 140pt &quot;MS Shell Dlg 2&quot;;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QPushButton" name="botonInstrucciones">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>180</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+	background-color: rgb(156, 100, 12);
+	font: 12pt &quot;Segoe Print&quot;;
+	border-radius: 11px;
+	border:none;
+	border-left: 1px solid rgb(156, 100, 12);
+	border-right: 1px solid rgb(156, 100, 12);
+	border-bottom: 3px solid rgb(156, 100, 12);
+}
+QPushButton:hover{
+	background-color: rgb(248, 196, 113);
+	border-left: 1px solid rgb(248, 196, 113);
+	border-right: 1px solid rgb(248, 196, 113);
+	border-bottom: 3px solid rgb(248, 196, 113);
+}
+QPushButton:pressed{
+	background-color: rgb(40, 170, 221);
+	border-left: 1px solid rgb(44, 131, 212);
+	border-right: 1px solid rgb(44, 131, 212);
+	border-top: 3px solid rgb(44, 131, 212);
+	border-bottomr: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Instrucciones</string>
+   </property>
+  </widget>
   <zorder>lblCamara</zorder>
   <zorder>widgetVideoTutorial</zorder>
   <zorder>botonReproducir</zorder>
@@ -281,6 +319,7 @@ font: 140pt &quot;MS Shell Dlg 2&quot;;
   <zorder>botonSalir</zorder>
   <zorder>lblSenaCorrecta</zorder>
   <zorder>label</zorder>
+  <zorder>botonInstrucciones</zorder>
  </widget>
  <resources/>
  <connections/>

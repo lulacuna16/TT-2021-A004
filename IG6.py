@@ -269,6 +269,8 @@ class Ui_IG6_SeccionPractica(object):
 			if porcentaje != 100:
 				self.botones[i].setEnabled(False)
 				self.botones[i].setStyleSheet(style)
+				self.botones[i].setToolTip("Primero debe terminar la\n categoría en la sección de\n aprendizaje.")
+				self.botones[i].setToolTipDuration(2500)
 
 if __name__ == "__main__":
 	import sys

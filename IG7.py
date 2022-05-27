@@ -201,6 +201,7 @@ class Ui_IG7_test(object):
 			self.botones_opciones_t2[i].setVisible(False)
 
 	def init(self):
+		self.mostrarMsg()
 		# Botones T1
 		style = '''
 			QPushButton{
@@ -255,7 +256,8 @@ class Ui_IG7_test(object):
 	def siguiente(self,IG7_Test):
 		if self.numPregunta < self.cuestionario.MAXPREGUNTAS:
 			if self.opcionActiva == -1:
-				print("Seleccione una opción primero")
+				# print("Seleccione una opción primero")
+				self.mostrarMsg()
 			else:
 				sena = self.cuestionario.preguntas[self.numPregunta][self.opcionActiva]
 				self.cuestionario.agregarRespuesta(sena)
@@ -270,6 +272,13 @@ class Ui_IG7_test(object):
 					# print(self.cuestionario.respuestas)
 					# print(self.cuestionario.verResultado())
 					self.ventanaResultados(IG7_Test)
+
+	def mostrarMsg(self):
+		self.boton_siguiente.setToolTip("Seleccione una opción primero.")
+		self.boton_siguiente.setToolTipDuration(2500)
+
+	def ocultarMsg(self):
+		self.boton_siguiente.setToolTip("")
 
 	def getPathMultimedia(self):
 		self.pathMult = "videos/"
@@ -301,6 +310,7 @@ class Ui_IG7_test(object):
 			}
 		'''
 		self.init()
+		self.ocultarMsg()
 		self.opcionActiva = opcion
 		self.botones_opciones_t1[opcion].setStyleSheet(style)
 		# print(self.opcionActiva)
@@ -363,6 +373,7 @@ class Ui_IG7_test(object):
 			}
 		'''
 		self.init()
+		self.ocultarMsg()
 		self.opcionActiva = opcion
 		self.botones_opciones_t2[opcion].setStyleSheet(style)
 		# print(self.opcionActiva)

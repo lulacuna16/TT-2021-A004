@@ -42,11 +42,11 @@ class Ui_IG_Instrucciones(object):
         _translate = QtCore.QCoreApplication.translate
         IG_Instrucciones.setWindowTitle(_translate("IG_Instrucciones", "Instrucciones"))
         self.labelInicio.setText(_translate("IG_Instrucciones", "Para utilizar la aplicación:"))
-        self.labelInstrucciones.setText(_translate("IG_Instrucciones", "1. Adopte una posición cómoda frente a tu computadora.\n"
+        self.labelInstrucciones.setText(_translate("IG_Instrucciones", "1. Adopte una posición cómoda frente a su computadora.\n"
 "\n"
-"2. Asegúrese de que la distancia entre la cámara y usted sea la adecuada, de tal modo que se pueda captar sus manos o su cuerpo, utilice la vista previa de la cámara como apoyo.\n"
+"2. Asegúrese de que la distancia entre la cámara y usted sea la adecuada, de tal modo que se pueda captar sus manos o su cuerpo. Utilice la vista previa de la cámara como apoyo.\n"
 "\n"
-"3.Antes de validar su seña, puede visualizar el videotutorial a la izquierda de la pantalla de la aplicación (puede utilizar los botones de Reproducir o Pausar las veces que desee).\n"
+"3.Antes de validar la seña seleccionada, puede visualizar el videotutorial a la izquierda de la pantalla de la aplicación (puede utilizar los botones de Reproducir o Pausar las veces que desee).\n"
 "\n"
 "4.Para comenzar a validar la seña, presione el botón Verificar y espere a que termine el conteo que se muestra en la vista previa de la cámara.\n"
 "*Mientras la aplicación está verificando su movimiento, el botón Verificar se deshabilita y aparece la leyenda \"Verificando...\".\n"

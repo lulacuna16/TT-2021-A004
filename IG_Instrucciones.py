@@ -52,10 +52,10 @@ class Ui_IG_Instrucciones(object):
 "4.Para comenzar a validar la seña, presione el botón Verificar y espere a que termine el conteo que se muestra en la vista previa de la cámara.\n"
 "*Mientras la aplicación está verificando su movimiento, el botón Verificar se deshabilita y aparece la leyenda \"Verificando...\".\n"
 "\n"
-"5.Si se trata de una seña dinámica, haga el movimiento de manera graduada y lenta, para que el sistema pueda leerlo de manera correcta.\n"
+"5.Si se trata de una seña dinámica, haga el movimiento de manera gradual y lenta, para que el sistema pueda leerlo de manera correcta.\n"
 "**Si la seña no se ha podido verificar en 20 segundos (señas estáticas) o 30 segundos (señas dinámicas) en la vista previa aparecerá un texto notificándole.\n"
 "\n"
-"6. Cuando se haya validado la seña, la vista previa de la cámara se detendrá y arriba de ella aparecerá una mensaje de que la seña fue correcta.\n"
+"6. Cuando se haya validado la seña, la vista previa de la cámara se detendrá y arriba de ella aparecerá una mensaje que indique que la seña fue correcta.\n"
 "\n"
 "7.Para regresar a la Sección de Aprendizaje presione el botón Salir. "))
 

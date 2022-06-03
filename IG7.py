@@ -395,6 +395,8 @@ class Ui_IG7_test(object):
 			    border-left: 1px solid rgb(156, 100, 12);
 			    border-right: 1px solid rgb(156, 100, 12);
 			    border-bottom: 3px solid rgb(156, 100, 12);
+				padding-left: 5px;
+				padding-right: 5px;
 			}
 			QPushButton:hover{
 			    background-color: rgb(248, 196, 113);
@@ -414,10 +416,12 @@ class Ui_IG7_test(object):
 		msgBox.setWindowTitle("Resultado")
 
 		calif = round((self.cuestionario.verResultado() * 10) / self.cuestionario.MAXPREGUNTAS, 2)
-		if(calif >= 8):
-			titulo = "FELIDADES"
-		elif(calif >= 6):
+		if(calif >= 9):
+			titulo = "FELICIDADES"
+		elif(calif >= 7):
 			titulo = "BUEN TRABAJO"
+		elif(calif >= 6):
+			titulo = "PUEDES MEJORAR"
 		else:
 			titulo = "SIGUE PRACTICANDO"
 		mensaje = f"Tu resultado es: {self.cuestionario.verResultado()}/{self.cuestionario.MAXPREGUNTAS}\t\n\tCalificación: {calif}"

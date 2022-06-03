@@ -204,7 +204,7 @@ class Ui_IG6_SeccionPractica(object):
 	def retranslateUi(self, IG6_SeccionPractica):
 		_translate = QtCore.QCoreApplication.translate
 		IG6_SeccionPractica.setWindowTitle(_translate("IG6_SeccionPractica", "Menú de práctica"))
-		self.label_instruccion.setText(_translate("IG6_SeccionPractica", "Selecciona categoría"))
+		self.label_instruccion.setText(_translate("IG6_SeccionPractica", "Selecciona una categoría:"))
 		self.boton_abecedario.setText(_translate("IG6_SeccionPractica", "Abecedario"))
 		self.boton_numeros.setText(_translate("IG6_SeccionPractica", "Números"))
 		self.boton_cuerpo.setText(_translate("IG6_SeccionPractica", "Cuerpo"))

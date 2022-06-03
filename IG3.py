@@ -201,7 +201,7 @@ class Ui_IG3_ModificacionPerfil(object):
         '''
         msgBox = QMessageBox()
         msgBox.setWindowTitle("Confirmación")
-        msgBox.setText("Esta acción borrara su progreso actual.")
+        msgBox.setText("Esta acción borrará su progreso actual.")
         msgBox.setInformativeText("¿Desea continuar?")
         yes_button = msgBox.addButton('Sí', QMessageBox.YesRole)
         msgBox.setStandardButtons(QMessageBox.No)

@@ -189,7 +189,7 @@ class Ui_IG2_MenuUsuario(object):
         self.botonAprender.setText(_translate("IG2_MenuUsuario", "Aprender"))
         self.botonPracticar.setText(_translate("IG2_MenuUsuario", "Practicar"))
         self.botonRegresarInicio.setText(_translate("IG2_MenuUsuario", "Regresar a Inicio"))
-        self.labelBienvenida.setText(_translate("IG2_MenuUsuario", "¡Que gusto verte!"))
+        self.labelBienvenida.setText(_translate("IG2_MenuUsuario", "¡Qué gusto verte!"))
 
     def nombreUsuario(self,id):
         usuario = Usuario()

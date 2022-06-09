@@ -33,42 +33,71 @@ tiempoLectura = 0
 tiempoLimiteE=60
 tiempoLimiteD=90
 global m, redConv #Variable para precargar el modelo para evaluar la seña
+
+debug = ['20_1', '20_2', '30_1', '30_2', '70_1', '70_3', '80_1', '80_2', '80_3', '90_2', '90_3']
 redConvs = [
 	tf.keras.models.load_model('./modelos/modeloNumerosEstaticos.h5'),
 	tf.keras.models.load_model('./modelos/modeloAbecedario_1.h5'),
 	tf.keras.models.load_model('./modelos/modeloAbecedario_2.h5'),
 	tf.keras.models.load_model('./modelos/modeloCuerpo.h5'),
 	tf.keras.models.load_model('./modelos/modeloDias.h5'),
-	tf.keras.models.load_model('./modelos/modeloNumeros307080.h5'),
-	tf.keras.models.load_model('./modelos/modeloNumeros1020100.h5'),
+	tf.keras.models.load_model('./modelos/modelonumsDin1.h5'),
+	tf.keras.models.load_model('./modelos/modeloNumsDin2.h5'),
 	tf.keras.models.load_model('./modelos/modeloNumeros456.h5'),
-	tf.keras.models.load_model('./modelos/modeloColores.h5')
+	tf.keras.models.load_model('./modelos/modeloColores.h5'),
+	tf.keras.models.load_model('./modelos/modelonums3678.h5'),
+	tf.keras.models.load_model('./modelos/modeloAbecedario_3.h5'),
+	tf.keras.models.load_model('./modelos/modeloAbecedario_Din.h5'),
+	tf.keras.models.load_model('./modelos/modeloCuerpoDin.h5')
 ]
 modelos = {
-		0: ["1", "2", "3", "4", "5", "6", "7", "8"],
-		1: ["A", "B", "C", "D", "E", "G", "I", "M", "R", "S"],
-		2: ["F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y"],
-		3: ["Cuello", "Diente", "Espalda", "Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"],
-		4: ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes"],
-		5: ["30", "70", "80"],
-		6: ["10", "20", "100"],
-		7: ["40", "50", "60"],
-		8: ["Amarillo","Azul","Blanco","Café","Gris","Morado","Naranja","Negro","Rojo","Rosa","Verde"]
+		0: ['1', '2', '', '4', '5', '_Fondo', '_Persona'],
+		1: ['B', 'C', 'D', '', 'M', 'S', 'V', '_Fondo', '_Persona'],
+		2: ['', 'H', '', 'L', 'N', 'O', 'T', '', 'W', 'Y', '_Fondo', '_Persona'],
+		3: ['', 'Diente', '', 'Estómago', 'Hombro', '', '', 'Muñeca', 'Nariz', 'Ojo', 'Pulgar', 'Uña', 'Pelo'],
+		4: ["", "Jueves", "Lunes", "", "Miércoles", "Sábado","Viernes"],
+		5: ['100', '60', '40','9'],
+		6: ["10", "", "Domingo", "Martes"],
+		7: ['20', '30', '70', '80', '90'],
+		8: ["Amarillo","Azul","Blanco","Café","Gris","Morado","Naranja","Negro","Rojo","Rosa","Verde"],
+		9: ['3', '6', '7', '8', '_Fondo', '_Persona'],
+		10: ['A', 'E', 'F', 'G', 'I', 'P', '', '', '_Fondo', '_Persona'],
+		11: ['K', 'Q', 'R', 'U', 'Ñ'],
+		12: ["Boca","Cuello", "Espalda", "Lengua", "Mano", "Brazo", "Codo", "Oreja"]
 	}
-Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "R", "S",
-			"F", "H", "L", "N", "O", "P", "T", "U", "V", "W", "Y","Cuello", "Diente", "Espalda",
-			"Estómago", "Hombro", "Lengua", "Mano", "Muñeca", "Nariz", "Pulgar", "Pelo"]
-Ciclo = ["Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado","Viernes","Amarillo","Azul",
+Estatica = ["1", "2", "3", "4", "5", "6", "7", "8", "A", "B", "C", "D", "E", "G", "I", "M", "", "S",
+			"F", "H", "L", "N", "O", "P", "T", "", "V", "W", "Y", "Diente", "Ojo",
+			"Estómago", "Hombro", "Muñeca", "Nariz", "Pulgar", "Uña", "Pelo"]
+Ciclo = ["Jueves", "Lunes", "Miércoles", "Sábado","Viernes","Amarillo","Azul",
 		 "Blanco","Café","Gris","Morado","Naranja","Negro","Rojo","Rosa","Verde"]
-Patron = ["10", "20", "100", "30", "70", "80", "40", "50", "60"]
+Patron = ["9", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100",'K', 'Q', 'R', 'U', 'Ñ',"Boca", "Cuello", "Espalda", "Lengua", "Mano", "Brazo", "Codo", "Oreja", "Domingo", "Martes"]
 
 patrones = {
-		"10": 	[2,3],
-		"20":	[4,5,4,5,4,5],
 		"100": 	[0,1],
-		"30": 	[0,1,0,1,0,1],
-		"70": 	[2,4,2,4,2,4],
-		"80": 	[3,4,3,4,3,4]
+		"60": 	[3,3,3,3,3,3],
+		"40": 	[2,2,2,2,2],
+		"9": 	[2,3,2,3],
+		'K': [0,0,0,0,0,0,0,0,0,0],
+		'Q': [1,2,],
+		'R': [3,3,3],
+		'U': [3,3,3],
+		'Ñ': [7,7,7,7],
+		"Cuello": [0,0,0,0],
+		"Espalda": [1,1,1,1],
+		"Lengua": [2,2,2,2],
+		"Boca": [2,2,2,2,2,2,2,2,2,2],
+		"Mano": [3,3],
+		"Brazo": [4,4,4],
+		"Codo": [5,5,5,5],
+		"Oreja": [6,6],
+		"10": [0,1],
+		"Domingo": 	[5,5,5,5,5],
+		"Martes": 	[6,6,6,6,6,6,6,6,6,6,6,6,6],
+		'20': [4,5,4,5],
+		'30': [4,5,4,5],
+		'70': [4,5,4,5],
+		'90': [4,5,4,5],
+		'80': [4,5,4,5]
 	}
 class Ui_IG5_Sena(object):
 	def setupUi(self, IG5_Sena):
@@ -410,7 +439,7 @@ class Ui_IG5_Sena(object):
 		predicciones_etq = np.argmax(predicciones,axis=1)
 		for i in predicciones_etq:
 			# prediccion = modelos[m][i]
-			print(i,valorEsperado)
+			#print(i, debug[i],valorEsperado)
 			if i == valorEsperado:
 				return True
 			else:
